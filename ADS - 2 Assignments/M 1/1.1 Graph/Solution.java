@@ -99,7 +99,7 @@ class GraphTheory implements Graph {
      * Adds an edge.
      * Complexity of add is 1.
      *
-     * @param      v     { parameter_description }
+     * @param      v1     { parameter_description }
      * @param      w     { parameter_description }
      */
     public void addEdge(final int v1, final int w) {
@@ -118,12 +118,12 @@ class GraphTheory implements Graph {
      * Particular value in the list.
      * Complexity is 1.
      *
-     * @param      v     { parameter_description }
+     * @param      v1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> list(int v) {
-        return list[v];
+    public Iterable<Integer> list(int v1) {
+        return list[v1];
     }
     /**
      * Determines if it has edge.
@@ -131,13 +131,13 @@ class GraphTheory implements Graph {
      * Complexity is N.
      * Checks throughout the list for the particular index.
      *
-     * @param      v     { parameter_description }
+     * @param      v1     { parameter_description }
      * @param      w     { parameter_description }
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
-        for (int k : list[v]) {
+    public boolean hasEdge(int v1, int w) {
+        for (int k : list[v1]) {
             if (k == w) {
                 return true;
             }
@@ -148,14 +148,14 @@ class GraphTheory implements Graph {
      * Displaying the given list in list format.
      * Complexity is N.
      *
-     * @param      v          { Vertices }
-     * @param      e          { Edges }
+     * @param      v1          { Vertices }
+     * @param      e1          { Edges }
      * @param      tokens     The tokens
      *
      * @throws     Exception  { No edges Exception }
      */
-    public void listdisplay(int v, int e, String[] tokens) throws Exception {
-        if (e <= 1 && v <= 1) {
+    public void listdisplay(int v1, int e1, String[] tokens) throws Exception {
+        if (e1 <= 1 && v1 <= 1) {
             System.out.println(vertex() + " vertices"
                 + ", " + edge() + " edges");
             throw new Exception("No edges");
@@ -177,12 +177,12 @@ class GraphTheory implements Graph {
      * Complexity is N^2.
      * The array used is a double dimensional array.
      *
-     * @param      v          { Vertices }
-     * @param      e          { Edges }
+     * @param      v1          { Vertices }
+     * @param      e1          { Edges }
      *
      * @throws     Exception  { No edges }
      */
-    public void matrixdisplay(int v, int e) throws Exception {
+    public void matrixdisplay(int v1, int e1) throws Exception {
         if (e <= 1 && v <= 1) {
             System.out.println(vertex() + " vertices"
                 + ", " + edge() + " edges");
@@ -191,16 +191,16 @@ class GraphTheory implements Graph {
             System.out.println(vertex() + " vertices"
                 + ", " + edge() + " edges");
             int[][] disp = new int[v][v];
-            for (int i = 0; i  < v; i++) {
-                for (int j = 0; j < v; j++) {
+            for (int i = 0; i  < v1; i++) {
+                for (int j = 0; j < v1; j++) {
                     if (hasEdge(i, j)) {
                         disp[i][j] = 1;
                     }
                 }
             }
 
-            for (int i = 0; i < v; i++) {
-                for (int j = 0; j < v; j++) {
+            for (int i = 0; i < v1; i++) {
+                for (int j = 0; j < v1; j++) {
                     System.out.print(disp[i][j] + " ");
                 }
                 System.out.println();
