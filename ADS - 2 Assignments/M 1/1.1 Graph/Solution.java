@@ -19,7 +19,7 @@ class GraphTheory implements Graph {
         this.v = v1;
         this.e = 0;
         list = (Bag<Integer>[]) new Bag[v1];
-        for (int i = 0; i < v1; i++) {
+        for (int i = 0; i < v; i++) {
             list[v] = new Bag<Integer>();
         }
     }
