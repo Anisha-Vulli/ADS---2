@@ -33,7 +33,7 @@ class GraphTheory implements Graph {
     }
 
     public void addEdge(int v, int w) {
-        if (v == e) {
+        if (v == w) {
             return;
         }
 
