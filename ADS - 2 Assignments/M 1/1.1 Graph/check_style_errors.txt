@@ -1,18 +1,15 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:41: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:42:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:43:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:73:21: Parameter item should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:86: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:93:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:95:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:98:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:102:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:103: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:105: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:92: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:99:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:101:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:104:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:108:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:109: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Bag.java:111: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

@@ -39,7 +39,13 @@ public class Bag<Item> implements Iterable<Item> {
 
     // helper linked list class
     private class Node {
+        /**
+         * item.
+         */
         private Item item;
+        /**
+         * Next node.
+         */
         private Node next;
     }
     /**
@@ -70,7 +76,7 @@ public class Bag<Item> implements Iterable<Item> {
      *
      * @param      item  The item
      */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;

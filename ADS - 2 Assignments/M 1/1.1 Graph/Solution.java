@@ -145,7 +145,7 @@ class GraphTheory implements Graph {
     }
     /**
      * Displaying the given list in list format.
-     * Complexity is N.
+     * Complexity is N^2.
      *
      * @param      v1          { Vertices }
      * @param      e1          { Edges }
