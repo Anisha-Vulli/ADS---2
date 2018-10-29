@@ -102,17 +102,17 @@ class GraphTheory implements Graph {
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(final int v, final int w) {
-        if (v == w) {
+    public void addEdge(final int v1, final int w) {
+        if (v1 == w) {
             return;
         }
 
-        if (!hasEdge(v, w)) {
+        if (!hasEdge(v1, w)) {
             e++;
         }
 
-        list[v].add(w);
-        list[w].add(v);
+        list[v1].add(w);
+        list[w].add(v1);
     }
     /**
      * Particular value in the list.
