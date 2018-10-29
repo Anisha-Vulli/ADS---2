@@ -38,6 +38,10 @@ public class Bag<Item> implements Iterable<Item> {
     private Node first;
 
     // helper linked list class
+    
+    /**
+     * Class for node.
+     */
     private class Node {
         /**
          * item.
@@ -89,22 +93,36 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
 
     /**
      * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
+        /**
+         * Current node.
+         */
         private Node current = first;
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
             return current != null;
         }
+        /**
+         * Removes.
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-
+        /**
+         * Next function.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
