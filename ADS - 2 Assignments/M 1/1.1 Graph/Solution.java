@@ -11,13 +11,13 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int vertex();
+    int vertex();
     /**
      * Returns the count of edge.
      *
      * @return     { description_of_the_return_value }
      */
-    public int edge();
+    int edge();
     /**
      * 
      * Adds an edge.
@@ -25,7 +25,7 @@ interface Graph {
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(int v, int w);
+    void addEdge(int v, int w);
     /**
      * Returns the particular value in the list.
      *
@@ -33,7 +33,7 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> list(int v);
+    Iterable<Integer> list(int v);
     /**
      * Determines if it has edge.
      *
@@ -42,7 +42,7 @@ interface Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w);
+    boolean hasEdge(int v, int w);
 }
 /**
  * Class for graph theory.
