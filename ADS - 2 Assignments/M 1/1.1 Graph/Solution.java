@@ -107,7 +107,7 @@ class Solution {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        GraphTheory grph = new GraphTheory();
+        GraphTheory grph = null;
         String type = sc.nextLine();
         int vertex = Integer.parseInt(sc.nextLine());
         int edges = Integer.parseInt(sc.nextLine());
