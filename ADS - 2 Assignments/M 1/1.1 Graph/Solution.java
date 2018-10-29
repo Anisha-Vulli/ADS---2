@@ -122,7 +122,7 @@ class GraphTheory implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> list(int v1) {
+    public Iterable<Integer> list(final int v1) {
         return list[v1];
     }
     /**
@@ -136,7 +136,7 @@ class GraphTheory implements Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v1, int w) {
+    public boolean hasEdge(final int v1, final int w) {
         for (int k : list[v1]) {
             if (k == w) {
                 return true;
@@ -154,7 +154,8 @@ class GraphTheory implements Graph {
      *
      * @throws     Exception  { No edges Exception }
      */
-    public void listdisplay(int v1, int e1, String[] tokens) throws Exception {
+    public void listdisplay(final int v1, final int e1
+        , final String[] tokens) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
             System.out.println(vertex() + " vertices"
                 + ", " + edge() + " edges");
@@ -182,7 +183,8 @@ class GraphTheory implements Graph {
      *
      * @throws     Exception  { No edges }
      */
-    public void matrixdisplay(int v1, int e1) throws Exception {
+    public void matrixdisplay(final int v1
+        , final int e1) throws Exception {
         if (e <= 1 && v <= 1) {
             System.out.println(vertex() + " vertices"
                 + ", " + edge() + " edges");
