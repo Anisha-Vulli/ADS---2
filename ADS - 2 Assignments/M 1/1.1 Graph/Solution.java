@@ -19,13 +19,13 @@ interface Graph {
      */
     int edge();
     /**
-     * 
+     *
      * Adds an edge.
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    void addEdge(int v, int w);
+    void addEdge(final int v, final int w);
     /**
      * Returns the particular value in the list.
      *
@@ -33,7 +33,7 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    Iterable<Integer> list(int v);
+    Iterable<Integer> list(final int v);
     /**
      * Determines if it has edge.
      *
@@ -42,7 +42,7 @@ interface Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    boolean hasEdge(int v, int w);
+    boolean hasEdge(final int v, final int w);
 }
 /**
  * Class for graph theory.

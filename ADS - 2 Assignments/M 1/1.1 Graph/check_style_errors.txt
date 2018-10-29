@@ -31,7 +31,11 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:22: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:28:18: Redundant 'final' modifier. [RedundantModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:28:31: Redundant 'final' modifier. [RedundantModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:36:28: Redundant 'final' modifier. [RedundantModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:45:21: Redundant 'final' modifier. [RedundantModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:45:34: Redundant 'final' modifier. [RedundantModifier]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:125:35: Parameter v1 should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:139:28: Parameter v1 should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:139:36: Parameter w should be final. [FinalParameters]
@@ -43,4 +47,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:214:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:226:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 16 errors.
