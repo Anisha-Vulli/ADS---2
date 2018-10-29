@@ -51,7 +51,7 @@ class GraphTheory implements Graph {
 
     public boolean hasEdge(int v, int w) {
         for (int k : list[v]) {
-            if (v == w) {
+            if (k == w) {
                 return true;
             }
         }
