@@ -109,10 +109,9 @@ class GraphTheory implements Graph {
 
         if (!hasEdge(v1, w)) {
             e++;
+            list[v1].add(w);
+            list[w].add(v1);
         }
-
-        list[v1].add(w);
-        list[w].add(v1);
     }
     /**
      * Particular value in the list.
