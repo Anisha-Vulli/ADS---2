@@ -31,9 +31,7 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:158:8: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:187:8: ',' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:216:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:228:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 3 errors.

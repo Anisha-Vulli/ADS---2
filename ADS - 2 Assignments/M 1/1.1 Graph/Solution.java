@@ -154,8 +154,8 @@ class GraphTheory implements Graph {
      *
      * @throws     Exception  { No edges Exception }
      */
-    public void listdisplay(final int v1, final int e1
-        , final String[] tokens) throws Exception {
+    public void listdisplay(final int v1, final int e1,
+        final String[] tokens) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
             System.out.println(vertex() + " vertices"
                 + ", " + edge() + " edges");
@@ -183,8 +183,8 @@ class GraphTheory implements Graph {
      *
      * @throws     Exception  { No edges }
      */
-    public void matrixdisplay(final int v1
-        , final int e1) throws Exception {
+    public void matrixdisplay(final int v1,
+        final int e1) throws Exception {
         if (e <= 1 && v <= 1) {
             System.out.println(vertex() + " vertices"
                 + ", " + edge() + " edges");
