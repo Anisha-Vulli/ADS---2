@@ -28,9 +28,9 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
-	/**
-	 * number of elements in bag.
-	 */
+    /**
+     * number of elements in bag.
+     */
     private int n;
     /**
      * beginning of bag.
@@ -42,31 +42,33 @@ public class Bag<Item> implements Iterable<Item> {
         private Item item;
         private Node next;
     }
-
-   /**
-     * Create an empty stack.
+    /**
+     * Constructs the object.
      */
     public Bag() {
         first = null;
         n = 0;
     }
-
-   /**
-     * Is the BAG empty?
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
-
-   /**
-     * Return the number of items in the bag.
+    /**
+     * Returns the size.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         return n;
     }
-
-   /**
-     * Add the item to the bag.
+    /**
+     * Adds a item.
+     *
+     * @param      item  The item
      */
     public void add(Item item) {
         Node oldfirst = first;
@@ -75,21 +77,27 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-
-
-   /**
-     * Return an iterator that iterates over the items in the bag.
+    /**
+     * Returns the iteration.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();  
     }
 
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+     * Class for list iterator.
+     */
     private class ListIterator implements Iterator<Item> {
         private Node current = first;
 
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
+        public boolean hasNext() {
+            return current != null;
+        }
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
 
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
