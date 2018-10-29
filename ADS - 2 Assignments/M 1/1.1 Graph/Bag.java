@@ -28,8 +28,14 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
-    private int N;         // number of elements in bag
-    private Node first;    // beginning of bag
+	/**
+	 * number of elements in bag.
+	 */
+    private int n;
+    /**
+     * beginning of bag.
+     */
+    private Node first;
 
     // helper linked list class
     private class Node {
@@ -42,7 +48,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
    /**
@@ -56,7 +62,7 @@ public class Bag<Item> implements Iterable<Item> {
      * Return the number of items in the bag.
      */
     public int size() {
-        return N;
+        return n;
     }
 
    /**
@@ -67,7 +73,7 @@ public class Bag<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
 
 
