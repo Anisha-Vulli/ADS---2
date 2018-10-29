@@ -34,8 +34,9 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:22: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:105:39: Parameter w should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:125:35: Parameter v1 should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:139:28: Parameter v1 should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:139:36: Parameter w should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:139:28: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:139:32: 'v' hides a field. [HiddenField]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:139:35: Parameter w should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:157:29: Parameter v1 should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:157:37: Parameter e1 should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:157:45: Parameter tokens should be final. [FinalParameters]
@@ -44,4 +45,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:214:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 1\1.1 Graph\Solution.java:226:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 14 errors.

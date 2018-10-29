@@ -131,13 +131,13 @@ class GraphTheory implements Graph {
      * Complexity is N.
      * Checks throughout the list for the particular index.
      *
-     * @param      v1    The v 1
+     * @param      v    The v 1
      * @param      w     { parameter_description }
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v1, int w) {
-        for (int k : list[v1]) {
+    public boolean hasEdge(int v, int w) {
+        for (int k : list[v]) {
             if (k == w) {
                 return true;
             }
