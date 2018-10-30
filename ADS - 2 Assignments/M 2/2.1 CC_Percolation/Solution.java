@@ -20,17 +20,20 @@ class Percolation {
      * object for weighted addEdge class.
      */
     private Graph cd;
-    private CC cc; 
-/**
- * Constructs the object.
- *
- * @param      n  The size
- */
+    /**
+     * cc object.
+     */
+    private CC cc;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     */
     Percolation(final int n) {
         grid = new int[n][n];
         cnt = 0;
         cd = new Graph((n * n) + 2);
-    	cc = new CC(cd);
+        cc = new CC(cd);
         this.size = n;
     }
     /**
@@ -111,7 +114,7 @@ class Percolation {
      * @return     True if percolates, False otherwise.
      */
     boolean percolates() {
-    	cc = new CC(cd);
+        cc = new CC(cd);
         return cc.connected(0, (size * size) + 1);
     }
 }
@@ -132,25 +135,11 @@ class Solution {
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-/*        int vertices = Integer.parseInt(scan.nextLine());
-        Graph g = new Graph(vertices);
-        
-        while(scan.hasNext()) {
-        	String[] tokens = scan.nextLine().split(" ");
-        	if(g.e() == 0) {
-        		g.addEdge(0, tokens[0]);
-        	}
-            g.addEdge(Integer.parseInt(tokens[0]),
-            	Integer.parseInt(tokens[1]));
-            if(g.e() == vertices) {
-        		g.addEdge(0, tokens[0]);
-        	}
-        }*/
         int vertices = s.nextInt();
         Percolation wc = new Percolation(vertices);
         while (s.hasNext()) {
         wc.open(s.nextInt() - 1, s.nextInt() - 1);
         }
         System.out.println(wc.percolates());
-}
+    }
 }
