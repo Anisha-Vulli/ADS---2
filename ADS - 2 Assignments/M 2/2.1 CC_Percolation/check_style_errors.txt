@@ -2,16 +2,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:39: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:68: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:69: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:108:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:109: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:110: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:110:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:110:94: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

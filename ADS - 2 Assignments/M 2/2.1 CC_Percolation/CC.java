@@ -37,7 +37,7 @@ public class CC {
     }
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      g     { parameter_description }
      * @param      v     { parameter_description }
@@ -66,7 +66,7 @@ public class CC {
     }
 
     /**
-     * Size of the 
+     * Size of the.
      *
      * @param      v     { parameter_description }
      *
@@ -105,8 +105,9 @@ public class CC {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        int v1 = marked.length;
+        if (v < 0 || v >= v1)
+            throw new IllegalArgumentException("vertex "
+                + v + " is not between 0 and " + (v1 - 1));
     }
 }
