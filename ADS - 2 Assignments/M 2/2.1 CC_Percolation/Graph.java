@@ -134,7 +134,7 @@ class Graph implements GraphTheory {
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v1, final int w) {
-        for (int k : list[v1]) {
+        for (int k : list(v1)) {
             if (k == w) {
                 return true;
             }
