@@ -1,37 +1,33 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+true
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -39,17 +35,15 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -57,8 +51,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -66,8 +59,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -75,8 +67,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -84,8 +75,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -93,8 +83,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -102,8 +91,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -111,17 +99,15 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -129,17 +115,15 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
-########## Testcase 15: Failed ##########
+########## Testcase 15: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -147,8 +131,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -156,8 +139,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -165,8 +147,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -174,8 +155,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -183,8 +163,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -192,8 +171,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -201,8 +179,7 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -210,7 +187,6 @@ Expected Output:
 true
 
 Your Output: 
-0 vertices, 0 edges
-No edges
+false
 ----------------------------------------
 

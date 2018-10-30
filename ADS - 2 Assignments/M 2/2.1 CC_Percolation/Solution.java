@@ -95,9 +95,11 @@ import java.util.Scanner;
      * checks for percolation.
      * @return returns true if percolation is possible.
      */
-    // public boolean percolates() {
-    //     return gph.connected(0, (size * size) + 1);
-    // }
+    public boolean percolates() {
+        int intital = 0;
+        int finalval = (size * size) + 1;
+        return gph.connected(intital, finalval);
+    }
     /**
      * method to find the component at given indices.
      *
@@ -133,11 +135,6 @@ class Solution {
         while (sc.hasNext()) {
             p.open(sc.nextInt() - 1, sc.nextInt() - 1);
         }
-        //System.out.println(p.percolates());
-        try {
-                gph.matrixdisplay(size, size);
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
+        System.out.println(p.percolates());
     }
 }

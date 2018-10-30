@@ -206,4 +206,11 @@ class Graph implements GraphTheory {
             }
         }
     }
+
+    public boolean connected(int init, int fin) {
+        if (hasEdge(init, fin) && hasEdge(fin, init)) {
+            return true;
+        }
+        return false;
+    }
 }
