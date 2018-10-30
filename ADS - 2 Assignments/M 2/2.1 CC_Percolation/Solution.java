@@ -38,6 +38,7 @@ class Percolation {
     }
     /**
      * function to check whether the element has to be connected or not.
+     * Complexity is 1.
      *
      * @param      row   The value of row
      * @param      col   The value of column
@@ -69,6 +70,7 @@ class Percolation {
     }
     /**
      * to get the component at the particular row and column.
+     * Complexity is 1.
      *
      * @param      i     row index is given.
      * @param      j     column index is given
@@ -80,6 +82,7 @@ class Percolation {
     }
     /**
      * Determines if open.
+     * Complexity is 1.
      *
      * @param      row   The row
      * @param      col   The col
@@ -91,6 +94,7 @@ class Percolation {
     }
     /**
      * Determines if full.
+     * Complexity is 1.
      *
      * @param      row   The row
      * @param      col   The col
@@ -102,6 +106,7 @@ class Percolation {
     }
     /**
      * to get the number of open sites.
+     * Complexity is 1.
      *
      * @return     integer is returned.
      */
@@ -110,6 +115,7 @@ class Percolation {
     }
     /**
      * function to check if the grid percolates or not.
+     * Complexity is N.
      *
      * @return     True if percolates, False otherwise.
      */
