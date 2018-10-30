@@ -24,13 +24,13 @@ public class CC {
      *
      * @param G the undirected graph
      */
-    public CC(Graph G) {
-        marked = new boolean[G.ve()];
-        id = new int[G.ve()];
-        size = new int[G.ve()];
-        for (int v = 0; v < G.ve(); v++) {
+    public CC(final Graph g) {
+        marked = new boolean[g.ve()];
+        id = new int[g.ve()];
+        size = new int[g.ve()];
+        for (int v = 0; v < g.ve(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(g, v);
                 count++;
             }
         }
@@ -42,13 +42,13 @@ public class CC {
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph g, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(g, w);
             }
         }
     }

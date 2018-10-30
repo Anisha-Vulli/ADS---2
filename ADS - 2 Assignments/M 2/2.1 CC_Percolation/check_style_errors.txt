@@ -2,9 +2,10 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:27:15: Parameter G should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:27:21: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:45:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:25:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:27:27: Expected @param tag for 'g'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:42:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:45:34: Expected @param tag for 'g'. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:72: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:76: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:78: Line has trailing spaces. [RegexpSingleline]
@@ -15,7 +16,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:121:93: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 2\2.1 CC_Percolation\CC.java:121:94: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...
