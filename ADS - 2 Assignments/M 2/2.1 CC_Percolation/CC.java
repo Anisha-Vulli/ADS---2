@@ -106,8 +106,10 @@ public class CC {
      */
     private void validateVertex(final int v) {
         int v1 = marked.length;
-        if (v < 0 || v >= v1)
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException("vertex "
                 + v + " is not between 0 and " + (v1 - 1));
+        }
     }
 }
+
