@@ -20,9 +20,9 @@ public class CC {
     private int count;
 
     /**
-     * Computes the connected components of the undirected graph {@code G}.
+     * Constructs the object.
      *
-     * @param G the undirected graph
+     * @param      g     { parameter_description }
      */
     public CC(final Graph g) {
         marked = new boolean[g.ve()];
