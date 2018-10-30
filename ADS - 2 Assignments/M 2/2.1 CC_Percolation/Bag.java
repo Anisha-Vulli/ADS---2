@@ -1,27 +1,6 @@
-/*************************************************************************
- *  Compilation:  javac Bag.java
- *  Execution:    java Bag < input.txt
- *
- *  A generic bag or multiset, implemented using a linked list.
- *
- *************************************************************************/
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/**
- *  The <tt>Bag</tt> class represents a bag (or multiset) of
- *  generic items. It supports insertion and iterating over the
- *  items in arbitrary order.
- *  <p>
- *  The <em>add</em>, <em>isEmpty</em>, and <em>size</em>  operation
- *  take constant time. Iteration takes time
- *  proportional to the number of items.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.
- *  cs.princeton.edu/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- */
 /**
  * Class for bag.
  *
@@ -29,32 +8,30 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * number of elements in bag.
+     * { var_description }.
      */
-    private int n;
+    private int n;     // number of elements in bag
     /**
-     * beginning of bag.
+     * { var_description }.
      */
-    private Node first;
-
-    // helper linked list class
-
+    private Node first;    // beginning of bag
     /**
      * Class for node.
      */
     private class Node {
         /**
-         * item.
+         * { var_description }.
          */
         private Item item;
         /**
-         * Next node.
+         * { var_description }.
          */
         private Node next;
     }
+
     /**
-     * Constructs the object.
-     */
+      * Create an empty stack.
+      */
     public Bag() {
         first = null;
         n = 0;
@@ -67,16 +44,17 @@ public class Bag<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return first == null;
     }
+
     /**
-     * Returns the size.
-     *
-     * @return     { description_of_the_return_value }
-     */
+      * Return the number of items in the bag.
+      * @return size.
+      */
     public int size() {
         return n;
     }
+
     /**
-     * Adds a item.
+     * { function_description }.
      *
      * @param      item  The item
      */
@@ -87,11 +65,12 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
+
+
     /**
-     * Returns the iteration.
-     *
-     * @return     { description_of_the_return_value }
-     */
+      * Return an iterator that iterates over the items in the bag.
+      * @return list iterator.
+      */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
@@ -101,7 +80,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * Current node.
+         * { var_description }.
          */
         private Node current = first;
         /**
@@ -113,13 +92,13 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * Removes.
+         * { function_description }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * Next function.
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */
