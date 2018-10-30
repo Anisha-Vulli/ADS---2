@@ -37,9 +37,9 @@ public class CC {
     }
 
     /**
-     * depth-first search for a Graph.
+     * { function_description }
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      v     { parameter_description }
      */
     private void dfs(final Graph g, final int v) {
@@ -53,68 +53,57 @@ public class CC {
         }
     }
 
-    /**
-     * Returns the component id of the connected
-     * component containing vertex {@code v}.
-     *
-     * @param  v the vertex
-     * @return the component id of the connected
-     * component containing vertex {@code v}
-     * @throws IllegalArgumentException unless
-     * {@code 0 <= v < V}
-     */
+   /**
+    * Returning the values in id.
+    *
+    * @param      v     { parameter_description }
+    *
+    * @return     { description_of_the_return_value }
+    */
     public int id(final int v) {
         validateVertex(v);
         return id[v];
     }
 
     /**
-     * Returns the number of vertices in 
-     * the connected component containing vertex {@code v}.
+     * Size of the 
      *
-     * @param  v the vertex
-     * @return the number of vertices in the 
-     * connected component containing vertex {@code v}
-     * @throws IllegalArgumentException unless 
-     * {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size(final int v) {
         validateVertex(v);
         return size[id[v]];
     }
 
-    /**
-     * Returns the number of connected
-     * components in the graph {@code G}.
-     *
-     * @return the number of connected
-     * components in the graph {@code G}
-     */
+   /**
+    * Count.
+    *
+    * @return     { description_of_the_return_value }
+    */
     public int count() {
         return count;
     }
 
     /**
-     * Returns true if vertices {@code v}
-     * and {@code w} are in the same
-     * connected component.
+     * Connected check.
      *
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @return {@code true} if vertices {@code v}
-     * and {@code w} are in the same
-     *         connected component; {@code false} otherwise
-     * @throws IllegalArgumentException unless
-     * {@code 0 <= v < V}
-     * @throws IllegalArgumentException unless
-     * {@code 0 <= w < V}
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public boolean connected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
     }
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * Validate vertex.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
