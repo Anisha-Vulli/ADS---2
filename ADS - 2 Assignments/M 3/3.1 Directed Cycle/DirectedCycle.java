@@ -29,8 +29,11 @@ public class DirectedCycle {
         marked  = new boolean[grp.vertex()];
         onStack = new boolean[grp.vertex()];
         edgeTo  = new int[grp.vertex()];
-        for (int v = 0; v < grp.vertex(); v++)
-            if (!marked[v] && cycle == null) dfs(grp, v);
+        for (int v = 0; v < grp.vertex(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(grp, v);
+            }
+        }
     }
     
     /**
@@ -46,7 +49,9 @@ public class DirectedCycle {
         for (int w : grp.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
@@ -78,7 +83,7 @@ public class DirectedCycle {
     }
 
     /**
-     * Returns a directed cycle if the digraph has
+     * Returns a directed cycle if the digraph has.
      * a directed cycle, and {@code null} otherwise.
      * @return a directed cycle (as an iterable) if
      * the digraph has a directed cycle,
@@ -87,7 +92,7 @@ public class DirectedCycle {
     public Iterable<Integer> cycle() {
         return cycle;
     }
-    
+
     /**
      * certify that digraph has a directed
      * cycle if it reports one
@@ -95,16 +100,18 @@ public class DirectedCycle {
      * @return     { description_of_the_return_value }
      */
     private boolean check() {
-
         if (hasCycle()) {
             // verify cycle
             int first = -1, last = -1;
             for (int v : cycle()) {
-                if (first == -1) first = v;
+                if (first == -1) {
+                    first = v;
+                }
                 last = v;
             }
             if (first != last) {
-    System.err.printf("cycle begins with %d andends with %d\n",
+                System.err.printf(
+                    "cycle begins with %d andends with %d\n",
                     first, last);
                 return false;
             }

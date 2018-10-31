@@ -4,16 +4,12 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:32: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:33: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:49: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:55:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:90: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:91: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:103: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:38: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:54:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:60:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:96: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
 Starting audit...
