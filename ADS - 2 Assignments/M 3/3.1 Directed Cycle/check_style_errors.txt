@@ -1,34 +1,5 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:17: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:23: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:24:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:24:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:25:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:28: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:29:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:30:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:44: Expected @return tag. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:51: Expected @return tag. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:58:21: Parameter item should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:58:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:70: Expected @return tag. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:71: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:75: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:76:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:78: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:78:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:79: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:79:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:81:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:82: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Bag.java:84: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:6: Line is longer than 80 characters (found 81). [LineLength]
@@ -101,10 +72,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 25 errors.
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:8:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:20:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:8: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
