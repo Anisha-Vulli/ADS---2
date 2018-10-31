@@ -18,6 +18,9 @@ public class DirectedCycle {
      * directed cycle (or null if no such cycle).
      */
     private Stack<Integer> cycle;
+    /**
+     * Defining bipatite.
+     */
     private boolean isBipartite = false;
 
     /**
@@ -113,7 +116,11 @@ public class DirectedCycle {
         }
         return true;
     }
-
+    /**
+     * Determines if bipartite.
+     *
+     * @return     True if bipartite, False otherwise.
+     */
     public boolean isBipartite() {
         return isBipartite;
     }
