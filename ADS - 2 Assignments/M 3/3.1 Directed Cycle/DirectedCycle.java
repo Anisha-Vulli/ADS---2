@@ -87,7 +87,7 @@ public class DirectedCycle {
     }
 
     /**
-     * certify that digraph has a directed
+     * certify that digraph has a directed.
      * cycle if it reports one
      *
      * @return     { description_of_the_return_value }
@@ -112,3 +112,4 @@ public class DirectedCycle {
         return true;
     }
 }
+
