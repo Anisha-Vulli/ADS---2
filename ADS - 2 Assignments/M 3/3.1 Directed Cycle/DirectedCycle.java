@@ -35,7 +35,7 @@ public class DirectedCycle {
             }
         }
     }
-    
+
     /**
      * check that algorithm computes either the
      * topological order or finds a directed cycle.
@@ -47,20 +47,13 @@ public class DirectedCycle {
         onStack[v] = true;
         marked[v] = true;
         for (int w : grp.adj(v)) {
-
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            }
-
-            // found new vertex, so recur
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(grp, w);
-            }
-
-            // trace back directed cycle
-            else if (onStack[w]) {
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
