@@ -112,18 +112,20 @@ class Graph {
     }
 
     /**
-     * Return a string representation of the graph.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
+        String newline = System.getProperty("line.separator");
+        s.append(vertices + " vertices, " + edges + " edges " + newline);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
             }
-            s.append(NEWLINE);
+            s.append(newline);
         }
         return s.toString();
     }

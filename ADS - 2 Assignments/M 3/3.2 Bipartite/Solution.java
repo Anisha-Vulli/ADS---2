@@ -1,8 +1,22 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 		//Empty constructor.
 	}
+	/**
+	 * Main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int vertex = Integer.parseInt(sc.nextLine());
