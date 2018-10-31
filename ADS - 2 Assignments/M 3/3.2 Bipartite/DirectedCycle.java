@@ -18,7 +18,7 @@ public class DirectedCycle {
      * directed cycle (or null if no such cycle).
      */
     private Stack<Integer> cycle;
-    private boolean isBipartite = true;
+    private boolean isBipartite = false;
 
     /**
      * Determines whether the digraph {@code G}
