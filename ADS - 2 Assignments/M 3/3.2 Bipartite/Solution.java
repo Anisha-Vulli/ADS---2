@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	Solution() {
+	private Solution() {
 		//Empty constructor.
 	}
 	/**
@@ -17,7 +17,7 @@ class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int vertex = Integer.parseInt(sc.nextLine());
 		int edge = Integer.parseInt(sc.nextLine());
@@ -35,3 +35,4 @@ class Solution {
         }
 	}
 }
+
