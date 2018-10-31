@@ -1,7 +1,7 @@
 /**
  * No such element exception.
  */
-import java.util.NoSuchElementException;
+// import java.util.NoSuchElementException;
 
 /**
  * Class for digraph.
@@ -28,7 +28,7 @@ public class Digraph {
      * indegree[v] = indegree of vertex v.
      */
     private int[] indegree;
-    
+
    /**
     * Constructs the object.
     * Initializes an empty digraph with <em>V</em> vertices.
@@ -52,7 +52,7 @@ public class Digraph {
      *
      * @param      grp   The group
      */
-    public Digraph(Digraph grp) {
+    public Digraph(final Digraph grp) {
         this(grp.vertex());
         this.e = grp.edge();
         for (int ver = 0; ver < v; ver++)
@@ -96,7 +96,7 @@ public class Digraph {
      *
      * @param      v1    The v 1
      */
-    private void validateVertex(int v1) {
+    private void validateVertex(final int v1) {
         if (v1 < 0 || v1 >= v)
             throw new IllegalArgumentException("vertex "
                 + v1 + " is not between 0 and " + (v-1));
@@ -111,7 +111,7 @@ public class Digraph {
      * @throws IllegalArgumentException unless both
      * {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(int v1, int w) {
+    public void addEdge(final int v1, final int w) {
         validateVertex(v1);
         validateVertex(w);
         adj[v1].add(w);
@@ -131,7 +131,7 @@ public class Digraph {
      * {@code v} in this digraph, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(int v1) {
+    public Iterable<Integer> adj(final int v1) {
         validateVertex(v1);
         return adj[v1];
     }
@@ -145,7 +145,7 @@ public class Digraph {
      * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int outdegree(int v1) {
+    public int outdegree(final int v1) {
         validateVertex(v1);
         return adj[v1].size();
     }
@@ -159,7 +159,7 @@ public class Digraph {
      * @return the indegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int indegree(int v1) {
+    public int indegree(final int v1) {
         validateVertex(v1);
         return indegree[v1];
     }
