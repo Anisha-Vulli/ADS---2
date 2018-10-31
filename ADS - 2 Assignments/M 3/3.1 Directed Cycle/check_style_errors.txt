@@ -1,15 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:58: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:72: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:100: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:102:53: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:102:54: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:156: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Digraph.java:188: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\DirectedCycle.java:2: Line has trailing spaces. [RegexpSingleline]

@@ -55,8 +55,9 @@ public class Digraph {
     public Digraph(final Digraph grp) {
         this(grp.vertex());
         this.e = grp.edge();
-        for (int ver = 0; ver < v; ver++)
+        for (int ver = 0; ver < v; ver++) {
             this.indegree[ver] = grp.indegree(ver);
+        }
         for (int ver = 0; ver < grp.vertex(); ver++) {
             // reverse so that adjacency list is in same
             //order as original
@@ -69,7 +70,7 @@ public class Digraph {
             }
         }
     }
-        
+
     /**
      * Returns the number of vertices in this digraph.
      * Complexity is 1.
@@ -97,9 +98,10 @@ public class Digraph {
      * @param      v1    The v 1
      */
     private void validateVertex(final int v1) {
-        if (v1 < 0 || v1 >= v)
+        if (v1 < 0 || v1 >= v) {
             throw new IllegalArgumentException("vertex "
-                + v1 + " is not between 0 and " + (v-1));
+                + v1 + " is not between 0 and " + (v - 1));
+        }
     }
 
     /**
@@ -153,7 +155,7 @@ public class Digraph {
     /**
      * Returns the number of directed edges incident to vertex {@code v}.
      * This is known as the <em>indegree</em> of vertex {@code v}.
-     * 
+     *
      * Complexity is  1.
      * @param  v1 the vertex
      * @return the indegree of vertex {@code v}
@@ -185,7 +187,7 @@ public class Digraph {
      * Complexity is N^2.
      *
      * @return the number of vertices <em>V</em>, followed by
-     * the number of edges <em>E</em>,  
+     * the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {
