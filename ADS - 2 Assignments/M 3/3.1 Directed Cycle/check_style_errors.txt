@@ -101,16 +101,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 25 errors.
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:13: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:8:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Solution.java:20:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
