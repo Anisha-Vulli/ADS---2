@@ -39,8 +39,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:15: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:19: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.

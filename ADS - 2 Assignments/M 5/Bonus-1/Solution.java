@@ -14,8 +14,8 @@ final class Solution {
 			String[] nodes = sc.nextLine().split(" ");
 			grp.addEdge(Integer.parseInt(nodes[0]), Integer.parseInt(nodes[1]));
 		}
-		//System.out.println(grp);
-		DepthFirstSearch dfs = new DepthFirstSearch(grp, vertex);
-		
+		System.out.println(grp);
+		//DepthFirstSearch dfs = new DepthFirstSearch(grp, vertex);
+
 	}
 }
