@@ -61,9 +61,6 @@ class Graph {
             adj[v].add(w);
             adj[w].add(v);
         }
-        if (v == w) {
-            return;
-        }
     }
     /**
      * Determines if it has edge.
