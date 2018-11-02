@@ -11,6 +11,7 @@ public class WordNet {
         Scanner sf = new Scanner(synsetsfile);
         File hyperfile = new File("D:\\MSIT\\IT\\ADS---2\\ADS - 2 Assignments\\M 4\\Code Camp - WordNet\\WordNet\\Files\\" + hyper);
         Scanner hf = new Scanner(hyperfile);
+        bst = new BinarySearchST<String, ArrayList<Integer>>();
         while (sf.hasNextLine()) {
             String[] inputline = sf.nextLine().split(",");
             String[] words = inputline[1].split(" ");
