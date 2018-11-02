@@ -17,6 +17,6 @@ final class Solution {
 		//System.out.println(grp);
 		CC ccobj = new CC(grp);
 		int[] idarray = ccobj.idarr();
-		System.out.println(ccobj.count());
+		System.out.println(Arrays.toString(idarray));
 	}
 }
