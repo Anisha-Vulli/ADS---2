@@ -507,8 +507,9 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:33: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:64: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
