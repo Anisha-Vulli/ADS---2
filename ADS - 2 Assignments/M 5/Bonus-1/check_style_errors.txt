@@ -1,6 +1,31 @@
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:14:29: Parameter G should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:14:35: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:14:38: Parameter s should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:22:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:22:22: Parameter G should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:22:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:22:31: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:25:13: 'count' hides a field. [HiddenField]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:42:27: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:56:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:56:33: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:57:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:58: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:59: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:59:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\DepthFirstSearch.java:59:94: '-' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 22 errors.
+Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:112: Expected @return tag. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:114:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
@@ -14,7 +39,8 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:15: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:19: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
