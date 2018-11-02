@@ -14,7 +14,7 @@ final class Solution {
 			String[] nodes = sc.nextLine().split(" ");
 			grp.addEdge(Integer.parseInt(nodes[0]), Integer.parseInt(nodes[1]));
 		}
-		//System.out.println(grp);
+		System.out.println(grp);
 		CC ccobj = new CC(grp);
 		int[] idarray = ccobj.idarr();
 		System.out.println(Arrays.toString(idarray));
