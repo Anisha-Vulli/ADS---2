@@ -1,0 +1,36 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+0
+
+Your Output: 
+5 vertices, 0 edges 
+0: 
+1: 
+2: 
+3: 
+4:
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+3
+
+Your Output: 
+5 vertices, 2 edges 
+0: 
+1: 1 1 
+2: 2 2 
+3: 
+4:
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+7
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at Graph.addEdge(Graph.java:62)
+	at Solution.main(Solution.java:15)
+----------------------------------------
+

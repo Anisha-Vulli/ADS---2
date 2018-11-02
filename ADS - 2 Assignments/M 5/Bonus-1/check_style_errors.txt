@@ -1,0 +1,18 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:117: Expected @return tag. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:119:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+Audit done.
+Checkstyle ends with 2 errors.
+Starting audit...
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:33: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:15: Line is longer than 80 characters (found 92). [LineLength]
+Audit done.
+Checkstyle ends with 8 errors.
