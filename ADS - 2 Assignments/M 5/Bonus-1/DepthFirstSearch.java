@@ -3,6 +3,7 @@ public class DepthFirstSearch {
     private boolean[] marked;    // marked[v] = is there an s-v path?
     private Integer[] idarr;
     private int count;           // number of vertices connected to s
+    private int val;
 
     /**
      * Computes the vertices in graph {@code G} that are
@@ -14,6 +15,7 @@ public class DepthFirstSearch {
     public DepthFirstSearch(Graph G, int s) {
         marked = new boolean[G.vertex()];
         idarr = new Integer[G.vertex()];
+        val = 1;
         validateVertex(s);
         dfs(G, s);
     }
@@ -21,14 +23,13 @@ public class DepthFirstSearch {
     // depth first search from v
     private void dfs(Graph G, int v) {
         count++;
+        val++;
         marked[v] = true;
-        int count = 1;
         for (int w : G.adj(v)) {
             if (!marked[w]) {
                 dfs(G, w);
-                idarr[w] = count;
+                idarr[w] = val;
             }
-            count++;
         }
         System.out.println(Arrays.toString(idarr));
     }
