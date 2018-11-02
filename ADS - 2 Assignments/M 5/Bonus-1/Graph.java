@@ -14,6 +14,7 @@ class Graph {
      * array of bag type.
      */
     private Bag<Integer>[] adj;
+    private boolean[] marked;
     /**
      * Constructs the object.
      */
@@ -121,6 +122,31 @@ class Graph {
             s.append(NEWLINE);
         }
         return s.toString();
+    }
+
+    public boolean hasSelfLoop(int v) {
+        for (int w : adj(v)) {
+            if (v == w) {
+                return true;
+            }
+        }
+        return false;
+    }
+    // does this graph have two parallel edges?
+    // side effect: initialize cycle to be two parallel edges
+    public boolean hasParallelEdges(int v) {
+        marked = new boolean[vertex()];
+        for (int w : adj(v)) {
+            if (marked[w]) {
+                return true;
+            }
+            marked[w] = true;
+        }
+
+        // for (int w : adj(v)) {
+        //     marked[w] = false;
+        // }
+        return false;
     }
 }
 
