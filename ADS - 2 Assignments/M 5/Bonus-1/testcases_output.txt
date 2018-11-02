@@ -3,22 +3,28 @@ Expected Output:
 0
 
 Your Output: 
+0
+1
 1
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 3
 
 Your Output: 
+2
+1
 3
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 7
 
 Your Output: 
+0
+7
 7
 ----------------------------------------
 
