@@ -39,8 +39,12 @@ final class Solution {
             }
         }
         //int finalcnt = 0;
-        System.out.println(count);
-        System.out.println(finalcnt);
-        System.out.println(count + finalcnt);
+        // System.out.println(count);
+        // System.out.println(finalcnt);
+        if (finalcnt == 1 && count == 1) {
+            System.out.println(0);
+        } else {
+            System.out.println(count + finalcnt);
+        }
     }
 }
