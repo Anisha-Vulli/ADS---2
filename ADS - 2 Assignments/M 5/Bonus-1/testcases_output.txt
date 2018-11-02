@@ -29,9 +29,8 @@ Expected Output:
 7
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 20 is not between 0 and 19
-	at Graph.validateVertex(Graph.java:126)
-	at Graph.addEdge(Graph.java:138)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at Graph.addEdge(Graph.java:61)
 	at Solution.main(Solution.java:15)
 ----------------------------------------
 
