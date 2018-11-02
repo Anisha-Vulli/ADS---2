@@ -28,8 +28,9 @@ final class Solution {
                 Integer.parseInt(nodes[1]));
         }
         //System.out.println(grp);
-        DirectedCycle dc = new DirectedCycle(grp);
-        if (dc.isBipartite()) {
+        //DirectedCycle dc = new DirectedCycle(grp);
+        Bipartite bp = new Bipartite(grp);
+        if (bp.isBipartite()) {
             System.out.println("Graph is bipartite");
         } else {
             System.out.println("Graph is not a bipartite");
