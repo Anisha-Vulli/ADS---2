@@ -9,7 +9,7 @@ final class Solution {
 		String[] val = sc.nextLine().split(" ");
 		int vertex = Integer.parseInt(val[0]);
 		int edge = Integer.parseInt(val[1]);
-		Graph grp = new Graph(vertex);
+		Graph grp = new Graph(vertex + 1);
 		while (sc.hasNextLine()) {
 			String[] nodes = sc.nextLine().split(" ");
 			grp.addEdge(Integer.parseInt(nodes[0]), Integer.parseInt(nodes[1]));
