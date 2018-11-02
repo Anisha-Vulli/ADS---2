@@ -3,12 +3,9 @@ Expected Output:
 0
 
 Your Output: 
-5 vertices, 0 edges 
-0: 
-1: 
-2: 
-3: 
-4:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at Graph.<init>(Graph.java:46)
+	at Solution.main(Solution.java:12)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -16,12 +13,9 @@ Expected Output:
 3
 
 Your Output: 
-5 vertices, 4 edges 
-0: 
-1: 1 1 1 1 1 1 
-2: 2 2 
-3: 
-4:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at Graph.<init>(Graph.java:46)
+	at Solution.main(Solution.java:12)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -29,9 +23,8 @@ Expected Output:
 7
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 20 is not between 0 and 19
-	at Graph.validateVertex(Graph.java:126)
-	at Graph.addEdge(Graph.java:138)
-	at Solution.main(Solution.java:15)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at Graph.<init>(Graph.java:46)
+	at Solution.main(Solution.java:12)
 ----------------------------------------
 
