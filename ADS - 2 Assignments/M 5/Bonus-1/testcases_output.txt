@@ -1,9 +1,9 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 0
 
 Your Output: 
-1
+0
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########

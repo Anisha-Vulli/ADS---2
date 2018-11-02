@@ -9,11 +9,15 @@ final class Solution {
         String[] val = sc.nextLine().split(" ");
         int vertex = Integer.parseInt(val[0]);
         int edge = Integer.parseInt(val[1]);
-        Graph grp = new Graph(vertex + 1);
+        if (edge == 0) {
+            System.out.println(edge);
+        } else {
+            Graph grp = new Graph(vertex + 1);
         while (sc.hasNextLine()) {
             String[] nodes = sc.nextLine().split(" ");
             grp.addEdge(Integer.parseInt(nodes[0]), Integer.parseInt(nodes[1]));
         }
+        
         //System.out.println(grp);
         CC ccobj = new CC(grp);
         int[] idarray = ccobj.idarr();
@@ -40,11 +44,10 @@ final class Solution {
         }
         //int finalcnt = 0;
         // System.out.println(count);
-        // System.out.println(finalcnt);
-        if (finalcnt == 1 && count == 1) {
-            System.out.println(0);
-        } else {
-            System.out.println(count + finalcnt);
+        //System.out.println(finalcnt);
+        System.out.println(count + finalcnt);
+
         }
+        
     }
 }
