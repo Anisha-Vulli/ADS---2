@@ -1,10 +1,47 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:114: Expected @return tag. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:116:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:14: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:20: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:27:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:29:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:29:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:30:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:30:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:31:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:32: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:40:18: Parameter V should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:40:22: 'V' hides a field. [HiddenField]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:40:22: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:41: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:41: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:50: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:54: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:57: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:58: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:59: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:64: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:70: Line is longer than 80 characters (found 111). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:76: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:80: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:110:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:119:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:124:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:124:33: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:125: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:126: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:126:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:126:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:134: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:136:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:136:32: Parameter w should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:152:34: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:164:23: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:173: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 39 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
@@ -16,3 +53,5 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:15: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
 Checkstyle ends with 8 errors.
+Starting audit...
+Audit done.
