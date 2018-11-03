@@ -1,12 +1,31 @@
-import java.util.*;
+/**
+ * Scanner import.
+ */
+import java.util.Scanner;
+/**
+ * Class for page rank.
+ */
 class PageRank {
+    /**
+     * Digraph object.
+     */
     private Digraph dgh;
+    /**
+     * Binary Search symbol table
+     */
     private BinarySearchST<Integer, Double> bst;
-    PageRank(Digraph dph) {
+    /**
+     * Constructs the object.
+     *
+     * @param      dph   The dph
+     */
+    PageRank(final Digraph dph) {
         this.dgh = dph;
         bst = new BinarySearchST<Integer, Double>();
     }
-
+    /** 
+     * Computation of Page Rank.
+     */
     public void pgCompu() {
         double outdegree = 0;
         double previousit = 0.25;
@@ -29,7 +48,9 @@ class PageRank {
             }
         }
     }
-
+    /**
+     * Display function.
+     */
     public void display() {
         System.out.println(dgh.toString());
         for (int i : bst.keys()) {
@@ -44,15 +65,17 @@ class WebSearch {
 
 }
 
-
-public class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
         //Empty constructor.
     }
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         // read the first line of the input to get the number of vertices
         int vertexcnt = Integer.parseInt(sc.nextLine());
