@@ -28,6 +28,10 @@ public class Digraph {
      * indegree[v] = indegree of vertex v.
      */
     private int[] indegree;
+    /**
+     * Marked array.
+     */
+    private boolean[] marked;
 
    /**
     * Constructs the object.
@@ -201,5 +205,26 @@ public class Digraph {
             s.append(NEWLINE);
         }
         return s.toString();
+    }
+    /**
+     * Determines if it has parallel edges.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     True if has parallel edges, False otherwise.
+     */
+    public boolean hasParallelEdges(int v) {
+        marked = new boolean[vertex()];
+        for (int w : adj(v)) {
+            if (marked[w]) {
+                return true;
+            }
+            marked[w] = true;
+        }
+
+        // for (int w : adj(v)) {
+        //     marked[w] = false;
+        // }
+        return false;
     }
 }
