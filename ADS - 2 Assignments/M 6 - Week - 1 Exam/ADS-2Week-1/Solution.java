@@ -14,11 +14,11 @@ class PageRank {
         for (int p = 0; p < dgh.V(); p++) {
             bst.put(p, previousit);
         }
-        for (int k = 0; k < 1000; k++) {
+        double temp = 0.0;
+        double finaltemp = 0.0;
+        for (int k = 1; k < 1000; k++) {
             for (int i = 0; i < dgh.V(); i++) {
             //ArrayList<Integer> list = dgh.adj(i);
-            double temp = 0.0;
-            double finaltemp = 0.0;
                 for (int j : dgh.adj(i)) {
                     //int cnt = 0;
                     temp = bst.get(j) / dgh.outdegree(j);
@@ -34,7 +34,7 @@ class PageRank {
         System.out.println(dgh.toString());
         for (int i : bst.keys()) {
             String str = "";
-            str = String.valueOf(i) + "-->" + bst.get(i);
+            str = String.valueOf(i) + " - " + bst.get(i);
             System.out.println(str);
         }
     }

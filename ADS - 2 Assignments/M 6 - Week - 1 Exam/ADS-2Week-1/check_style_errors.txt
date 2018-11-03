@@ -453,7 +453,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:5:14: Parameter dph should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:10:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:12:29: '0.25' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:17:29: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:19:29: '1000' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:33:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:43: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:48: Class Solution should be declared as final. [FinalClass]
