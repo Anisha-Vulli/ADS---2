@@ -79,13 +79,13 @@ final class Solution {
         //Empty constructor.
     }
     /**
-     * Main function
+     * Main function.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        // read the first line of the input to get the 
+        // read the first line of the input to get the
         //number of vertices
         int vertexcnt = Integer.parseInt(sc.nextLine());
         Digraph dgh = new Digraph(vertexcnt);
