@@ -27,13 +27,14 @@ class PageRank {
      * Computation of Page Rank.
      */
     public void pgCompu() {
-        double outdegree = 0;
-        double previousit = 0.25;
-        double pg = 0.0;
+        final double outdegree = 0;
+        final double previousit = 0.25;
+        final double pg = 0.0;
         for (int p = 0; p < dgh.V(); p++) {
             bst.put(p, previousit);
         }
-        for (int k = 0; k < 1000; k++) {
+        final int thousand = 1000;
+        for (int k = 0; k < thousand; k++) {
             for (int i = 0; i < dgh.V(); i++) {
             //ArrayList<Integer> list = dgh.adj(i);
             double temp = 0.0;
