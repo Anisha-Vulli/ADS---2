@@ -45,13 +45,8 @@ class PageRank {
             double finaltemp = 0.0;
                 for (int j : dgh.adj(i)) {
                     //int cnt = 0;
-                    if (dgh.hasParallelEdges(j)) {
-                        temp = bst.get(j) / (dgh.outdegree(j) * 2);
-                        finaltemp = finaltemp + temp;
-                    } else {
-                        temp = bst.get(j) / dgh.outdegree(j);
-                        finaltemp = finaltemp + temp;
-                    }
+                    temp = bst.get(j) / dgh.outdegree(j);
+                    finaltemp = finaltemp + temp;
                     //System.out.println(finaltemp);
                 }
                 bst.put(i, finaltemp);
