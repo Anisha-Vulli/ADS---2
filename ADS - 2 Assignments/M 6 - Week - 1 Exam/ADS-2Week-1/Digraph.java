@@ -2,6 +2,7 @@
  * No such element exception.
  */
 // import java.util.NoSuchElementException;
+import java.util.Arrays;
 
 /**
  * Class for digraph.
@@ -33,6 +34,8 @@ public class Digraph {
      */
     private boolean[] marked;
 
+    private Bag<Integer>[] incoming;
+
    /**
     * Constructs the object.
     * Initializes an empty digraph with <em>V</em> vertices.
@@ -44,6 +47,7 @@ public class Digraph {
         this.e = 0;
         indegree = new int[v1];
         adj = (Bag<Integer>[]) new Bag[v1];
+        incoming = (Bag<Integer>[]) new Bag[v1];
         for (int ver = 0; ver < v1; ver++) {
             adj[ver] = new Bag<Integer>();
         }
@@ -121,6 +125,7 @@ public class Digraph {
         validateVertex(v1);
         validateVertex(w);
         adj[v1].add(w);
+        incoming[w].add(v1);
         indegree[w]++;
         e++;
     }
@@ -204,6 +209,7 @@ public class Digraph {
             }
             s.append(NEWLINE);
         }
+        System.out.println(Arrays.toString(incoming));
         return s.toString();
     }
     /**
@@ -226,5 +232,10 @@ public class Digraph {
         //     marked[w] = false;
         // }
         return false;
+    }
+
+    public Iterable<Integer> incomingedge(final int v1) {
+        validateVertex(v1);
+        return adj[v1];
     }
 }
