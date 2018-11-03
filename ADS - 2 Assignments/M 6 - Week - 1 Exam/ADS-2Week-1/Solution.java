@@ -11,7 +11,7 @@ class PageRank {
      */
     private Digraph dgh;
     /**
-     * Binary Search symbol table
+     * Binary Search symbol table.
      */
     private BinarySearchST<Integer, Double> bst;
     /**
@@ -23,7 +23,7 @@ class PageRank {
         this.dgh = dph;
         bst = new BinarySearchST<Integer, Double>();
     }
-    /** 
+    /**
      * Computation of Page Rank.
      */
     public void pgCompu() {
@@ -61,7 +61,9 @@ class PageRank {
         }
     }
 }
-
+/**
+ * Class for web search.
+ */
 class WebSearch {
 
 }
@@ -76,9 +78,15 @@ final class Solution {
     private Solution() {
         //Empty constructor.
     }
+    /**
+     * Main function
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        // read the first line of the input to get the number of vertices
+        // read the first line of the input to get the 
+        //number of vertices
         int vertexcnt = Integer.parseInt(sc.nextLine());
         Digraph dgh = new Digraph(vertexcnt);
         // iterate count of vertices times
@@ -87,27 +95,28 @@ final class Solution {
         for (int i = 0; i < vertexcnt; i++) {
             String[] nodes = sc.nextLine().split(" ");
             for (int j = 1; j < nodes.length; j++) {
-                dgh.addEdge(Integer.parseInt(nodes[0]), Integer.parseInt(nodes[j]));   
+                dgh.addEdge(Integer.parseInt(nodes[0]),
+                    Integer.parseInt(nodes[j]));
             }
         }
-        // Create page rank object and pass the graph object to the constructor
+        // Create page rank object and pass the graph object
+        //to the constructor
         PageRank pr = new PageRank(dgh);
         pr.pgCompu();
         pr.display();
         // print the page rank object
-        
         // This part is only for the final test case
-        
+
         // File path to the web content
         String file = "WebContent.txt";
-        
+
         // instantiate web search object
-        // and pass the page rank object and the file path to the constructor
-        
+        // and pass the page rank object and the file path
+        // to the constructor
+
         // read the search queries from std in
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search
         // print the return value of iAmFeelingLucky
-        
     }
 }
