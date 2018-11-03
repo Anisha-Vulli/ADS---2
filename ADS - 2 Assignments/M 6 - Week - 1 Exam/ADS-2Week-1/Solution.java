@@ -42,6 +42,7 @@ class PageRank {
                 for (int j : dgh.incomingedge(i)) {
                     //int cnt = 0;
                     temp = bst.get(j) / dgh.outdegree(j);
+                    //System.out.println("Outdegree : " + i + " " + j  + " " + dgh.outdegree(j));
                     finaltemp = finaltemp + temp;
                     //System.out.println(finaltemp);
                 }

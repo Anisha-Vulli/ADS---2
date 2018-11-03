@@ -244,6 +244,6 @@ public class Digraph {
      */
     public Iterable<Integer> incomingedge(final int v1) {
         validateVertex(v1);
-        return adj[v1];
+        return incoming[v1];
     }
 }
