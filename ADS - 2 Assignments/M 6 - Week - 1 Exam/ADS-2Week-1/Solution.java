@@ -25,7 +25,7 @@ class PageRank {
                     finaltemp = finaltemp + temp;
                     //System.out.println(finaltemp);
                 }
-                bst.put(i, 2 * finaltemp);
+                bst.put(i, finaltemp);
             }
         }
     }
