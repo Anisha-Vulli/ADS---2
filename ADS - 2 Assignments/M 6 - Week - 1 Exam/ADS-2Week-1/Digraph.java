@@ -212,9 +212,6 @@ public class Digraph {
             }
             s.append(NEWLINE);
         }
-        for (int i = 0; i < incoming.length; i++) {
-            System.out.println(incoming[i].toString());
-        }
         return s.toString();
     }
     /**
