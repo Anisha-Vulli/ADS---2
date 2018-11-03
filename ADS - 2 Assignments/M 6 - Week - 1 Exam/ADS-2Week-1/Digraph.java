@@ -49,6 +49,9 @@ public class Digraph {
         adj = (Bag<Integer>[]) new Bag[v1];
         incoming = (Bag<Integer>[]) new Bag[v1];
         for (int ver = 0; ver < v1; ver++) {
+            incoming[ver] = new Bag<Integer>();
+        }
+        for (int ver = 0; ver < v1; ver++) {
             adj[ver] = new Bag<Integer>();
         }
     }
