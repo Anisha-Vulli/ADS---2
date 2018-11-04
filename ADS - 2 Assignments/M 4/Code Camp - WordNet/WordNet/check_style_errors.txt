@@ -525,17 +525,14 @@ Starting audit...
 Audit done.
 Checkstyle ends with 27 errors.
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.io.File. [UnusedImports]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:60: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:23: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:29: Line is longer than 80 characters (found 151). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:8: Unused import - java.io.File. [UnusedImports]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:12: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:26:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:26:60: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:45: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:53: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
