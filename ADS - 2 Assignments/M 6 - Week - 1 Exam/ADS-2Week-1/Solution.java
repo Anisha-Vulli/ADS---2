@@ -38,7 +38,7 @@ class PageRank {
             if (dgh.outdegree(l) == 0) {
                 for (int m = 0; m < dgh.vertex(); m++) {
                     if (m != l) {
-                        dgh.addEdge(m, l);
+                        dgh.addEdge(l, m);
                     }
                 }
             }
@@ -69,7 +69,7 @@ class PageRank {
      * Display function.
      */
     public void display() {
-        System.out.println(dgh.toString());
+        //System.out.println(dgh.toString());
         for (int i : bst.keys()) {
             String str = "";
             str = String.valueOf(i) + " - " + bst.get(i);
@@ -115,6 +115,7 @@ final class Solution {
                     Integer.parseInt(nodes[j]));
             }
         }
+        System.out.println(dgh);
         // Create page rank object and pass the graph object
         //to the constructor
         PageRank pr = new PageRank(dgh);
