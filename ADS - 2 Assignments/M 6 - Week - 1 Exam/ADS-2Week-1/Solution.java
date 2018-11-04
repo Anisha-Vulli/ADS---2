@@ -46,6 +46,10 @@ class PageRank {
         final int thousand = 1000;
         for (int k = 0; k < thousand; k++) {
             for (int i = 0; i < dgh.vertex(); i++) {
+                if (dgh.indegree(i) == 0) {
+                    bst.put(i, 0.0);
+                    break;
+                }
             //ArrayList<Integer> list = dgh.adj(i);
             double temp = 0.0;
             double finaltemp = 0.0;
