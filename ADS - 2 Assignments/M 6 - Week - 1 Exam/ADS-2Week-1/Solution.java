@@ -13,7 +13,8 @@ class PageRank {
     /**
      * Binary Search symbol table.
      */
-    private BinarySearchST<Integer, Double> bst;
+    private BinarySearchST<Integer, Double> prev;
+    private BinarySearchST<Integer, Double> current;
     /**
      * Constructs the object.
      *
@@ -21,7 +22,8 @@ class PageRank {
      */
     PageRank(final Digraph dph) {
         this.dgh = dph;
-        bst = new BinarySearchST<Integer, Double>();
+        prev = new BinarySearchST<Integer, Double>();
+        current = new BinarySearchST<Integer, Double>();
     }
     /**
      * Computation of Page Rank.
@@ -31,7 +33,7 @@ class PageRank {
         final double previousit = 0.25;
         final double pg = 0.0;
         for (int p = 0; p < dgh.vertex(); p++) {
-            bst.put(p, (1.0 / dgh.vertex()));
+            prev.put(p, (1.0 / dgh.vertex()));
         }
 
         for (int l = 0; l < dgh.vertex(); l++) {
@@ -43,35 +45,43 @@ class PageRank {
                 }
             }
         }
+
         final int thousand = 1000;
         for (int k = 1; k < 999; k++) {
             for (int i = 0; i < dgh.vertex(); i++) {
-                if (dgh.indegree(i) == 0) {
-                    bst.put(i, 0.0);
-                    break;
-                }
-            //ArrayList<Integer> list = dgh.adj(i);
-            //double temp = 0.0;
-            double finaltemp = 0.0;
-                for (int j : dgh.reverse().adj(i)) {
-                    //int cnt = 0;
-                    //System.out.println("Outdegree : " + 
-                    //i + " " + j  + " " + dgh.outdegree(j));
-                    finaltemp = finaltemp + (bst.get(j) / dgh.outdegree(j));
-                    //System.out.println(finaltemp);
-                }
-                bst.put(i, finaltemp);
+                //caluculation(i);
+                double finaltemp = caluculation(i);
+                current.put(i, finaltemp);
+            }
+            for (int i : current.keys()) {
+                prev.put(i, current.get(i));
             }
         }
+        
+    }
+
+    public double caluculation(int i) {
+        if (dgh.indegree(i) == 0) {
+            prev.put(i, 0.0);
+            return 0.0;
+        }
+        double finaltemp = 0.0;
+        for (int j : dgh.reverse().adj(i)) {
+            //System.out.println("index " + j);
+            //System.out.println("value " + bst.get(j) + " " + dgh.outdegree(j));
+            finaltemp = finaltemp + (prev.get(j) / dgh.outdegree(j));
+        }
+        //System.out.println(finaltemp);
+        return finaltemp;
     }
     /**
      * Display function.
      */
     public void display() {
         //System.out.println(dgh.toString());
-        for (int i : bst.keys()) {
+        for (int i : prev.keys()) {
             String str = "";
-            str = String.valueOf(i) + " - " + bst.get(i);
+            str = String.valueOf(i) + " - " + prev.get(i);
             System.out.println(str);
         }
     }
