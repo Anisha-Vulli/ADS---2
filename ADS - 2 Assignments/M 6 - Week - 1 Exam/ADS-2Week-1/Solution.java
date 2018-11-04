@@ -31,7 +31,7 @@ class PageRank {
         final double previousit = 0.25;
         final double pg = 0.0;
         for (int p = 0; p < dgh.vertex(); p++) {
-            bst.put(p, previousit);
+            bst.put(p, (1.0 / dgh.vertex()));
         }
         final int thousand = 1000;
         for (int k = 0; k < thousand; k++) {
