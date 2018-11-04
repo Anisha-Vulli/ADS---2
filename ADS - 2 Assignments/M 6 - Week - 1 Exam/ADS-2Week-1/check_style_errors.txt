@@ -351,25 +351,21 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:17:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:50:29: '990' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:60: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:63:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:63:32: Parameter i should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:71: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:78:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:78:25: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:97:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:97:14: Variable 'pr' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:98:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:98:42: Variable 'bst' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:99:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:99:15: Parameter probj should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:99:31: Parameter filename should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:120:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:120:32: Parameter input should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:33: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:55:29: '990' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:64: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:76:32: Parameter i should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:84: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:93: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:100:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:107: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:137:15: Parameter probj should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:137:31: Parameter filename should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:160: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:167:32: Parameter input should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...

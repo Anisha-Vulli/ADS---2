@@ -14,6 +14,9 @@ class PageRank {
      * Binary Search symbol table.
      */
     private BinarySearchST<Integer, Double> prev;
+    /**
+     * Binary search symbol table to store current values.
+     */
     private BinarySearchST<Integer, Double> current;
     /**
      * Constructs the object.
@@ -27,6 +30,8 @@ class PageRank {
     }
     /**
      * Computation of Page Rank.
+     * 
+     * Complexity is V^2.
      */
     public void pgCompu() {
         final double outdegree = 0;
@@ -56,10 +61,18 @@ class PageRank {
             for (int i : current.keys()) {
                 prev.put(i, current.get(i));
             }
-        }
-        
+        }   
     }
 
+    /**
+     * Caluculation of page rank.
+     * 
+     * Complexity is V.
+     *
+     * @param      i     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public double caluculation(int i) {
         if (dgh.indegree(i) == 0) {
             prev.put(i, 0.0);
@@ -75,17 +88,30 @@ class PageRank {
         return finaltemp;
     }
 
+    /**
+     * Gets the pr.
+     * 
+     * Complexity is 1.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     The pr.
+     */
     public double getPR(int v) {
         return prev.get(v);
     }
+
+
     /**
      * Display function.
+     * 
+     * Complexity is V.
      */
     public void display() {
         //System.out.println(dgh.toString());
-        for (int i : prev.keys()) {
+        for (int i : current.keys()) {
             String str = "";
-            str = String.valueOf(i) + " - " + prev.get(i);
+            str = String.valueOf(i) + " - " + current.get(i);
             System.out.println(str);
         }
     }
@@ -94,8 +120,20 @@ class PageRank {
  * Class for web search.
  */
 class WebSearch {
-    PageRank pr;
-    BinarySearchST<String, Bag<Integer>> bst;
+    /**
+     * Page rank object.
+     */
+    private PageRank pr;
+    /**
+     * Binary search symbol table.
+     */
+    private BinarySearchST<String, Bag<Integer>> bst;
+    /**
+     * Constructs the object.
+     *
+     * @param      probj     The probj
+     * @param      filename  The filename
+     */
     WebSearch(PageRank probj, String filename) {
         pr = probj;
         In file = new In(filename);
@@ -117,6 +155,15 @@ class WebSearch {
         }
     }
 
+    /**
+     * I am feeling lucky method.
+     * 
+     * Complexity is N.
+     *
+     * @param      input  The input
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int iAmFeelingLucky(String input) {
         if (!bst.contains(input)) {
             return -1;
