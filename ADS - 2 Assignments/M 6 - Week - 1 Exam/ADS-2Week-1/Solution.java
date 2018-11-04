@@ -74,6 +74,10 @@ class PageRank {
         //System.out.println(finaltemp);
         return finaltemp;
     }
+
+    public double getPR(int v) {
+        return prev.get(v);
+    }
     /**
      * Display function.
      */
@@ -90,6 +94,44 @@ class PageRank {
  * Class for web search.
  */
 class WebSearch {
+    PageRank pr;
+    BinarySearchST<String, Bag<Integer>> bst;
+    WebSearch(PageRank probj, String filename) {
+        pr = probj;
+        In file = new In(filename);
+        bst = new BinarySearchST<String, Bag<Integer>>();
+        while (file.hasNextLine()) {
+            String[] input = file.readLine().split(":");
+            for (String str : input[1].split(" ")) {
+                if (bst.contains(str)) {
+                    Bag test = bst.get(str);
+                    test.add(Integer.parseInt(input[0]));
+                    bst.put(str, test);
+                } else {
+                    bst.put(str, new Bag<Integer>());
+                    Bag test = bst.get(str);
+                    test.add(Integer.parseInt(input[0]));
+                    bst.put(str, test);
+                }
+            }
+        }
+    }
+
+    public int iAmFeelingLucky(String input) {
+        if (!bst.contains(input)) {
+            return -1;
+        }
+        Double maxpr = -1.0;
+        int maxid = -1;
+        Bag<Integer> bag = bst.get(input);
+        for (Integer inte : bag) {
+            if (pr.getPR(inte) > maxpr) {
+                maxpr = pr.getPR(inte);
+                maxid = inte;
+            }
+        }
+        return maxid;
+    }
 
 }
 
@@ -139,7 +181,12 @@ final class Solution {
         // instantiate web search object
         // and pass the page rank object and the file path
         // to the constructor
+        WebSearch ws = new WebSearch(pr, file);
 
+        while (sc.hasNextLine()) {
+            String[] queries = sc.nextLine().split("=");
+            System.out.println(ws.iAmFeelingLucky(queries[1]));
+        }
         // read the search queries from std in
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search

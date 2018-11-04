@@ -357,8 +357,19 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:63:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:63:32: Parameter i should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:71: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:78:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:78:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:97:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:97:14: Variable 'pr' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:98:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:98:42: Variable 'bst' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:99:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:99:15: Parameter probj should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:99:31: Parameter filename should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:120:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:120:32: Parameter input should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 Audit done.
 Starting audit...
