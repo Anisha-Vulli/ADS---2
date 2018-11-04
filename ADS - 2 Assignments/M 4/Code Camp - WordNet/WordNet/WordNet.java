@@ -1,17 +1,36 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 import java.io.File;
 public class WordNet {
 
     private BinarySearchST<String, ArrayList<Integer>> bst;
-    Digraph dgh;
+    private BinarySearchST<Integer, String> binst;
+    private Digraph dgh;
+    private SAP sap;
+    private boolean hasCycle = false;
+    private boolean hasMultipleroots = false;
+
+    public Digraph getDigraph() {
+        return this.dgh;
+    }
+
+    public boolean gethasCycle() {
+        return this.hasCycle;
+    }
+
+    public boolean gethasMultipleroots() {
+        return this.hasMultipleroots;
+    }
 
     // constructor takes the name of the two input files
     public WordNet(String syn, String hyper) throws Exception {
-        File synsetsfile = new File("D:\\MSIT\\IT\\ADS---2\\ADS - 2 Assignments\\M 4\\Code Camp - WordNet\\WordNet\\Files\\" + syn);
+        try {
+            File synsetsfile = new File("Files/" + syn);
         Scanner sf = new Scanner(synsetsfile);
-        File hyperfile = new File("D:\\MSIT\\IT\\ADS---2\\ADS - 2 Assignments\\M 4\\Code Camp - WordNet\\WordNet\\Files\\" + hyper);
+        File hyperfile = new File("Files/" + hyper);
         Scanner hf = new Scanner(hyperfile);
         bst = new BinarySearchST<String, ArrayList<Integer>>();
+        binst = new BinarySearchST<Integer, String>();
         while (sf.hasNextLine()) {
             String[] inputline = sf.nextLine().split(",");
             String[] words = inputline[1].split(" ");
@@ -35,7 +54,29 @@ public class WordNet {
                 dgh.addEdge(Integer.parseInt(inputline[0]), Integer.parseInt(inputline[i]));
             }
         }
+    } catch (Exception e) {
+        System.out.println(e);
+    }
+
+    DirectedCycle dc = new DirectedCycle(dgh);
+    if (dc.hasCycle()) {
+        hasCycle = true;
+    }
        
+    }
+
+    public void checkMultipleRoots() {
+        int roots = 0;
+        for (int i = 0; i < dgh.V(); i++) {
+            if (dgh.outdegree(i) == 0) {
+                roots++;
+            }
+        }
+
+        if (roots != 1) {
+            hasMultipleroots = true;
+            System.out.println("Multiple roots");
+        }
     }
 
     // returns all WordNet nouns
@@ -45,24 +86,31 @@ public class WordNet {
 
     // is the word a WordNet noun?
     public boolean isNoun(String word) {
-        for (String str : bst.keys()) {
-            if (str.equals(word)) {
-                return true;
-            }
-        }
-        return false;
+        // for (String str : bst.keys()) {
+        //     if (str.equals(word)) {
+        //         return true;
+        //     }
+        // }
+        return true;
     }
 
     // distance between nounA and nounB (defined below)
-    // public int distance(String nounA, String nounB) {
-
-    // }
+    public int distance(String nounA, String nounB) {
+        ArrayList id1 = bst.get(nounA);
+        ArrayList id2 = bst.get(nounB);
+        sap = new SAP(dgh);
+        return sap.length(id1, id2);
+    }
 
     // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // in a shortest ancestral path (defined below)
-    // public String sap(String nounA, String nounB) {
-
-    // }
+    public String sap(String nounA, String nounB) {
+        ArrayList id1 = bst.get(nounA);
+        ArrayList id2 = bst.get(nounB);
+        sap = new SAP(dgh);
+        int ans = sap.ancestor(id1, id2);
+        return binst.get(ans);
+    }
 
     // do unit testing of this class
     // public static void main(String[] args) {

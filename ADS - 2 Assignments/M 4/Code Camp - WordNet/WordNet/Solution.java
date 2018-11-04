@@ -1,25 +1,39 @@
 import java.io.File;
 import java.util.Scanner;
 class Solution {
-	public static void main(String[] args) throws Exception{
-		Scanner sc = new Scanner(System.in);
-		String synsets = sc.nextLine();
-		String hypernyms = sc.nextLine();
-		// try {
-			WordNet wrdnet = new WordNet(synsets, hypernyms);
-			String input = sc.nextLine();
-			if (input.equals("Graph")) { 
-				try {
-					System.out.println(wrdnet.dgh);
-				} catch (Exception e) {
-					System.out.println(e.getMessage());
-				}
-				
-			} else {
+    public static void main(String[] args) throws Exception{
+        Scanner sc = new Scanner(System.in);
+        String synsets = sc.nextLine();
+        String hypernyms = sc.nextLine();
+        try {
+            WordNet wrdnet = new WordNet(synsets, hypernyms);
+            String input = sc.nextLine();
+            if (wrdnet.gethasCycle()) {
+                System.out.println("Cycle detected");
+                return;
+            }
 
-			}
-		// } catch (Exception e) {
-		// 	System.out.println(e);
-		// }
-	}
+            if (input.equals("Graph")) {
+                wrdnet.checkMultipleRoots();
+                if (wrdnet.gethasMultipleroots()) {
+                    return;
+                } else {
+                    System.out.println(wrdnet.getDigraph());
+                }
+            } 
+            if (input.equals("Queries")) {
+                while (sc.hasNextLine()) {
+                    String[] tokens = sc.nextLine().split(" ");
+                    try {
+                        wrdnet.sap(tokens[0], tokens[1]);
+                        System.out.println("distance = " + wrdnet.distance(tokens[0], tokens[1]) + ", ancestor = " + wrdnet.sap(tokens[0], tokens[1]));
+                    } catch (Exception e) {
+                        System.out.println("IllegalArgumentException");
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
 }
