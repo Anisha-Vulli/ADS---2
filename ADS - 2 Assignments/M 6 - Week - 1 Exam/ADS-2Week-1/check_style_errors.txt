@@ -351,7 +351,7 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:45: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:55: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...

@@ -33,6 +33,16 @@ class PageRank {
         for (int p = 0; p < dgh.vertex(); p++) {
             bst.put(p, (1.0 / dgh.vertex()));
         }
+
+        for (int l = 0; l < dgh.vertex(); l++) {
+            if (dgh.outdegree(l) == 0) {
+                for (int m = 0; m < dgh.vertex(); m++) {
+                    if (m != l) {
+                        dgh.addEdge(m, l);
+                    }
+                }
+            }
+        }
         final int thousand = 1000;
         for (int k = 0; k < thousand; k++) {
             for (int i = 0; i < dgh.vertex(); i++) {
