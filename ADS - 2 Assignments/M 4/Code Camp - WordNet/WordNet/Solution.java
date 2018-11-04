@@ -15,7 +15,7 @@ class Solution {
 
             if (input.equals("Graph")) {
                 wrdnet.checkMultipleRoots();
-                if (wrdnet.gethasMultipleroots()) {
+                if (wrdnet.gethasMultipleRoots()) {
                     return;
                 } else {
                     System.out.println(wrdnet.getDigraph());
