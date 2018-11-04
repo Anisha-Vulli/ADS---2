@@ -8,8 +8,15 @@ class Solution {
 		// try {
 			WordNet wrdnet = new WordNet(synsets, hypernyms);
 			String input = sc.nextLine();
-			if (input.equals("Graph")) {
-				System.out.println(wrdnet.dgh);
+			if (input.equals("Graph")) { 
+				try {
+					System.out.println(wrdnet.dgh);
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				
+			} else {
+
 			}
 		// } catch (Exception e) {
 		// 	System.out.println(e);

@@ -508,8 +508,11 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:4:64: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:11: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:17: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Solution.java:18:32: Must have at least one statement. [EmptyBlock]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
