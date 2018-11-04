@@ -33,6 +33,7 @@ public class WordNet {
         binst = new BinarySearchST<Integer, String>();
         while (sf.hasNextLine()) {
             String[] inputline = sf.nextLine().split(",");
+            binst.put(Integer.parseInt(inputline[0]), inputline[1]);
             String[] words = inputline[1].split(" ");
             for (int i = 0; i < words.length; i++) {
                 if (bst.contains(words[i])) {
