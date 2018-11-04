@@ -47,7 +47,7 @@ class PageRank {
         }
 
         final int thousand = 1000;
-        for (int k = 1; k < 999; k++) {
+        for (int k = 1; k < 990; k++) {
             for (int i = 0; i < dgh.vertex(); i++) {
                 //caluculation(i);
                 double finaltemp = caluculation(i);
