@@ -44,21 +44,20 @@ class PageRank {
             }
         }
         final int thousand = 1000;
-        for (int k = 1; k < 990; k++) {
+        for (int k = 1; k < 999; k++) {
             for (int i = 0; i < dgh.vertex(); i++) {
                 if (dgh.indegree(i) == 0) {
                     bst.put(i, 0.0);
                     break;
                 }
             //ArrayList<Integer> list = dgh.adj(i);
-            double temp = 0.0;
+            //double temp = 0.0;
             double finaltemp = 0.0;
-                for (int j : dgh.incomingedge(i)) {
+                for (int j : dgh.reverse().adj(i)) {
                     //int cnt = 0;
-                    temp = bst.get(j) / dgh.outdegree(j);
                     //System.out.println("Outdegree : " + 
                     //i + " " + j  + " " + dgh.outdegree(j));
-                    finaltemp = finaltemp + temp;
+                    finaltemp = finaltemp + (bst.get(j) / dgh.outdegree(j));
                     //System.out.println(finaltemp);
                 }
                 bst.put(i, finaltemp);
