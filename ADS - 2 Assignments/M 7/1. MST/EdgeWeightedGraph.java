@@ -206,7 +206,7 @@ public class EdgeWeightedGraph {
                 if (e.other(v) > v) {
                     list.add(e);
                 } else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0){
+                    if (selfLoops % 2 == 0) {
                         list.add(e);
                     }
                     selfLoops++;
@@ -237,3 +237,4 @@ public class EdgeWeightedGraph {
         return s.toString();
     }
 }
+
