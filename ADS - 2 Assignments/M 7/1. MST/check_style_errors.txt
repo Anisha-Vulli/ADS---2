@@ -254,20 +254,17 @@ Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:7: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:15: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:51:23: Parameter G should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:51:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:81: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:93: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:103: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:110:27: Parameter G should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:110:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:124: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:157: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:159: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:23:47: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:53: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:65: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:75: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:78:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:82:51: Expected @param tag for 'grp'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:96: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:129: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\KruskalMST.java:131: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\MinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 7\1. MST\MinPQ.java:15: Line is longer than 80 characters (found 89). [LineLength]

@@ -1,32 +1,4 @@
 /**
- *  The {@code KruskalMST} class represents a data type for computing a
- *  <em>minimum spanning tree</em> in an edge-weighted graph.
- *  The edge weights can be positive, zero, or negative and need not
- *  be distinct. If the graph is not connected, it computes a <em>minimum
- *  spanning forest</em>, which is the union of minimum spanning trees
- *  in each connected component. The {@code weight()} method returns the 
- *  weight of a minimum spanning tree and the {@code edges()} method
- *  returns its edges.
- *  <p>
- *  This implementation uses <em>Krusal's algorithm</em> and the
- *  union-find data type.
- *  The constructor takes time proportional to <em>E</em> log <em>E</em>
- *  and extra space (not including the graph) proportional to <em>V</em>,
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  Afterwards, the {@code weight()} method takes constant time
- *  and the {@code edges()} method takes time proportional to <em>V</em>.
- *  <p>
- *  For additional documentation,
- *  see <a href="https://algs4.cs.princeton.edu/43mst">Section 4.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *  For alternate implementations, see {@link LazyPrimMST}, {@link PrimMST},
- *  and {@link BoruvkaMST}.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
-
-/**
  * Class for kruskal mst.
  */
 public class KruskalMST {
@@ -48,7 +20,7 @@ public class KruskalMST {
      * of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
-    public KruskalMST(EdgeWeightedGraph G) {
+    public KruskalMST(final EdgeWeightedGraph G) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
         for (Edge e : G.edges()) {
@@ -107,7 +79,7 @@ public class KruskalMST {
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean check(EdgeWeightedGraph G) {
+    private boolean check(final EdgeWeightedGraph grp) {
 
         // check total weight
         double total = 0.0;
@@ -127,7 +99,7 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
          * Checks if the pariticular graph is acyclic.
          * Complexity is E.
          */
-        UF uf = new UF(G.V());
+        UF uf = new UF(grp.V());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
             if (uf.connected(v, w)) {
@@ -138,7 +110,7 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
         }
 
         // check that it is a spanning forest
-        for (Edge e : G.edges()) {
+        for (Edge e : grp.edges()) {
             int v = e.either(), w = e.other(v);
             if (!uf.connected(v, w)) {
                 System.err.println("Not a spanning forest");
@@ -151,14 +123,14 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
         for (Edge e : edges()) {
 
             // all edges in MST except e
-            uf = new UF(G.V());
+            uf = new UF(grp.V());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
             }
             
             // check that e is min weight edge in crossing cut
-            for (Edge f : G.edges()) {
+            for (Edge f : grp.edges()) {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
