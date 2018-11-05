@@ -82,8 +82,8 @@ public class EdgeWeightedGraph {
         this(in.readInt());
         int ed = in.readInt();
         if (ed < 0) {
-            throw new IllegalArgumentException
-            ("Number of edges must be nonnegative");
+            throw new IllegalArgumentException(
+                "Number of edges must be nonnegative");
         }
         for (int i = 0; i < edge; i++) {
             int v = in.readInt();
@@ -205,7 +205,9 @@ public class EdgeWeightedGraph {
                 if (e.other(v) > v) {
                     list.add(e);
                 } else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                    if (selfLoops % 2 == 0){
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
@@ -217,8 +219,9 @@ public class EdgeWeightedGraph {
      * Returns a string representation of the edge-weighted graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists of edges
+     * @return the number of vertices <em>V</em>,
+     * followed by the number of edges <em>E</em>,
+     * followed by the <em>V</em> adjacency lists of edges
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
