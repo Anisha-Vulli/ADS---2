@@ -33,9 +33,12 @@ public class KruskalMST {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
-            if (!uf.connected(v, w)) { // v-w does not create a cycle
-                uf.union(v, w);  // merge v and w components
-                mst.enqueue(e);  // add edge e to mst
+            // v-w does not create a cycle.
+            if (!uf.connected(v, w)) {
+                // merge v and w components.
+                uf.union(v, w);
+                // add edge e to mst.
+                mst.enqueue(e);
                 weight += e.weight();
             }
         }
@@ -50,7 +53,7 @@ public class KruskalMST {
      * @return the edges in a minimum spanning
      * tree (or forest) as
      * an iterable of edges
-     * 
+     *
      * Complexity is 1.
      */
     public Iterable<Edge> edges() {
@@ -62,7 +65,7 @@ public class KruskalMST {
      * in a minimum spanning tree (or forest).
      * @return the sum of the edge weights
      * in a minimum spanning tree (or forest)
-     * 
+     *
      * Complexity is 1.
      */
     public double weight() {
@@ -72,10 +75,10 @@ public class KruskalMST {
 
     /**
      * Checks the optimality conditions.
-     * 
+     *
      * Complexity is E V lg* V.
      *
-     * @param      G     { parameter_description }
+     * @param      grp     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
@@ -93,7 +96,7 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
         }
 
         // check that it is acyclic
-        
+
 
         /**
          * Checks if the pariticular graph is acyclic.
@@ -135,7 +138,7 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
                         System.err.println("Edge " + f
-                            + " violates cut optimality conditions");
+                        + " violates cut optimality conditions");
                         return false;
                     }
                 }
