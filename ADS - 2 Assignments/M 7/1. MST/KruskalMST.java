@@ -25,14 +25,27 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
-public class KruskalMST {
-    private static final double FLOATING_POINT_EPSILON = 1E-12;
 
-    private double weight;                        // weight of MST
-    private Queue<Edge> mst = new Queue<Edge>();  // edges in MST
+/**
+ * Class for kruskal mst.
+ */
+public class KruskalMST {
+    /**
+     * Floating point.
+     */
+    private static final double FLOATING_POINT_EPSILON = 1E-12;
+    /**
+     * weight of MST.
+     */
+    private double weight;
+    /**
+     * edges in MST.
+     */
+    private Queue<Edge> mst = new Queue<Edge>();
 
     /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
+     * Compute a minimum spanning tree (or forest)
+     * of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
     public KruskalMST(EdgeWeightedGraph G) {
@@ -60,23 +73,40 @@ public class KruskalMST {
     }
 
     /**
-     * Returns the edges in a minimum spanning tree (or forest).
-     * @return the edges in a minimum spanning tree (or forest) as
-     *    an iterable of edges
+     * Returns the edges in a minimum spanning
+     * tree (or forest).
+     * @return the edges in a minimum spanning
+     * tree (or forest) as
+     * an iterable of edges
+     * 
+     * Complexity is 1.
      */
     public Iterable<Edge> edges() {
         return mst;
     }
 
     /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+     * Returns the sum of the edge weights
+     * in a minimum spanning tree (or forest).
+     * @return the sum of the edge weights
+     * in a minimum spanning tree (or forest)
+     * 
+     * Complexity is 1.
      */
     public double weight() {
         return weight;
     }
-    
-    // check optimality conditions (takes time proportional to E V lg* V)
+
+
+    /**
+     * Checks the optimality conditions.
+     * 
+     * Complexity is E V lg* V.
+     *
+     * @param      G     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean check(EdgeWeightedGraph G) {
 
         // check total weight
@@ -85,11 +115,18 @@ public class KruskalMST {
             total += e.weight();
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", total, weight());
+System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
+    total, weight());
             return false;
         }
 
         // check that it is acyclic
+        
+
+        /**
+         * Checks if the pariticular graph is acyclic.
+         * Complexity is E.
+         */
         UF uf = new UF(G.V());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
@@ -109,7 +146,8 @@ public class KruskalMST {
             }
         }
 
-        // check that it is a minimal spanning forest (cut optimality conditions)
+        // check that it is a minimal spanning forest
+        //(cut optimality conditions)
         for (Edge e : edges()) {
 
             // all edges in MST except e
@@ -124,7 +162,8 @@ public class KruskalMST {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f + " violates cut optimality conditions");
+                        System.err.println("Edge " + f
+                            + " violates cut optimality conditions");
                         return false;
                     }
                 }
