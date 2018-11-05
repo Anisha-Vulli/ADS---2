@@ -14,6 +14,6 @@ class Solution {
 			ewg.addEdge(edg);
 		}
 		KruskalMST krush = new KruskalMST(ewg);
-		System.out.format("%4f", krush.weight());
+		System.out.format("%6f", krush.weight());
 	}
 }
