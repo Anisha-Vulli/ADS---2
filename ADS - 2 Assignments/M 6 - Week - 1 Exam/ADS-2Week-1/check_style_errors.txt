@@ -352,7 +352,7 @@ Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:33: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:55:29: '990' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:55:29: '999' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:64: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 6 - Week - 1 Exam\ADS-2Week-1\Solution.java:76:32: Parameter i should be final. [FinalParameters]
