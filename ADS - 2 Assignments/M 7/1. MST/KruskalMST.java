@@ -20,16 +20,16 @@ public class KruskalMST {
      * of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
-    public KruskalMST(final EdgeWeightedGraph G) {
+    public KruskalMST(final EdgeWeightedGraph gph) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
-        for (Edge e : G.edges()) {
+        for (Edge e : gph.edges()) {
             pq.insert(e);
         }
 
         // run greedy algorithm
-        UF uf = new UF(G.V());
-        while (!pq.isEmpty() && mst.size() < G.V() - 1) {
+        UF uf = new UF(gph.V());
+        while (!pq.isEmpty() && mst.size() < gph.V() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
@@ -44,7 +44,7 @@ public class KruskalMST {
         }
 
         // check optimality conditions
-        assert check(G);
+        assert check(gph);
     }
 
     /**
@@ -129,7 +129,9 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
             uf = new UF(grp.V());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
-                if (f != e) uf.union(x, y);
+                if (f != e) {
+                    uf.union(x, y);
+                }
             }
             
             // check that e is min weight edge in crossing cut
