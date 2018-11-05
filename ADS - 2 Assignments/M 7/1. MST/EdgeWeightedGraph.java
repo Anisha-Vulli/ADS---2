@@ -5,7 +5,7 @@ public class EdgeWeightedGraph {
     /**
      * New line.
      */
-    private static final String NEWLINE 
+    private static final String NEWLINE
     = System.getProperty("line.separator");
     /**
      * Vertices.
@@ -19,19 +19,19 @@ public class EdgeWeightedGraph {
      * Adj array of bags.
      */
     private Bag<Edge>[] adj;
-    
+
     /**
      * Initializes an empty edge-weighted graph with
      * {@code V} vertices and 0 edges.
      *
-     * @param  V the number of vertices
+     * @param  vertex the number of vertices
      * @throws IllegalArgumentException if
      * {@code V < 0}
      */
-    public EdgeWeightedGraph(int vertex) {
+    public EdgeWeightedGraph(final int vertex) {
         if (vertex < 0) {
-            throw new IllegalArgumentException
-            ("Number of vertices must be nonnegative");
+            throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative");
         }
         this.ver = vertex;
         this.edge = 0;
@@ -52,7 +52,10 @@ public class EdgeWeightedGraph {
      */
     // public EdgeWeightedGraph(int V, int E) {
     //     this(V);
-    //     if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
+    //     if (E < 0) {
+    //     throw new IllegalArgumentException(
+    //     "Number of edges must be nonnegative");
+    //     }
     //     for (int i = 0; i < E; i++) {
     //         int v = StdRandom.uniform(V);
     //         int w = StdRandom.uniform(V);
@@ -62,7 +65,7 @@ public class EdgeWeightedGraph {
     //     }
     // }
 
-    /**  
+    /**
      * Initializes an edge-weighted graph from an input stream.
      * The format is the number of vertices <em>V</em>,
      * followed by the number of edges <em>E</em>,
@@ -75,7 +78,7 @@ public class EdgeWeightedGraph {
      * @throws IllegalArgumentException
      * if the number of vertices or edges is negative
      */
-    public EdgeWeightedGraph(In in) {
+    public EdgeWeightedGraph(final In in) {
         this(in.readInt());
         int E = in.readInt();
         if (E < 0) {
@@ -98,7 +101,7 @@ public class EdgeWeightedGraph {
      *
      * @param  gph the edge-weighted graph to copy
      */
-    public EdgeWeightedGraph(EdgeWeightedGraph gph) {
+    public EdgeWeightedGraph(final EdgeWeightedGraph gph) {
         this(gph.V());
         this.edge = gph.E();
         for (int v = 0; v < gph.V(); v++) {
@@ -133,7 +136,7 @@ public class EdgeWeightedGraph {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         if (v < 0 || v >= ver)
             throw new IllegalArgumentException
         ("vertex " + v + " is not between 0 and " + (ver-1));
@@ -146,7 +149,7 @@ public class EdgeWeightedGraph {
      * @throws IllegalArgumentException unless
      * both endpoints are between {@code 0} and {@code V-1}
      */
-    public void addEdge(Edge e) {
+    public void addEdge(final Edge e) {
         int v = e.either();
         int w = e.other(v);
         validateVertex(v);
@@ -163,7 +166,7 @@ public class EdgeWeightedGraph {
      * @return the edges incident on vertex {@code v} as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> adj(int v) {
+    public Iterable<Edge> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -175,7 +178,7 @@ public class EdgeWeightedGraph {
      * @return the degree of vertex {@code v}               
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
