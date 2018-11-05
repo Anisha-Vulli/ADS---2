@@ -18,7 +18,7 @@ public class KruskalMST {
     /**
      * Compute a minimum spanning tree (or forest)
      * of an edge-weighted graph.
-     * @param G the edge-weighted graph
+     * @param gph the edge-weighted graph
      */
     public KruskalMST(final EdgeWeightedGraph gph) {
         // more efficient to build heap by passing array of edges
@@ -133,7 +133,7 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
                     uf.union(x, y);
                 }
             }
-            
+
             // check that e is min weight edge in crossing cut
             for (Edge f : grp.edges()) {
                 int x = f.either(), y = f.other(x);
