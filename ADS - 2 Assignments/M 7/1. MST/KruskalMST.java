@@ -28,8 +28,8 @@ public class KruskalMST {
         }
 
         // run greedy algorithm
-        UF uf = new UF(gph.V());
-        while (!pq.isEmpty() && mst.size() < gph.V() - 1) {
+        UF uf = new UF(gph.vertex());
+        while (!pq.isEmpty() && mst.size() < gph.vertex() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
@@ -102,7 +102,7 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
          * Checks if the pariticular graph is acyclic.
          * Complexity is E.
          */
-        UF uf = new UF(grp.V());
+        UF uf = new UF(grp.vertex());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
             if (uf.connected(v, w)) {
@@ -126,7 +126,7 @@ System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
         for (Edge e : edges()) {
 
             // all edges in MST except e
-            uf = new UF(grp.V());
+            uf = new UF(grp.vertex());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) {
