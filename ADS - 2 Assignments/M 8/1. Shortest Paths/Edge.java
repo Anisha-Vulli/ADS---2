@@ -120,3 +120,4 @@ public class Edge implements Comparable<Edge> {
         return Double.compare(this.weight, that.weight);
     }
 }
+
