@@ -375,11 +375,7 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\Solution.java:33: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\Solution.java:42: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
