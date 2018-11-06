@@ -162,9 +162,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 158 errors.
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\DijkstrasSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\DirectedEdge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 8\1. Shortest Paths\DirectedEdge.java:25: Line has trailing spaces. [RegexpSingleline]
