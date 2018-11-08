@@ -312,9 +312,9 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:79: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:87: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:105: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:80: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:88: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 10\Seam Carving\Solution.java:106: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 20 errors.
 Starting audit...

@@ -46,6 +46,7 @@ public class Solution {
         SeamCarver seamCarver = null;
         if (!scan.hasNextLine()) {
             System.out.println("Picture is null");
+            return;
         }
         try {
             switch (cases) {
