@@ -45,7 +45,7 @@ public class Solution {
         String cases = scan.nextLine();
         SeamCarver seamCarver = null;
         if (!(scan.hasNext())) {
-            System.out.println("Picture is null");
+            System.out.println("picture is null");
             return;
         }
         try {
