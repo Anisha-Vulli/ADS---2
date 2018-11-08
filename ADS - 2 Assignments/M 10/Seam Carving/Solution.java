@@ -44,6 +44,9 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
         SeamCarver seamCarver = null;
+        if (!scan.hasNextLine()) {
+            System.out.println("Picture is null");
+        }
         try {
             switch (cases) {
             case "width":
