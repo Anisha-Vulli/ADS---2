@@ -8,9 +8,16 @@
  *  of each pixel as calculated by SeamCarver object. 
  * 
  ******************************************************************************/
+/**
+ * Class for print energy.
+ */
 public class PrintEnergy {
-
-    public static void main(String[] args) {
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
         StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
         

@@ -8,13 +8,20 @@
  *  Each image hides the previous one - drag them to see all three.
  *
  ******************************************************************************/
-
+/**
+ * Picture import.
+ */
 import edu.princeton.cs.algs4.Picture;
+/**
+ * Stdout import.
+ */
 import edu.princeton.cs.algs4.StdOut;
-
+/**
+ * Class for show seams.
+ */
 public class ShowSeams {
 
-    private static void showHorizontalSeam(SeamCarver sc) {
+    private static void showHorizontalSeam(final SeamCarver sc) {
         Picture picture = SCUtility.toEnergyPicture(sc);
         int[] horizontalSeam = sc.findHorizontalSeam();
         Picture overlay = SCUtility.seamOverlay(picture, true, horizontalSeam);
@@ -22,7 +29,7 @@ public class ShowSeams {
     }
 
 
-    private static void showVerticalSeam(SeamCarver sc) {
+    private static void showVerticalSeam(final SeamCarver sc) {
         Picture picture = SCUtility.toEnergyPicture(sc);
         int[] verticalSeam = sc.findVerticalSeam();
         Picture overlay = SCUtility.seamOverlay(picture, false, verticalSeam);

@@ -11,12 +11,19 @@ import java.awt.Color;
 
 import edu.princeton.cs.algs4.Picture;
 import edu.princeton.cs.algs4.StdRandom;
-
+/**
+ * Class for sc utility.
+ */
 public class SCUtility {
-
-
-    // create random width-by-height array of tiles
-    public static Picture randomPicture(int width, int height) {
+    /**
+     * create random width-by-height array of tiles.
+     *
+     * @param      width   The width
+     * @param      height  The height
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static Picture randomPicture(final int width, final int height) {
         Picture picture = new Picture(width, height);
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {
@@ -31,28 +38,48 @@ public class SCUtility {
     }
 
 
-    public static double[][] toEnergyMatrix(SeamCarver sc) {
+    public static double[][] toEnergyMatrix(final SeamCarver sc) {
         double[][] returnDouble = new double[sc.width()][sc.height()];
-        for (int col = 0; col < sc.width(); col++)
-            for (int row = 0; row < sc.height(); row++)
+        for (int col = 0; col < sc.width(); col++) {
+            for (int row = 0; row < sc.height(); row++) {
                 returnDouble[col][row] = sc.energy(col, row);
+            }
+        }
     
         return returnDouble;        
     }
 
-    // displays grayvalues as energy (converts to picture, calls show)
-    public static void showEnergy(SeamCarver sc) {
+    /**
+     * Shows the energy.
+     * displays grayvalues as energy (converts to picture, calls show).
+     * 
+     *
+     * @param      sc    The screen
+     */
+    public static void showEnergy(final SeamCarver sc) {
         doubleToPicture(toEnergyMatrix(sc)).show();
     }
-
-    public static Picture toEnergyPicture(SeamCarver sc) {
+    /**
+     * Picture to energy conversion functionn.
+     *
+     * @param      sc    The screen
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static Picture toEnergyPicture(final SeamCarver sc) {
         double[][] energyMatrix = toEnergyMatrix(sc);
         return doubleToPicture(energyMatrix);
     }
-
-    // converts a double matrix of values into a normalized picture
-    // values are normalized by the maximum grayscale value (ignoring border pixels)
-    public static Picture doubleToPicture(double[][] grayValues) {
+    
+    /**
+     * converts a double matrix of values into a normalized picture.
+     * values are normalized by the maximum grayscale value (ignoring border pixels).
+     *
+     * @param      grayValues  The gray values
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static Picture doubleToPicture(final double[][] grayValues) {
 
         // each 1D array in the matrix represents a single column, so number
         // of 1D arrays is the width, and length of each array is the height
@@ -88,7 +115,7 @@ public class SCUtility {
     // This method is useful for debugging seams. It overlays red
     // pixels over the calculate seam. Due to the lack of a copy
     // constructor, it also alters the original picture.
-    public static Picture seamOverlay(Picture picture, boolean horizontal, int[] seamIndices) {
+    public static Picture seamOverlay(final Picture picture, final boolean horizontal, final int[] seamIndices) {
         Picture overlaid = new Picture(picture.width(), picture.height());
         int width = picture.width();
         int height = picture.height();

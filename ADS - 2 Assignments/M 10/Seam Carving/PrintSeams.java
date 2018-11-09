@@ -38,9 +38,8 @@ public class PrintSeams {
     private static final boolean HORIZONTAL   = true;
     private static final boolean VERTICAL     = false;
 
-    private static void printSeam(SeamCarver carver, int[] seam, boolean direction) {
+    private static void printSeam(final SeamCarver carver, final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
-
         for (int row = 0; row < carver.height(); row++) {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
@@ -60,7 +59,7 @@ public class PrintSeams {
         StdOut.println();
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
         StdOut.printf("%s (%d-by-%d image)\n", args[0], picture.width(), picture.height());
         StdOut.println();

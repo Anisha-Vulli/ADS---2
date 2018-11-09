@@ -26,7 +26,7 @@ public class SeamCarver {
      *
      * @param      picture1  The picture 1
      */
-    public SeamCarver(Picture picture1) {
+    public SeamCarver(final Picture picture1) {
         x = picture1.height();
         y = picture1.width();
         this.picture = picture1;
@@ -67,7 +67,7 @@ public class SeamCarver {
      *
      * @return     { description_of_the_return_value }
      */
-    public double energy(int x, int y) {
+    public double energy(final int x, final int y) {
         if (x == 0 || y == 0 || x == picture.width() - 1 || y == picture.height() - 1) {
             //energy[x][y] = Double.parseDouble(1000);
             return 1000;
@@ -97,22 +97,89 @@ public class SeamCarver {
         return energy;
     }
 
-    /**
-     * sequence of indices for horizontal seam. 
-     *
-     * @return     { description_of_the_return_value }
-     */
     public int[] findHorizontalSeam() {
-        return new int[0];
-    }
+        double[][] pathSum =new double[width()][height()];
+        int[][] parent = new int[width()][height()];
+        for(int i =0 ;i<height();i++){
+            pathSum[0][i] = 1000;
+            parent[0][i]=i;
+        }
+        for(int x= 1; x <width();x++){
+            for(int y =0 ;y<height();y++){
+                double tempSum =  pathSum[x-1][y];
+                parent[x][y] = y;
+                if(y>0 && pathSum[x-1][y-1] <tempSum){
+                    tempSum = pathSum[x-1][y-1];
+                    parent[x][y] = y-1;
+                }
+                if(y<height()-1 && pathSum[x-1][y+1] < tempSum){
+                    tempSum = pathSum[x-1][y+1];
+                    parent[x][y] = y+1;
+                }
+                pathSum[x][y]=tempSum+energy(x,y);
+            }
+        }
+        int minIndex=0;
 
-    /**
-     * sequence of indices for vertical seam.
-     *
-     * @return     { description_of_the_return_value }
-     */
+        for(int i = 1; i<height();i++){
+            if(pathSum[width()-1][i] < pathSum[width()-1][minIndex]){
+                minIndex = i;
+            }
+        }
+
+        int res [] = new int[width()];
+        res[width()-1] = minIndex;
+        for (int h = width()-2;h>=0 ;h-- ) {
+            res[h]= parent[h+1][minIndex];
+            minIndex=parent[h+1][minIndex];
+        }
+        return res;
+
+        
+
+        
+    }
+    // sequence of indices for vertical seam
     public int[] findVerticalSeam() {
-        return new int[0];
+        double[][] pathSum =new double[width()][height()];
+        int[][] parent = new int[width()][height()];
+        for(int i =0 ;i<width();i++){
+            pathSum[i][0] = 1000;
+            parent[i][0]=i;
+        }
+        for(int y = 1; y <height();y++){
+            for(int x =0 ;x<width();x++){
+                double tempSum =  pathSum[x][y-1];
+                parent[x][y] = x;
+                if(x>0 && pathSum[x-1][y-1] <tempSum){
+                    tempSum = pathSum[x-1][y-1];
+                    parent[x][y] = x-1;
+                }
+                if(x<width()-1 && pathSum[x+1][y-1] <tempSum){
+                    tempSum = pathSum[x+1][y-1];
+                    parent[x][y] = x+1;
+                }
+                pathSum[x][y]=tempSum+energy(x,y);
+            }
+        }
+        int minIndex=0;
+
+        for(int i = 1; i<width();i++){
+            if(pathSum[i][height()-1] < pathSum[minIndex][height()-1]){
+                minIndex = i;
+            }
+        }
+
+        int res [] = new int[height()];
+        res[height()-1] = minIndex;
+        for (int h = height()-2;h>=0 ;h-- ) {
+            //res[h] = parent[res[h+1]][h]; 
+            res[h]= parent[minIndex][h+1];
+            minIndex=parent[minIndex][h+1];
+        }
+        return res;
+
+        //return new int[0];
     }
 
     /**
@@ -121,7 +188,7 @@ public class SeamCarver {
      *
      * @param      seam  The seam
      */
-    public void removeHorizontalSeam(int[] seam) {
+    public void removeHorizontalSeam(final int[] seam) {
 
     }
 
@@ -131,7 +198,7 @@ public class SeamCarver {
      *
      * @param      seam  The seam
      */
-    public void removeVerticalSeam(int[] seam) {
+    public void removeVerticalSeam(final int[] seam) {
 
     }
 }
