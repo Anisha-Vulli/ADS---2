@@ -1,47 +1,75 @@
-
+/**
+ * Class for seam carver.
+ */
 public class SeamCarver {
+    /**
+     * Picture objext.
+     */
     Picture picture;
+    /**
+     * Color array.
+     */
     int[][] color;
+    /**
+     * Energy array.
+     */
     Double[][] energy;
+    /**
+     * X and Y integer.
+     */
     int x;
     int y;
-    // create a seam carver object based on the given picture
+    /**
+     * Constructs the object.
+     * create a seam carver object based on the given picture.
+     * 
+     *
+     * @param      picture1  The picture 1
+     */
     public SeamCarver(Picture picture1) {
         x = picture1.height();
         y = picture1.width();
         this.picture = picture1;
         color = new int[picture1.width()][picture1.height()];
         energy = new Double[picture1.width()][picture1.height()];
-
-        // for (int i = 0; i < x; i++) {
-        //     for (int j = 0; j < y; j++) {
-        //         color[i][j] = picture1.get(i, j).getRGB();
-        //     }
-        // }
-
-        // for (int i = 0; i < x; i++) {
-        //     for (int j = 0; j < y; j++) {
-        //         energy[i][j] = energy(i, j);
-        //     }
-        // }
     }
-    // current picture
+    /**
+     * current picture. 
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Picture picture() {
         return null;
     }
-    // width of current picture
+    /**
+     * width of current picture.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int width() {
         return picture.width();
     }
 
-    // height of current picture
+    /**
+     * height of current picture. 
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int height() {
         return picture.height();
     }
 
-    // energy of pixel at column x and row y
+    /**
+     * energy of pixel at column x and row y. 
+     *
+     * @param      x     { parameter_description }
+     * @param      y     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public double energy(int x, int y) {
         if (x == 0 || y == 0 || x == picture.width() - 1 || y == picture.height() - 1) {
+            //energy[x][y] = Double.parseDouble(1000);
             return 1000;
         }
 
@@ -65,25 +93,44 @@ public class SeamCarver {
         + Math.pow(rightBluey - leftBluey, 2);
         double energySum = deltaX + deltaY;
         double energy = Math.sqrt(energySum);
+        //energy[x][y] = energy;
         return energy;
     }
 
-    // sequence of indices for horizontal seam
+    /**
+     * sequence of indices for horizontal seam. 
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int[] findHorizontalSeam() {
         return new int[0];
     }
 
-    // sequence of indices for vertical seam
+    /**
+     * sequence of indices for vertical seam.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int[] findVerticalSeam() {
         return new int[0];
     }
 
-    // remove horizontal seam from current picture
+    /**
+     * Removes a horizontal seam.
+     * remove horizontal seam from current picture.
+     *
+     * @param      seam  The seam
+     */
     public void removeHorizontalSeam(int[] seam) {
 
     }
 
-    // remove vertical seam from current picture
+    /**
+     * Removes a vertical seam.
+     * remove vertical seam from current picture. 
+     *
+     * @param      seam  The seam
+     */
     public void removeVerticalSeam(int[] seam) {
 
     }
