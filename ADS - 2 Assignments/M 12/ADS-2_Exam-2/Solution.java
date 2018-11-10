@@ -20,7 +20,7 @@ public class Solution {
         String caseToGo = sc.nextLine();
         switch (caseToGo) {
         case "Graph":
-            System.out.format("%.5f", ewg.toString());
+            System.out.format("%.5f", ewg);
             //Print the Graph Object.
             break;
 

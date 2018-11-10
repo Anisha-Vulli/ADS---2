@@ -9,7 +9,7 @@ Expected Output:
 5:
 
 Your Output: 
-Exception in thread "main" java.util.IllegalFormatConversionException: f != java.lang.String
+Exception in thread "main" java.util.IllegalFormatConversionException: f != EdgeWeightedGraph
 	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4421)
 	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2949)
 	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2896)
@@ -33,7 +33,7 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.util.IllegalFormatConversionException: f != java.lang.String
+Exception in thread "main" java.util.IllegalFormatConversionException: f != EdgeWeightedGraph
 	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4421)
 	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2949)
 	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2896)
