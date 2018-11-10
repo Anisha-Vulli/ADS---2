@@ -206,10 +206,8 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:197: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:210: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:215: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:236:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:238:29: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 44 errors.
+Checkstyle ends with 42 errors.
 Starting audit...
 Audit done.
 Starting audit...

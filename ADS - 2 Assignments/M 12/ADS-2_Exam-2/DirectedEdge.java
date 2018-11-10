@@ -228,16 +228,16 @@ public class EdgeWeightedDigraph {
         return s.toString();
     }
 
-    /**
-     * Unit tests the {@code EdgeWeightedDigraph} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        In in = new In(args[0]);
-        EdgeWeightedDigraph G = new EdgeWeightedDigraph(in);
-        StdOut.println(G);
-    }
+    // /**
+    //  * Unit tests the {@code EdgeWeightedDigraph} data type.
+    //  *
+    //  * @param args the command-line arguments
+    //  */
+    // public static void main(String[] args) {
+    //     In in = new In(args[0]);
+    //     EdgeWeightedDigraph G = new EdgeWeightedDigraph(in);
+    //     StdOut.println(G);
+    // }
 
 }
 
