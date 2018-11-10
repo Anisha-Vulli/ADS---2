@@ -55,15 +55,15 @@ public class EdgeWeightedDigraph {
      * @throws IllegalArgumentException if {@code V < 0}
      * @throws IllegalArgumentException if {@code E < 0}
      */
-    public EdgeWeightedDigraph(final int V, final int E) {
-        this(V);
-        if (E < 0) {
+    public EdgeWeightedDigraph(final int ver, final int edg) {
+        this(ver);
+        if (edg < 0) {
          throw new IllegalArgumentException(
             "Number of edges in a Digraph must be nonnegative");
         }
         final int hundred = 100;
         final float pointnum = 0.01;
-        for (int i = 0; i < E; i++) {
+        for (int i = 0; i < edg; i++) {
             int v = StdRandom.uniform(V);
             int w = StdRandom.uniform(V);
             double weight = pointnum * StdRandom.uniform(hundred);
