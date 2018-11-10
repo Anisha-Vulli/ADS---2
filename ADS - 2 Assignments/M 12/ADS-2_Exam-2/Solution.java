@@ -31,11 +31,11 @@ public class Solution {
             // Other wise print "No Path Found."
             String[] input = sc.nextLine().split(" ");
             int source = Integer.parseInt(input[0]);
-            DijkstrasSP djk = new DijkstrasSP(ewg, source);
-            if (djk.distance(Integer.parseInt(input[1])) == 0.0) {
+            DijkstraUndirectedSP djk = new DijkstraUndirectedSP(ewg, source);
+            if (djk.distTo(Integer.parseInt(input[1])) == 0.0) {
                 System.out.println("No Path Found.");
             } else {
-                System.out.println(djk.distance(Integer.parseInt(input[1])));
+                System.out.println(djk.distTo(Integer.parseInt(input[1])));
             }
             break;
 
@@ -48,22 +48,15 @@ public class Solution {
             String[] inputval = sc.nextLine().split(" ");
             int source1 = Integer.parseInt(inputval[0]);
             int destination = Integer.parseInt(inputval[1]);
-            DijkstrasSP djksp = new DijkstrasSP(ewg, source1);
+            DijkstraUndirectedSP djksp = new DijkstraUndirectedSP(ewg, source1);
             for (Edge ed : djksp.pathTo(destination)) {
-                //System.out.println("hello");
-                //System.out.println(ed.either());
                 if (ed.either() != Integer.parseInt(inputval[2])) {
                     System.out.println("No Path Found.");
                     break;
                 } else {
-                    System.out.println(djksp.distance(Integer.parseInt(inputval[1])));
+                    System.out.println(djksp.distTo(Integer.parseInt(inputval[1])));
                 }
             }
-            // if (djksp.distance(Integer.parseInt(inputval[1])) == 0.0) {
-            //     System.out.println("No Path Found.");
-            // } else {
-            //     System.out.println(djksp.distance(Integer.parseInt(inputval[1])));
-            // }
             break;
 
         default:
