@@ -120,6 +120,11 @@ public class Edge implements Comparable<Edge> {
         return Double.compare(this.weight, that.weight);
     }
 
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return String.format("%d-%d %.5f", v, w, weight);
     }
