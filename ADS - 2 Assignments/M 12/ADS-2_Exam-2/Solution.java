@@ -62,10 +62,13 @@ public class Solution {
                         if (Integer.parseInt(vertices[1]) == k) {
                             m = 1;
                         }
+                        if (Integer.parseInt(vertices[1]) == k) {
+                            n = 1;
+                        }
                     }
-                    // if (n == 0) {
-                    //     q.enqueue(Integer.parseInt(vertices[1]));
-                    // }
+                    if (n == 0) {
+                        q.enqueue(Integer.parseInt(vertices[1]));
+                    }
                     if (m == 0) {
                         q.enqueue(Integer.parseInt(vertices[0]));
                     }
