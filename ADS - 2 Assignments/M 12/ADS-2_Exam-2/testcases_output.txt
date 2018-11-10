@@ -9,8 +9,11 @@ Expected Output:
 5:
 
 Your Output: 
-Exception in thread "main" java.util.MissingFormatArgumentException: Format specifier '%.5f'
-	at java.base/java.util.Formatter.format(Formatter.java:2670)
+Exception in thread "main" java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4421)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2949)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2896)
+	at java.base/java.util.Formatter.format(Formatter.java:2671)
 	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
 	at Solution.main(Solution.java:23)
 ----------------------------------------
@@ -30,8 +33,11 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.util.MissingFormatArgumentException: Format specifier '%.5f'
-	at java.base/java.util.Formatter.format(Formatter.java:2670)
+Exception in thread "main" java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4421)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2949)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2896)
+	at java.base/java.util.Formatter.format(Formatter.java:2671)
 	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
 	at Solution.main(Solution.java:23)
 ----------------------------------------
