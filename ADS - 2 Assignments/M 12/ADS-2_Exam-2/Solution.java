@@ -32,7 +32,7 @@ public class Solution {
             String[] input = sc.nextLine().split(" ");
             int source = Integer.parseInt(input[0]);
             DijkstraUndirectedSP djk = new DijkstraUndirectedSP(ewg, source);
-            if (djk.distTo(Integer.parseInt(input[1])) == 0.0) {
+            if (djk.hasPathTo(Integer.parseInt(input[1]))) {
                 System.out.println("No Path Found.");
             } else {
                 System.out.println(djk.distTo(Integer.parseInt(input[1])));

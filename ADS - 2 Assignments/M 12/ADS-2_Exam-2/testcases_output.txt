@@ -54,12 +54,12 @@ Your Output:
 Infinity
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 370.0
 
 Your Output: 
-370.0
+No Path Found.
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
