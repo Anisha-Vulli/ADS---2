@@ -1,23 +1,5 @@
 /**
- *  The {@code DijkstraUndirectedSP} class represents a data type for solving
- *  the single-source shortest paths problem in edge-weighted graphs
- *  where the edge weights are nonnegative.
- *  <p>
- *  This implementation uses Dijkstra's algorithm with a binary heap.
- *  The constructor takes time proportional to <em>E</em> log <em>V</em>,
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  Each call to {@code distTo(int)} and {@code hasPathTo(int)} takes constant time;
- *  each call to {@code pathTo(int)} takes time proportional to the number of
- *  edges in the shortest path returned.
- *  <p>
- *  For additional documentation,    
- *  see <a href="https://algs4.cs.princeton.edu/44sp">Section 4.4</a> of    
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *  See {@link DijkstraSP} for a version on edge-weighted digraphs.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- *  @author Nate Liu
+ * Class for dijkstra undirected sp.
  */
 public class DijkstraUndirectedSP {
     /**
