@@ -50,7 +50,7 @@ public final class Solution {
             int dest = Integer.parseInt(input[1]);
             DijkstraUndirectedSP djk = new DijkstraUndirectedSP(ewg, source);
             if (djk.hasPathTo(dest)) {
-                System.out.println(djk.distTo(Integer.parseInt(input[1]))); 
+                System.out.println(djk.distTo(Integer.parseInt(input[1])));
             } else {
                 System.out.println("No Path Found.");
             }
@@ -58,7 +58,7 @@ public final class Solution {
 
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one 
+            // First is the source and second is the via is the one
             // where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
@@ -111,7 +111,7 @@ public final class Solution {
                         q.enqueue(Integer.parseInt(vertexs[1]));
                     }
                 }
-                System.out.println(dusp.distTo(via) 
+                System.out.println(dusp.distTo(via)
                     + dusp1.distTo(destination));
                 while (!q.isEmpty()) {
                     System.out.print(q.dequeue() + " ");
