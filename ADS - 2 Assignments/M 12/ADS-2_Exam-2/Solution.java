@@ -29,7 +29,8 @@ public final class Solution {
         new EdgeWeightedGraph(vertex);
         for (int i = 0; i < edge; i++) {
             String[] tokens = sc.nextLine().split(" ");
-            e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Float.parseFloat(tokens[2]));
+            e = new Edge(Integer.parseInt(tokens[0]),
+                Integer.parseInt(tokens[1]), Float.parseFloat(tokens[2]));
             ewg.addEdge(e);
         }
         String caseToGo = sc.nextLine();
@@ -57,7 +58,8 @@ public final class Solution {
 
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
+            // First is the source and second is the via is the one 
+            // where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
@@ -109,7 +111,8 @@ public final class Solution {
                         q.enqueue(Integer.parseInt(vertexs[1]));
                     }
                 }
-                System.out.println(dusp.distTo(via) + dusp1.distTo(destination));
+                System.out.println(dusp.distTo(via) 
+                    + dusp1.distTo(destination));
                 while (!q.isEmpty()) {
                     System.out.print(q.dequeue() + " ");
                 }

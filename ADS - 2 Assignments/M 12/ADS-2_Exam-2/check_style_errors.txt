@@ -109,11 +109,10 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 112). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:52: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:60: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:112: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:53: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:61: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\Solution.java:114: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
