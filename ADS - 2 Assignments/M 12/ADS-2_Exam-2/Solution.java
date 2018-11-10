@@ -73,7 +73,7 @@ public class Solution {
                     }
                     //System.out.print(edg + "   ");
                 }
-                System.out.println(dusp.distTo(destination));
+                System.out.println(djksp.distTo(via) + dusp.distTo(destination));
             } else {
                 System.out.println("No Path Found.");
             }
