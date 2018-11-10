@@ -1,8 +1,23 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
-
-public class Solution {
-
-    public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty constructor.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
