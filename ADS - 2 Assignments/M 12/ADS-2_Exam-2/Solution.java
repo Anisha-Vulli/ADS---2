@@ -56,11 +56,19 @@ public class Solution {
                     if (ed.either() != via) {
                         break;
                     }
+                    if (ed == null) {
+                        System.out.println("No Path Found.");
+                        break;
+                    }
                     //System.out.print(ed + "   ");
                 }
                 DijkstraUndirectedSP dusp = new DijkstraUndirectedSP(ewg, via);
                 for (Edge edg : dusp.pathTo(destination)) {
                     if (edg.either() != via) {
+                        break;
+                    }
+                    if (edg == null) {
+                        System.out.println("No Path Found.");
                         break;
                     }
                     //System.out.print(edg + "   ");
