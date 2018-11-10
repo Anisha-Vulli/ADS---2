@@ -21,7 +21,7 @@ public class DijkstraUndirectedSP {
      * other vertex in the edge-weighted graph
      * {@code G}.
      *
-     * @param  G the edge-weighted digraph
+     * @param  grp the edge-weighted digraph
      * @param  s the source vertex
      * @throws IllegalArgumentException
      * if an edge weight is negative
@@ -140,7 +140,7 @@ public class DijkstraUndirectedSP {
      * for all edge e = v-w on the SPT: distTo[w] == distTo[v]
      * + e.weight() 
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      s     { parameter_description }
      *
      * @return     { description_of_the_return_value }

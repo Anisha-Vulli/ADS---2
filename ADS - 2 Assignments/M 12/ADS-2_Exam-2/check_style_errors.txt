@@ -2,8 +2,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:24:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:32:33: Expected @param tag for 'grp'. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:45: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:54: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:63: Line has trailing spaces. [RegexpSingleline]
@@ -13,8 +11,6 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:127: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:137: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:141: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:143:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:149:33: Expected @param tag for 'g'. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:149:36: Parameter s should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:165: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:172: Line is longer than 80 characters (found 83). [LineLength]
@@ -29,7 +25,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:201:93: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DijkstraUndirectedSP.java:201:94: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 23 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:139:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:150:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
