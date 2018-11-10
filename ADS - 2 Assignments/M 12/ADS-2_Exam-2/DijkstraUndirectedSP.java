@@ -42,8 +42,9 @@ public class DijkstraUndirectedSP {
 
         validateVertex(s);
 
-        for (int v = 0; v < grp.vertex(); v++)
+        for (int v = 0; v < grp.vertex(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
         distTo[s] = 0.0;
 
         // relax vertices in order of distance from s
@@ -51,8 +52,9 @@ public class DijkstraUndirectedSP {
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
             int v = pq.delMin();
-            for (Edge e : grp.adj(v))
+            for (Edge e : grp.adj(v)) {
                 relax(e, v);
+            }
         }
 
         // check optimality conditions
@@ -60,7 +62,7 @@ public class DijkstraUndirectedSP {
     }
 
     /**
-     * relax edge e and update pq if changed. 
+     * relax edge e and update pq if changed.
      *
      * @param      e     { parameter_description }
      * @param      v     { parameter_description }
@@ -70,8 +72,11 @@ public class DijkstraUndirectedSP {
         if (distTo[w] > distTo[v] + e.weight()) {
             distTo[w] = distTo[v] + e.weight();
             edgeTo[w] = e;
-            if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-            else                pq.insert(w, distTo[w]);
+            if (pq.contains(w)) {
+                pq.decreaseKey(w, distTo[w]);
+            } else {
+                pq.insert(w, distTo[w]);
+            }
         }
     }
 
