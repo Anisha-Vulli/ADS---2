@@ -53,11 +53,17 @@ public class Solution {
             DijkstraUndirectedSP djksp = new DijkstraUndirectedSP(ewg, source1);
             if (djksp.hasPathTo(destination)) {
                 for (Edge ed : djksp.pathTo(via)) {
-                    System.out.print(ed + "   ");
+                    if (ed.either() != via) {
+                        break;
+                    }
+                    //System.out.print(ed + "   ");
                 }
                 DijkstraUndirectedSP dusp = new DijkstraUndirectedSP(ewg, via);
                 for (Edge edg : dusp.pathTo(destination)) {
-                    System.out.print(edg + "   ");
+                    if (edg.either() != via) {
+                        break;
+                    }
+                    //System.out.print(edg + "   ");
                 }
                 System.out.println(dusp.distTo(destination));
             } else {
