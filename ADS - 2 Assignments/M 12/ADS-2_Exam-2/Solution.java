@@ -49,14 +49,12 @@ public class Solution {
             String[] inputval = sc.nextLine().split(" ");
             int source1 = Integer.parseInt(inputval[0]);
             int destination = Integer.parseInt(inputval[1]);
+            int via = Integer.parseInt(inputval[2]);
             DijkstraUndirectedSP djksp = new DijkstraUndirectedSP(ewg, source1);
-            for (Edge ed : djksp.pathTo(destination)) {
-                if (ed.either() != Integer.parseInt(inputval[2])) {
-                    System.out.println("No Path Found.");
-                    break;
-                } else {
-                    System.out.println(djksp.distTo(Integer.parseInt(inputval[1])));
-                }
+            if (djksp.hasPathTo(destination)) {
+                System.out.println(djksp.distTo(destination)); 
+            } else {
+                System.out.println("No Path Found.");
             }
             break;
 
