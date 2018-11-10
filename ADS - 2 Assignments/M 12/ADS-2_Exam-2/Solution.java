@@ -25,6 +25,10 @@ public class Solution {
             break;
 
         case "DirectedPaths":
+            // Handle the case of DirectedPaths, where two integers are given.
+            // First is the source and second is the destination.
+            // If the path exists print the distance between them.
+            // Other wise print "No Path Found."
             String[] input = sc.nextLine().split(" ");
             int source = Integer.parseInt(input[0]);
             DijkstrasSP djk = new DijkstrasSP(ewg, source);
@@ -33,10 +37,6 @@ public class Solution {
             } else {
                 System.out.println(djk.distance(Integer.parseInt(input[1])));
             }
-            // Handle the case of DirectedPaths, where two integers are given.
-            // First is the source and second is the destination.
-            // If the path exists print the distance between them.
-            // Other wise print "No Path Found."
             break;
 
         case "ViaPaths":
@@ -45,6 +45,14 @@ public class Solution {
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
+            String[] inputval = sc.nextLine().split(" ");
+            int source1 = Integer.parseInt(inputval[0]);
+            DijkstrasSP djksp = new DijkstrasSP(ewg, source1);
+            if (djksp.distance(Integer.parseInt(inputval[1])) == 0.0) {
+                System.out.println("No Path Found.");
+            } else {
+                System.out.println(djksp.distance(Integer.parseInt(inputval[1])));
+            }
             break;
 
         default:
