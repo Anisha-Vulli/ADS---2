@@ -48,11 +48,17 @@ public class Solution {
             String[] inputval = sc.nextLine().split(" ");
             int source1 = Integer.parseInt(inputval[0]);
             DijkstrasSP djksp = new DijkstrasSP(ewg, source1);
-            if (djksp.distance(Integer.parseInt(inputval[1])) == 0.0) {
-                System.out.println("No Path Found.");
-            } else {
-                System.out.println(djksp.distance(Integer.parseInt(inputval[1])));
+            for (Edge ed : djksp.pathTo(source1)) {
+                if (ed.either() != Integer.parseInt(inputval[2])) {
+                    System.out.println("No Path Found.");
+                    break;
+                }
             }
+            // if (djksp.distance(Integer.parseInt(inputval[1])) == 0.0) {
+            //     System.out.println("No Path Found.");
+            // } else {
+            //     System.out.println(djksp.distance(Integer.parseInt(inputval[1])));
+            // }
             break;
 
         default:
