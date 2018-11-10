@@ -62,9 +62,9 @@ public class Solution {
                         if (Integer.parseInt(vertices[1]) == k) {
                             m = 1;
                         }
-                        if (Integer.parseInt(vertices[1]) == k) {
-                            n = 1;
-                        }
+                        // if (Integer.parseInt(vertices[1]) == k) {
+                        //     n = 1;
+                        // }
                     }
                     if (n == 0) {
                         q.enqueue(Integer.parseInt(vertices[1]));
@@ -83,9 +83,9 @@ public class Solution {
                         if (Integer.parseInt(vertexs[0]) == j) {
                             p = 1;
                         }
-                        if (Integer.parseInt(vertexs[1]) == j) {
-                            r = 1;
-                        }
+                        // if (Integer.parseInt(vertexs[1]) == j) {
+                        //     r = 1;
+                        // }
                     }
                     if (p == 0) {
                         q.enqueue(Integer.parseInt(vertexs[0]));
