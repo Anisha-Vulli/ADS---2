@@ -53,15 +53,15 @@ No Path Found.
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at DijkstrasSP.distance(DijkstrasSP.java:118)
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:34)
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 370.0
 
 Your Output: 
-370.0
+No Path Found.
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########

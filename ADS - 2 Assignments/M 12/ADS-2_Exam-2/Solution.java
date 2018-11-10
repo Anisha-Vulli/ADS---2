@@ -28,7 +28,7 @@ public class Solution {
             String[] input = sc.nextLine().split(" ");
             int source = Integer.parseInt(input[0]);
             DijkstrasSP djk = new DijkstrasSP(ewg, source);
-            if (djk.distance(Integer.parseInt(input[1])) == 0.0) {
+            if (djk.hasPathTo(Integer.parseInt(input[1]))) {
                 System.out.println("No Path Found.");
             } else {
                 System.out.println(djk.distance(Integer.parseInt(input[1])));
