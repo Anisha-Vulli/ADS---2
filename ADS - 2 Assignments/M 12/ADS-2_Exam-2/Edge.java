@@ -121,7 +121,7 @@ public class Edge implements Comparable<Edge> {
     }
 
     public String toString() {
-        return v + "-" + w + weight;
+        return v + "-" + w + " " + weight;
     }
 }
 
