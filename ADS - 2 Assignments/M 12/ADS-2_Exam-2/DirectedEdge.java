@@ -108,17 +108,17 @@ public class EdgeWeightedDigraph {
      *
      * @param  G the edge-weighted digraph to copy
      */
-    public EdgeWeightedDigraph(EdgeWeightedDigraph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < G.V(); v++)
-            this.indegree[v] = G.indegree(v);
-        for (int v = 0; v < G.V(); v++) {
+    public EdgeWeightedDigraph(EdgeWeightedDigraph grp) {
+        this(grp.V());
+        this.E = grp.E();
+        for (int v = 0; v < grp.V(); v++)
+            this.indegree[v] = grp.indegree(v);
+        for (int v = 0; v < grp.V(); v++) {
             // reverse so that adjacency list
             //is in same order as original
             Stack<DirectedEdge> reverse
             = new Stack<DirectedEdge>();
-            for (DirectedEdge e : G.adj[v]) {
+            for (DirectedEdge e : grp.adj[v]) {
                 reverse.push(e);
             }
             for (DirectedEdge e : reverse) {
