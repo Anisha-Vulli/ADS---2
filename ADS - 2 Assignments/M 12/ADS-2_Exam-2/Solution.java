@@ -51,8 +51,9 @@ public class Solution {
             DijkstrasSP djksp = new DijkstrasSP(ewg, source1);
             for (Edge ed : djksp.pathTo(destination)) {
                 //System.out.println("hello");
+                System.out.println(ed.either());
                 if (ed.either() != Integer.parseInt(inputval[2])) {
-                    System.out.println(ed.either());
+
                     System.out.println("No Path Found.");
                     break;
                 }
