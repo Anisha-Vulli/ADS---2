@@ -52,16 +52,6 @@ public class Solution {
             int via = Integer.parseInt(inputval[2]);
             DijkstraUndirectedSP djksp = new DijkstraUndirectedSP(ewg, source1);
             if (djksp.hasPathTo(destination)) {
-                for (Edge ed : djksp.pathTo(via)) {
-                    if (ed.either() != via) {
-                        break;
-                    }
-                    if (ed == null) {
-                        System.out.println("No Path Found.");
-                        break;
-                    }
-                    //System.out.print(ed + "   ");
-                }
                 DijkstraUndirectedSP dusp = new DijkstraUndirectedSP(ewg, via);
                 for (Edge edg : dusp.pathTo(destination)) {
                     if (edg.either() != via) {
@@ -73,6 +63,10 @@ public class Solution {
                     }
                     //System.out.print(edg + "   ");
                 }
+                for (Edge ed : djksp.pathTo(via)) {
+                    //System.out.print(ed + "   ");
+                }
+                
                 System.out.println(djksp.distTo(via) + dusp.distTo(destination));
             } else {
                 System.out.println("No Path Found.");
