@@ -108,7 +108,8 @@ public class EdgeWeightedDigraph {
      *
      * @param  grp the edge-weighted digraph to copy
      */
-    public EdgeWeightedDigraph(EdgeWeightedDigraph grp) {
+    public EdgeWeightedDigraph(
+        final EdgeWeightedDigraph grp) {
         this(grp.V());
         this.E = grp.E();
         for (int v = 0; v < grp.V(); v++) {
