@@ -63,9 +63,9 @@ public class Solution {
                             m = 1;
                         }
                     }
-                    if (n == 0) {
-                        q.enqueue(Integer.parseInt(vertices[1]));
-                    }
+                    // if (n == 0) {
+                    //     q.enqueue(Integer.parseInt(vertices[1]));
+                    // }
                     if (m == 0) {
                         q.enqueue(Integer.parseInt(vertices[0]));
                     }
