@@ -9,13 +9,10 @@ Expected Output:
 5:
 
 Your Output: 
-6 vertices 6 edges
-0: 0-3 1.0  0-1 2.0  
-1: 1-2 4.0  1-4 5.0  0-1 2.0  
-2: 2-4 1.0  3-2 3.0  1-2 4.0  
-3: 3-2 3.0  0-3 1.0  
-4: 2-4 1.0  1-4 5.0  
-5:
+Exception in thread "main" java.util.MissingFormatArgumentException: Format specifier '%.5f'
+	at java.base/java.util.Formatter.format(Formatter.java:2670)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -33,17 +30,10 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-10 vertices 11 edges
-0: 0-7 221.0  0-4 78.0  
-1: 1-7 158.0  1-7 159.0  1-6 92.0  
-2: 2-9 237.0  2-5 179.0  2-4 55.0  
-3: 3-7 205.0  
-4: 4-5 191.0  2-4 55.0  0-4 78.0  
-5: 4-5 191.0  2-5 179.0  
-6: 1-6 92.0  
-7: 7-9 157.0  3-7 205.0  1-7 158.0  1-7 159.0  0-7 221.0  
-8: 
-9: 7-9 157.0  2-9 237.0
+Exception in thread "main" java.util.MissingFormatArgumentException: Format specifier '%.5f'
+	at java.base/java.util.Formatter.format(Formatter.java:2670)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
