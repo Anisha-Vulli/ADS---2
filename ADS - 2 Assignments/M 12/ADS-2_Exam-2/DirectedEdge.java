@@ -62,10 +62,11 @@ public class EdgeWeightedDigraph {
             "Number of edges in a Digraph must be nonnegative");
         }
         final int hundred = 100;
+        final float pointnum = 0.01;
         for (int i = 0; i < E; i++) {
             int v = StdRandom.uniform(V);
             int w = StdRandom.uniform(V);
-            double weight = 0.01 * StdRandom.uniform(hundred);
+            double weight = pointnum * StdRandom.uniform(hundred);
             DirectedEdge e = new DirectedEdge(v, w, weight);
             addEdge(e);
         }

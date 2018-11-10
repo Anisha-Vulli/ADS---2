@@ -54,20 +54,19 @@ Checkstyle ends with 48 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:58:42: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:58:55: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:68:29: '0.01' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:74: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:90:13: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:110:32: Parameter G should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:110:52: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:113: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:136:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:147:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:157:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:160:62: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:160:63: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:249: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:75: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:91:13: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:111:32: Parameter G should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:111:52: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:114: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:137:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:148:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:158:33: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:161:62: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:161:63: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:250: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 Audit done.
 Starting audit...
