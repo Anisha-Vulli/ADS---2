@@ -115,10 +115,13 @@ class DijkstrasSP {
      */
     public double distance(final int vertex) {
         double sum = 0;
+        if (pathTo(vertex) == null) {
+            return 0.0;
+        }
         for (Edge each : pathTo(vertex)) {
             sum += each.weight();
         }
-        System.out.println(sum);
+        //System.out.println(sum);
         return sum;
 
     }
