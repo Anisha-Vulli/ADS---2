@@ -14,7 +14,7 @@ public class Solution {
         new EdgeWeightedGraph(vertex);
         for (int i = 0; i < edge; i++) {
             String[] tokens = sc.nextLine().split(" ");
-            e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
+            e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Float.parseFloat(tokens[2]));
             ewg.addEdge(e);
         }
         String caseToGo = sc.nextLine();
