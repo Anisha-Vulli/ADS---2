@@ -72,7 +72,7 @@ public class EdgeWeightedDigraph {
         }
     }
 
-    /**  
+    /**
      * Initializes an edge-weighted digraph from the
      * specified input stream.
      * The format is the number of vertices <em>V</em>,
@@ -88,12 +88,12 @@ public class EdgeWeightedDigraph {
      */
     public EdgeWeightedDigraph(final In in) {
         this(in.readInt());
-        int E = in.readInt();
-        if (E < 0) {
+        int e = in.readInt();
+        if (e < 0) {
             throw new IllegalArgumentException(
                 "Number of edges must be nonnegative");
         }
-        for (int i = 0; i < E; i++) {
+        for (int i = 0; i < e; i++) {
             int v = in.readInt();
             int w = in.readInt();
             validateVertex(v);
