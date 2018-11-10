@@ -118,6 +118,8 @@ class DijkstrasSP {
         for (Edge each : pathTo(vertex)) {
             sum += each.weight();
         }
+        System.out.println(sum);
         return sum;
+
     }
 }

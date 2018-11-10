@@ -56,11 +56,13 @@ Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 370.0
 
 Your Output: 
+370.0
+370.0
 370.0
 ----------------------------------------
 
