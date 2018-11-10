@@ -106,13 +106,14 @@ public class EdgeWeightedDigraph {
     /**
      * Initializes a new edge-weighted digraph that is a deep copy of {@code G}.
      *
-     * @param  G the edge-weighted digraph to copy
+     * @param  grp the edge-weighted digraph to copy
      */
     public EdgeWeightedDigraph(EdgeWeightedDigraph grp) {
         this(grp.V());
         this.E = grp.E();
-        for (int v = 0; v < grp.V(); v++)
+        for (int v = 0; v < grp.V(); v++) {
             this.indegree[v] = grp.indegree(v);
+        }
         for (int v = 0; v < grp.V(); v++) {
             // reverse so that adjacency list
             //is in same order as original
@@ -155,10 +156,10 @@ public class EdgeWeightedDigraph {
      *
      * @param      v     { parameter_description }
      */
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         if (v < 0 || v >= V) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V-1));
+                "vertex " + v + " is not between 0 and " + (V - 1));
         }
     }
 
@@ -247,7 +248,7 @@ public class EdgeWeightedDigraph {
             }
         }
         return list;
-    } 
+    }
 
     /**
      * Returns a string representation of this edge

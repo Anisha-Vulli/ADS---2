@@ -52,18 +52,11 @@ Starting audit...
 Audit done.
 Checkstyle ends with 48 errors.
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:109:8: Unused @param tag for 'G'. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:111:32: Parameter grp should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:111:52: Expected @param tag for 'grp'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:114: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:137:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:148:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:158:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:161:62: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:161:63: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:250: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:138:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:149:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
