@@ -119,5 +119,9 @@ public class Edge implements Comparable<Edge> {
     public int compareTo(final Edge that) {
         return Double.compare(this.weight, that.weight);
     }
+
+    public String toString() {
+        return v + "-" + w + weight;
+    }
 }
 
