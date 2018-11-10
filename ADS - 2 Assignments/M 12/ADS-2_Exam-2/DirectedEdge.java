@@ -50,8 +50,8 @@ public class EdgeWeightedDigraph {
      * Initializes a random edge-weighted digraph with
      * {@code V} vertices and <em>E</em> edges.
      *
-     * @param  V the number of vertices
-     * @param  E the number of edges
+     * @param  ver the number of vertices
+     * @param  edg the number of edges
      * @throws IllegalArgumentException if {@code V < 0}
      * @throws IllegalArgumentException if {@code E < 0}
      */
