@@ -23,26 +23,27 @@ public class EdgeWeightedDigraph {
      * indegree[v] = indegree of vertex v.
      */
     private int[] indegree;
-    
+
     /**
      * Initializes an empty edge-weighted digraph
      * with {@code V} vertices and 0 edges.
      *
-     * @param  V the number of vertices
+     * @param  vertexcnt the number of vertices
      * @throws IllegalArgumentException if
      * {@code V < 0}
      */
     public EdgeWeightedDigraph(final int vertexcnt) {
         if (V < 0) {
-            throw new IllegalArgumentException
-            ("Number of vertices in a Digraph must be nonnegative");
+            throw new IllegalArgumentException(
+                "Number of vertices in a Digraph must be nonnegative");
         }
         this.vertex = vertexcnt;
         this.edge = 0;
         this.indegree = new int[vertex];
         adj = (Bag<DirectedEdge>[]) new Bag[vertex];
-        for (int v = 0; v < V; v++)
+        for (int v = 0; v < V; v++) {
             adj[v] = new Bag<DirectedEdge>();
+        }
     }
 
     /**
@@ -86,7 +87,10 @@ public class EdgeWeightedDigraph {
     public EdgeWeightedDigraph(final In in) {
         this(in.readInt());
         int E = in.readInt();
-        if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
+        if (E < 0) {
+            throw new IllegalArgumentException(
+                "Number of edges must be nonnegative");
+        }
         for (int i = 0; i < E; i++) {
             int v = in.readInt();
             int w = in.readInt();
