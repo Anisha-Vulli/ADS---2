@@ -52,6 +52,7 @@ public class Solution {
             for (Edge ed : djksp.pathTo(destination)) {
                 //System.out.println("hello");
                 if (ed.either() != Integer.parseInt(inputval[2])) {
+                    System.out.println(ed.either());
                     System.out.println("No Path Found.");
                     break;
                 }
