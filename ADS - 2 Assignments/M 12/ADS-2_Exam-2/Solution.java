@@ -31,11 +31,12 @@ public class Solution {
             // Other wise print "No Path Found."
             String[] input = sc.nextLine().split(" ");
             int source = Integer.parseInt(input[0]);
+            int dest = Integer.parseInt(input[1]);
             DijkstraUndirectedSP djk = new DijkstraUndirectedSP(ewg, source);
-            if (djk.hasPathTo(Integer.parseInt(input[1]))) {
-                System.out.println("No Path Found.");
+            if (djk.hasPathTo(dest)) {
+                System.out.println(djk.distTo(Integer.parseInt(input[1]))); 
             } else {
-                System.out.println(djk.distTo(Integer.parseInt(input[1])));
+                System.out.println("No Path Found.");
             }
             break;
 
