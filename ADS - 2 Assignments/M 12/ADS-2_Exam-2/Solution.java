@@ -20,11 +20,15 @@ public class Solution {
         String caseToGo = sc.nextLine();
         switch (caseToGo) {
         case "Graph":
-            System.out.format("%.5f", ewg);
+            System.out.println(ewg.toString());
             //Print the Graph Object.
             break;
 
         case "DirectedPaths":
+            String[] input = sc.nextLine().split(" ");
+            int source = Integer.parseInt(input[0]);
+            DijkstrasSP djk = new DijkstrasSP(ewg, source);
+            System.out.println((int) djk.distance(Integer.parseInt(input[1])));
             // Handle the case of DirectedPaths, where two integers are given.
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
