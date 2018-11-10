@@ -54,21 +54,20 @@ Checkstyle ends with 48 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:58:42: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:58:55: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:67:29: '0.01' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:67:54: '100' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:73: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:89:13: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:109:32: Parameter G should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:109:52: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:112: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:135:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:146:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:156:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:159:62: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:159:63: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:248: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:68:29: '0.01' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:74: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:90:13: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:110:32: Parameter G should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:110:52: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:113: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:136:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:147:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:157:33: Parameter v should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:160:62: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:160:63: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 12\ADS-2_Exam-2\DirectedEdge.java:249: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...
