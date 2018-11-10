@@ -9,8 +9,13 @@ Expected Output:
 5:
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+6 6
+0: Edge@35fb3008  Edge@7225790e  
+1: Edge@54a097cc  Edge@36f6e879  Edge@7225790e  
+2: Edge@5a61f5df  Edge@3551a94  Edge@54a097cc  
+3: Edge@3551a94  Edge@35fb3008  
+4: Edge@5a61f5df  Edge@36f6e879  
+5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -28,8 +33,17 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+10 11
+0: Edge@35fb3008  Edge@7225790e  
+1: Edge@54a097cc  Edge@36f6e879  Edge@5a61f5df  
+2: Edge@3551a94  Edge@531be3c5  Edge@52af6cff  
+3: Edge@735b478  
+4: Edge@2c9f9fb0  Edge@52af6cff  Edge@7225790e  
+5: Edge@2c9f9fb0  Edge@531be3c5  
+6: Edge@5a61f5df  
+7: Edge@2096442d  Edge@735b478  Edge@54a097cc  Edge@36f6e879  Edge@35fb3008  
+8: 
+9: Edge@2096442d  Edge@3551a94
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -37,8 +51,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -46,8 +59,7 @@ Expected Output:
 370.0
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -55,8 +67,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -65,7 +76,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:9)
+
 ----------------------------------------
 
