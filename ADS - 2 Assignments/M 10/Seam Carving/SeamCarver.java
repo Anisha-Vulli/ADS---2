@@ -182,23 +182,23 @@ public class SeamCarver {
         //return new int[0];
     }
 
-    /**
-     * Removes a horizontal seam.
-     * remove horizontal seam from current picture.
-     *
-     * @param      seam  The seam
-     */
-    public void removeHorizontalSeam(final int[] seam) {
-
-    }
-
-    /**
-     * Removes a vertical seam.
-     * remove vertical seam from current picture. 
-     *
-     * @param      seam  The seam
-     */
-    public void removeVerticalSeam(final int[] seam) {
-
-    }
+   public void removeHorizontalSeam(int[] seam) {
+		//handle exceptions
+	for(int col = 0; col < y; col++) {
+		for(int row = seam[col]; row < x- 1; row++) {
+			this.picture.set(col, row, this.picture.get(col, row + 1));
+		}
+	}
+	x--;
+	}
+	// remove vertical seam from current picture
+	//time complexity is O(width * height)
+	public void removeVerticalSeam(int[] seam) {
+	for(int row = 0; row < x; row++) {
+		for(int col = seam[row]; col < y - 1; col++) {
+		this.picture.set(col, row, this.picture.get(col + 1, row));
+		}
+	}
+	y--;
+	}
 }
