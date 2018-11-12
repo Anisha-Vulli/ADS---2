@@ -8,13 +8,6 @@ public class Quick3string {
     private static final int CUTOFF =  15;
 
     /**
-     * Constructs the object.
-     */
-    Quick3string(){
-        //Empty constructor.
-    } 
-
-    /**  
      * Rearranges the array of strings
      * in ascending order.
      * 
@@ -24,14 +17,14 @@ public class Quick3string {
      */
     public static void sort(final String[] a) {
         StdRandom.shuffle(a);
-        sort(a, 0, a.length-1, 0);
+        sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
     }
 
     /**
      * return the dth character of s,
      * -1 if d = length of s.
-     * 
+     *
      * Comlexity is 1.
      *
      * @param      s     { parameter_description }
@@ -39,7 +32,7 @@ public class Quick3string {
      *
      * @return     { description_of_the_return_value }
      */
-    private static int charAt(final String s, final int d) { 
+    private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
         if (d == s.length()) {
             return -1;
@@ -50,7 +43,7 @@ public class Quick3string {
     /**
      * 3-way string quicksort a[lo..hi].
      * starting at dth character.
-     * 
+     *
      * Complexity is ~2NlogN.
      * It avoids recomparision of long prefixes.
      *
@@ -60,7 +53,7 @@ public class Quick3string {
      * @param      d     { parameter_description }
      */
     private static void sort(final String[] a,
-        final int lo, final int hi, final int d) { 
+        final int lo, final int hi, final int d) {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
@@ -81,17 +74,17 @@ public class Quick3string {
                 i++;
             }
         }
-        sort(a, lo, lt-1, d);
+        sort(a, lo, lt - 1, d);
         if (v >= 0) {
-            sort(a, lt, gt, d+1);
+            sort(a, lt, gt, d + 1);
         }
-        sort(a, gt+1, hi, d);
+        sort(a, gt + 1, hi, d);
     }
 
     /**
      * sort from a[lo] to a[hi], starting
      * at the dth character.
-     * 
+     *
      * Complexity is N^2.
      *
      * @param      a     { parameter_description }
@@ -102,16 +95,16 @@ public class Quick3string {
     private static void insertion(final String[] a,
         final int lo, final int hi, final int d) {
         for (int i = lo; i <= hi; i++) {
-            for (int j = i; j > lo && 
-                less(a[j], a[j-1], d); j--) {
-                exch(a, j, j-1);
+            for (int j = i; j > lo &&
+                less(a[j], a[j - 1], d); j--) {
+                exch(a, j, j - 1);
             }
         }
     }
 
     /**
      * exchange a[i] and a[j].
-     * 
+     *
      * Complexity is 1.
      *
      * @param      a     { parameter_description }
@@ -158,7 +151,7 @@ public class Quick3string {
 
     /**
      * Determines if sorted.
-     * 
+     *
      * Complexity is N.
      *
      * @param      a     { parameter_description }
@@ -167,7 +160,7 @@ public class Quick3string {
      */
     private static boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {
-            if (a[i].compareTo(a[i-1]) < 0) {
+            if (a[i].compareTo(a[i - 1]) < 0) {
                 return false;
             }
         }
