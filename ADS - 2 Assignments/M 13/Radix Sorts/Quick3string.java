@@ -1,9 +1,3 @@
-
-/**
- * Import for random.
- */
-import java.util.Random;
-
 /**
  * Class for quick 3 string.
  */
