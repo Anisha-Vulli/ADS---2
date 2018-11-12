@@ -1,10 +1,26 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Arrays import.
+ */
 import java.util.Arrays;
-
-public class Solution {
-	Solution() {
-
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//Empty constructor.
 	}
+	/**
+	 * Main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
@@ -17,3 +33,4 @@ public class Solution {
 		System.out.println(Arrays.toString(arr));
 	}
 }
+
