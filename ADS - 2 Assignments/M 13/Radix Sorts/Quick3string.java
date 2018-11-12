@@ -8,6 +8,13 @@ public class Quick3string {
     private static final int CUTOFF =  15;
 
     /**
+     * Constructs the object.
+     */
+    Quick3string() {
+        //Empty constructor.
+    }
+
+    /**
      * Rearranges the array of strings
      * in ascending order.
      * 

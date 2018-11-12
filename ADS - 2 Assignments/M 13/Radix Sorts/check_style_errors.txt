@@ -1,8 +1,8 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 13\Radix Sorts\Quick3string.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 13\Radix Sorts\Quick3string.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 13\Radix Sorts\Quick3string.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 13\Radix Sorts\Quick3string.java:98:36: '&&' should be on a new line. [OperatorWrap]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 13\Radix Sorts\Quick3string.java:20: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 13\Radix Sorts\Quick3string.java:105:36: '&&' should be on a new line. [OperatorWrap]
 Audit done.
 Checkstyle ends with 4 errors.
 Starting audit...
