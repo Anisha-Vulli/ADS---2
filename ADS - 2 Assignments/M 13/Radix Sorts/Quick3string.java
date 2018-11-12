@@ -10,7 +10,7 @@ public class Quick3string {
     /**
      * Constructs the object.
      */
-    Quick3string() {
+    public Quick3string() {
         //Empty constructor.
     }
 
