@@ -7,7 +7,12 @@ public class Solution {
 		//Your code goes here...
 		TST<Integer> tst = new TST<Integer>();
 		for (int i = 0; i < words.length; i++) {
-			tst.put(words[i], i);
+			for (int j = 0; j < words[i].length(); j++) {
+				String s = words[i].substring(j);
+				if (!tst.contains(s)) {
+					tst.put(s, i);
+				}
+			}
 		}
 		String prefix = sc.nextLine();
 		for (String str : tst.keysWithPrefix(prefix)) {
