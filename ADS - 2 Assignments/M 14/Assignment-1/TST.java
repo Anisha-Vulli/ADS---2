@@ -177,7 +177,7 @@ public class TST<Value> {
      * @return the string in the symbol table that is the longest prefix
      * of {@code query},
      * or {@code null} if no such string
-     * @throws IllegalArgumentException if {@code query} is {@code null} 
+     * @throws IllegalArgumentException if {@code query} is {@code null}
      *
      * Complexity is L.
      */
