@@ -7,75 +7,70 @@ import java.util.NoSuchElementException;
  */
 public class Queue<Item> implements Iterable<Item> {
     /**
-     * integer variable.
+     * Integer variable.
      */
-    private int n;         // number of elements on queue
+    private int n;
     /**
-     * node variable.
+     * Node first.
      */
-    private Node first;    // beginning of queue
+    private Node first;
     /**
-     * node variable.
+     * Node last.
      */
-    private Node last;     // end of queue
+    private Node last;
     /**
      * Class for node.
      */
     private class Node {
         /**
-         * item variable of item type.
+         * Item variable.
          */
         private Item item;
         /**
-         * next variable of node type.
+         * Node variable.
          */
         private Node next;
     }
-
     /**
-      * Create an empty queue.
-      */
+     * Create an empty queue.
+     */
     public Queue() {
         first = null;
         last  = null;
     }
-
     /**
-      * Is the queue empty?
-      * Time Complexity : O(1).
-      * @return boolean.
-      */
+     * Is the queue empty?
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
-
     /**
-      * Return the number of items in the queue.
-      * Time Complexity : O(1).
-      * @return size.
-      */
-    public int size() {
+     * Return the number of items in the queue.
+     *
+     * @return     number of elements.
+     */
+    public  int size() {
         return n;
     }
-
     /**
-      * Return the item least recently added to the queue.
-      * Throw an exception if the queue is empty.
-      * Time Complexity : O(1).
-      * @return item type.
-      */
+     * Return the item least recently added to the queue. Throw an exception if
+     * the queue is empty.
+     *
+     * @return     first item.
+     */
     public Item peek() {
         if (isEmpty()) {
             throw new RuntimeException("Queue underflow");
         }
         return first.item;
     }
-
     /**
-      * Add the item to the queue.
-      * Time Complexity : O(1).
-      * @param item item.
-      */
+     * Add the item to the queue.
+     *
+     * @param      item  The item
+     */
     public void enqueue(final Item item) {
         Node x = new Node();
         x.item = item;
@@ -90,11 +85,11 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-      * Remove and return the item on the queue least recently added.
-      * Throw an exception if the queue is empty.
-      * Time Complexity : O(1).
-      * @return item.
-      */
+     * Remove and return the item on the queue least recently added. Throw an
+     * exception if the queue is empty.
+     *
+     * @return     item.
+     */
     public Item dequeue() {
         if (isEmpty()) {
             throw new RuntimeException("Queue underflow");
@@ -103,16 +98,16 @@ public class Queue<Item> implements Iterable<Item> {
         first = first.next;
         n--;
         if (isEmpty()) {
-            last = null;  // to avoid loitering
+            last = null;
         }
         return item;
     }
 
     /**
-      * Return string representation.
-      * Time Complexity : O(N).
-      * @return string representation.
-      */
+     * Return string representation.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
@@ -120,14 +115,12 @@ public class Queue<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-
-
     /**
-      * Return an iterator that iterates over the
-      *  items on the queue in FIFO order.
-      *  Time Complexity : O(N).
-      *  @return item array.
-      */
+     * Return an iterator that iterates over the items on the queue in FIFO
+     * order.
+     *
+     * @return     list iterator.
+     */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
@@ -136,32 +129,31 @@ public class Queue<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * node variable.
+         * Node variables.
          */
         private Node current = first;
         /**
          * Determines if it has next.
-         *Time Complexity : O(1).
+         *
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
         /**
-         * remove method.
-         * Time Complexity : O(1).
+         * remove.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * next method.
-         *Time Complexity : O(N).
-         * @return     { description_of_the_return_value }
+         * Item.
+         *
+         * @return     item.
          */
         public Item next() {
             if (!hasNext()) {
-             throw new NoSuchElementException();
+                throw new NoSuchElementException();
             }
             Item item = current.item;
             current = current.next;
@@ -169,5 +161,6 @@ public class Queue<Item> implements Iterable<Item> {
         }
     }
 }
+
 
 
