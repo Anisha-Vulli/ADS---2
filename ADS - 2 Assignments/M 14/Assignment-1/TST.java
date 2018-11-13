@@ -5,13 +5,13 @@
  */
 public class TST<Value> {
     /**
-     * { var_description }.
+     * size.
      */
-    private int n;              // size
+    private int n;
     /**
-     * { var_description }.
+     * root of TST.
      */
-    private Node<Value> root;   // root of TST
+    private Node<Value> root;
     /**
      * Class for node.
      *
@@ -21,16 +21,15 @@ public class TST<Value> {
         /**
          * c.
          */
-        private char c;                        // character
+        private char c;
         /**
-         * Node.
+         * left, middle, and right subtries.
          */
         private Node<Value> left, mid, right;
-        // left, middle, and right subtries
         /**
-         * val.
+         * value associated with string.
          */
-        private Value val;                     // value associated with string
+        private Value val;
     }
 
     /**
@@ -52,6 +51,8 @@ public class TST<Value> {
      * @return {@code true} if this symbol table contains {@code key} and
      *     {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * 
+     * Complexity is 1.
      */
     public boolean contains(final String key) {
         if (key == null) {
@@ -67,7 +68,9 @@ public class TST<Value> {
      * @return the value associated with the given key
      * if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
-     * time complexity - L+logN.
+     *
+     * Complexity is l + log N.
+     *
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(final String key) {
@@ -86,11 +89,13 @@ public class TST<Value> {
     }
     /**
      * get.
+     * 
+     * Complexity is L.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
      * @param      d     { parameter_description }
-     * time complexity - L+logN.
+     *
      * @return     { description_of_the_return_value }
      */
     private Node<Value> get(final Node<Value> x,
@@ -99,7 +104,8 @@ public class TST<Value> {
             return null;
         }
         if (key.length() == 0) {
-            throw new IllegalArgumentException("key must have length >= 1");
+            throw new IllegalArgumentException(
+                "key must have length >= 1");
         }
         char c = key.charAt(d);
         if      (c < x.c) {
@@ -124,7 +130,8 @@ public class TST<Value> {
      */
     public void put(final String key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException("calls put() with null key");
+            throw new IllegalArgumentException(
+                "calls put() with null key");
         }
         if (!contains(key)) {
             n++;
@@ -133,6 +140,8 @@ public class TST<Value> {
     }
     /**
      * put.
+     * 
+     * Complexity is L.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -169,6 +178,9 @@ public class TST<Value> {
      * of {@code query},
      * or {@code null} if no such string
      * @throws IllegalArgumentException if {@code query} is {@code null}
+     * 
+     * 
+     * Complexity is L.
      */
     public String longestPrefixOf(final String query) {
         if (query == null) {
@@ -199,9 +211,12 @@ public class TST<Value> {
     }
 
     /**
-     * Returns all keys in the symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
+     * Returns all keys in the symbol table
+     * as an {@code Iterable}.
+     * To iterate over all of the keys
+     * in the symbol table named {@code st},
+     * use the foreach notation: {@code
+     * for (Key key : st.keys())}.
      * @return all keys in the symbol table as an {@code Iterable}
      */
     public Iterable<String> keys() {
@@ -216,6 +231,8 @@ public class TST<Value> {
      * @return all of the keys in the set that start with {@code prefix},
      *     as an iterable
      * @throws IllegalArgumentException if {@code prefix} is {@code null}
+     * 
+     * Complexity is L. in worst case.
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
         if (prefix == null) {
@@ -235,6 +252,8 @@ public class TST<Value> {
     }
     /**
      * collect.
+     * 
+     * Complexity is L.
      *
      * @param      x       { parameter_description }
      * @param      prefix  The prefix
