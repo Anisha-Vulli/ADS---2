@@ -51,7 +51,7 @@ public class TST<Value> {
      * @return {@code true} if this symbol table contains {@code key} and
      *     {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
-     * 
+     *
      * Complexity is 1.
      */
     public boolean contains(final String key) {
@@ -89,7 +89,7 @@ public class TST<Value> {
     }
     /**
      * get.
-     * 
+     *
      * Complexity is L.
      *
      * @param      x     { parameter_description }
@@ -140,7 +140,7 @@ public class TST<Value> {
     }
     /**
      * put.
-     * 
+     *
      * Complexity is L.
      *
      * @param      x     { parameter_description }
@@ -177,9 +177,8 @@ public class TST<Value> {
      * @return the string in the symbol table that is the longest prefix
      * of {@code query},
      * or {@code null} if no such string
-     * @throws IllegalArgumentException if {@code query} is {@code null}
-     * 
-     * 
+     * @throws IllegalArgumentException if {@code query} is {@code null} 
+     *
      * Complexity is L.
      */
     public String longestPrefixOf(final String query) {
@@ -231,7 +230,7 @@ public class TST<Value> {
      * @return all of the keys in the set that start with {@code prefix},
      *     as an iterable
      * @throws IllegalArgumentException if {@code prefix} is {@code null}
-     * 
+     *
      * Complexity is L. in worst case.
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
@@ -252,7 +251,7 @@ public class TST<Value> {
     }
     /**
      * collect.
-     * 
+     *
      * Complexity is L.
      *
      * @param      x       { parameter_description }

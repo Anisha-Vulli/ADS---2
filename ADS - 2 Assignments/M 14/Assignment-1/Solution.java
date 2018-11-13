@@ -5,13 +5,19 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty constructor.
+    }
     /**
      * Main function.
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         String[] words = loadWords();
         Scanner sc = new Scanner(System.in);
         //Your code goes here...
