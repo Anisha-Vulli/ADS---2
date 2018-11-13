@@ -24,7 +24,7 @@ public final class Solution {
         TST<Integer> tst = new TST<Integer>();
         /**
          * Putting the words into tst.
-         * 
+         *
          * Complexity is N^2.
          */
         for (int i = 0; i < words.length; i++) {
@@ -54,3 +54,5 @@ public final class Solution {
         return words;
     }
 }
+
+
