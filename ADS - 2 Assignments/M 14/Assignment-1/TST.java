@@ -1,83 +1,45 @@
-/******************************************************************************
- *  Compilation:  javac TST.java
- *  Execution:    java TST < words.txt
- *  Dependencies: StdIn.java
- *  Data files:   https://algs4.cs.princeton.edu/52trie/shellsST.txt
- *
- *  Symbol table with string keys, implemented using a ternary search
- *  trie (TST).
- *
- *
- *  % java TST < shellsST.txt
- *  keys(""):
- *  by 4
- *  sea 6
- *  sells 1
- *  she 0
- *  shells 3
- *  shore 7
- *  the 5
- *
- *  longestPrefixOf("shellsort"):
- *  shells
- *
- *  keysWithPrefix("shor"):
- *  shore
- *
- *  keysThatMatch(".he.l."):
- *  shells
- *
- *  % java TST
- *  theory the now is the time for all good men
- *
- *  Remarks
- *  --------
- *    - can't use a key that is the empty string ""
- *
- ******************************************************************************/
-
-
 /**
- *  The {@code TST} class represents an symbol table of key-value
- *  pairs, with string keys and generic values.
- *  It supports the usual <em>put</em>, <em>get</em>, <em>contains</em>,
- *  <em>delete</em>, <em>size</em>, and <em>is-empty</em> methods.
- *  It also provides character-based methods for finding the string
- *  in the symbol table that is the <em>longest prefix</em> of a given prefix,
- *  finding all strings in the symbol table that <em>start with</em> a given prefix,
- *  and finding all strings in the symbol table that <em>match</em> a given pattern.
- *  A symbol table implements the <em>associative array</em> abstraction:
- *  when associating a value with a key that is already in the symbol table,
- *  the convention is to replace the old value with the new value.
- *  Unlike {@link java.util.Map}, this class uses the convention that
- *  values cannot be {@code null}—setting the
- *  value associated with a key to {@code null} is equivalent to deleting the key
- *  from the symbol table.
- *  <p>
- *  This implementation uses a ternary search trie.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/52trie">Section 5.2</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * Class for tst.
+ *
+ * @param      <Value>  The value
  */
 public class TST<Value> {
-    private int n;              // size
-    private Node<Value> root;   // root of TST
+    /**
+     * size.
+     */
+    private int n;
+    /**
+     * root of TST.
+     */
+    private Node<Value> root;
 
     private static class Node<Value> {
-        private char c;                        // character
-        private Node<Value> left, mid, right;  // left, middle, and right subtries
-        private Value val;                     // value associated with string
+        /**
+         * character.
+         */
+        private char c;
+        /**
+         * left, middle, and right subtries.
+         */
+        private Node<Value> left, mid, right;
+        /**
+         * value associated with string.
+         */
+        private Value val;
     }
 
     /**
      * Initializes an empty string symbol table.
      */
     public TST() {
+        //Empty constructor.
     }
 
     /**
-     * Returns the number of key-value pairs in this symbol table.
-     * @return the number of key-value pairs in this symbol table
+     * Returns the number of key-value
+     * pairs in this symbol table.
+     * @return the number of key-value
+     * pairs in this symbol table
      */
     public int size() {
         return n;
@@ -86,13 +48,19 @@ public class TST<Value> {
     /**
      * Does this symbol table contain the given key?
      * @param key the key
-     * @return {@code true} if this symbol table contains {@code key} and
+     * @return {@code true} if this symbol
+     * table contains {@code key} and
      *     {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @throws IllegalArgumentException if
+     * {@code key} is {@code null}
+     * 
+     * 
+     * Complexity is N.
      */
-    public boolean contains(String key) {
+    public boolean contains(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -100,29 +68,56 @@ public class TST<Value> {
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *     and {@code null} if the key is not in the symbol table
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @return the value associated with
+     * the given key if the key is in the symbol table
+     *     and {@code null} if the key is
+     *     not in the symbol table
+     * @throws IllegalArgumentException if
+     * {@code key} is {@code null}
      */
-    public Value get(String key) {
+    public Value get(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("calls get() with null argument");
+            throw new IllegalArgumentException(
+                "calls get() with null argument");
         }
-        if (key.length() == 0) throw new IllegalArgumentException("key must have length >= 1");
+        if (key.length() == 0) {
+            throw new IllegalArgumentException(
+                "key must have length >= 1");
+        }
         Node<Value> x = get(root, key, 0);
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         return x.val;
     }
 
-    // return subtrie corresponding to given key
-    private Node<Value> get(Node<Value> x, String key, int d) {
-        if (x == null) return null;
-        if (key.length() == 0) throw new IllegalArgumentException("key must have length >= 1");
+    /**
+     * return subtrie corresponding to given key. 
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node<Value> get(final Node<Value> x, String key, int d) {
+        Node<Value> y = x;
+        if (x == null) {
+            return null;
+        }
+        if (key.length() == 0) {
+            throw new IllegalArgumentException("key must have length >= 1");
+        }
         char c = key.charAt(d);
-        if      (c < x.c)              return get(x.left,  key, d);
-        else if (c > x.c)              return get(x.right, key, d);
-        else if (d < key.length() - 1) return get(x.mid,   key, d+1);
-        else                           return x;
+        if (c < x.c) {
+            return get(x.left,  key,  d);
+        } else if (c > x.c) {
+            return get(x.right, key, d);
+        } else if (d < key.length() - 1) {
+            return get(x.mid,   key, d+1);
+        } else {
+            return y;
+        }
     }
 
     /**
