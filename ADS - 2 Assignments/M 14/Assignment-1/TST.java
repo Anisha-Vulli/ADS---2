@@ -136,17 +136,18 @@ public class TST<Value> {
         root = put(root, key, val, 0);
     }
 
-    private Node<Value> put(Node<Value> x, String key, Value val, int d) {
+    private Node<Value> put(final Node<Value> x, String key, Value val, int d) {
+        Node<Value> y = x;
         char c = key.charAt(d);
-        if (x == null) {
-            x = new Node<Value>();
-            x.c = c;
+        if (y == null) {
+            y = new Node<Value>();
+            y.c = c;
         }
-        if      (c < x.c)               x.left  = put(x.left,  key, val, d);
-        else if (c > x.c)               x.right = put(x.right, key, val, d);
-        else if (d < key.length() - 1)  x.mid   = put(x.mid,   key, val, d+1);
-        else                            x.val   = val;
-        return x;
+        if      (c < y.c)               y.left  = put(y.left,  key, val, d);
+        else if (c > y.c)               y.right = put(y.right, key, val, d);
+        else if (d < key.length() - 1)  y.mid   = put(y.mid,   key, val, d+1);
+        else                            y.val   = val;
+        return y;
     }
 
     /**
