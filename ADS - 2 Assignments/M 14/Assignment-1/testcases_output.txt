@@ -25,7 +25,7 @@ ABSTRACTIONS
 ABSURD
 
 Your Output: 
-
+TABS
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -163,7 +163,9 @@ ADVOCATING
 ADY
 
 Your Output: 
-
+BAD
+DAD
+HAD
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -212,7 +214,7 @@ SUBTYPE
 SUBVERT
 
 Your Output: 
-SUB
+
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -761,6 +763,6 @@ REXAMPLE
 REY
 
 Your Output: 
-RE
+ARE
 ----------------------------------------
 

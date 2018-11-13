@@ -10,7 +10,7 @@ public class Solution {
 			tst.put(words[i], i);
 		}
 		String prefix = sc.nextLine();
-		for (String str : tst.keysThatMatch(prefix)) {
+		for (String str : tst.keysThatMatch("." + prefix)) {
 			System.out.println(str);
 		}
 	}
