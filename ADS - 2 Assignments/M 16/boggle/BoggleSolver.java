@@ -33,11 +33,11 @@ public class BoggleSolver {
 
         for (int row = 0; row < board.rows(); row++) {
             for (int col = 0; col < board.cols(); col++) {
-                if (marked[i][j]) {
+                if (marked[row][col]) {
                     continue;
                 }
 
-                marked[i][j] = true;
+                marked[row][col] = true;
                 letter += board.getLetter(row, col) + "";
                 dfs(board, list, row, col, marked, letter);
             }
