@@ -20,6 +20,8 @@ public class DijkstraUndirectedSP {
      * vertex {@code s} to every
      * other vertex in the edge-weighted graph
      * {@code G}.
+     * 
+     * Complexity is E + V.
      *
      * @param  grp the edge-weighted digraph
      * @param  s the source vertex
@@ -63,6 +65,8 @@ public class DijkstraUndirectedSP {
 
     /**
      * relax edge e and update pq if changed.
+     * 
+     * Complexity is log E.
      *
      * @param      e     { parameter_description }
      * @param      v     { parameter_description }
@@ -92,6 +96,8 @@ public class DijkstraUndirectedSP {
      *         POSITIVE_INFINITY} if no such path
      * @throws IllegalArgumentException unless
      * {@code 0 <= v < V}
+     * 
+     * Complexity is 1.
      */
     public double distTo(final int v) {
         validateVertex(v);
@@ -102,6 +108,9 @@ public class DijkstraUndirectedSP {
      * Returns true if there is a path between
      * the source vertex {@code s} and
      * vertex {@code v}.
+     *
+     *
+     *Complexity is 1.
      *
      * @param  v the destination vertex
      * @return {@code true} if there is a path
@@ -126,6 +135,8 @@ public class DijkstraUndirectedSP {
      *         {@code null} if no such path
      * @throws IllegalArgumentException unless
      * {@code 0 <= v < V}
+     * 
+     * Complexity is E log V.
      */
     public Iterable<Edge> pathTo(final int v) {
         validateVertex(v);
@@ -200,9 +211,17 @@ public class DijkstraUndirectedSP {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+
+    /**
+     * Complexity is 1.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         int V = distTo.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException(
+                "vertex " + v + " is not between 0 and " + (V-1));
+        }
     }
 }
