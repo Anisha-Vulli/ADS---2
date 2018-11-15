@@ -318,8 +318,10 @@ public class TST<Value> {
     }
 
     public boolean hasPrefix(final String str) {
-        Node x = get(root, str, 0);
-        return x != null;
+        if (get(str) != null) {
+            return true;
+        }
+        return false;
     }
 }
 
