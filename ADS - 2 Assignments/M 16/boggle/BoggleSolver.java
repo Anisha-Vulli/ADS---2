@@ -1,13 +1,13 @@
 import java.util.*;
 public class BoggleSolver {
-    private TST<Integer> tst;
+    TrieST tst;
     // Initializes the data structure using the given array of strings as the dictionary.
     // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
     public BoggleSolver(String[] dictionary) {
         //System.out.println("constructor ki vachindi");
-        tst = new TST<Integer>();
+        tst = new TrieST();
         for (int i = 0; i < dictionary.length; i++) {
-            tst.put(dictionary[i], i);
+            tst.add(dictionary[i]);
         }
     }
 
@@ -19,8 +19,6 @@ public class BoggleSolver {
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
                 boolean[][] marked = new boolean[board.rows()][board.cols()];
-                //marked[i][j] = true;
-                //String letter = "" + board.getLetter(i, j);
                 dfs(board, list, i, j, marked, "");
             }
         }
@@ -28,7 +26,6 @@ public class BoggleSolver {
     }
 
     public void dfs(BoggleBoard board, ArrayList<String> list, int i, int j, boolean[][] marked, String letter) {
-        //System.out.println("dfs ki vachindi");
         //System.out.println(letter);
         if (marked[i][j]) {
             return;
@@ -43,18 +40,14 @@ public class BoggleSolver {
         if (!tst.hasPrefix(word)) {
             return;
         }
-        if (tst.contains(word) && letter.length() > 2) {
-            // if (!list.contains(word)) {
-                   
-            // }
-
-            list.add(word);
+        if (tst.contains(word) && word.length() > 2) {
+            if (!list.contains(word)) {
+               list.add(word);   
+            }
         }
-
-        
         marked[i][j] = true;
-        for (int row = -1; row < 1; row++) {
-            for (int col = -1; col < 1; col++) {
+        for (int row = -1; row <= 1; row++) {
+            for (int col = -1; col <= 1; col++) {
                 if (row == 0 && col == 0) {
                     continue;
                 }
@@ -74,19 +67,26 @@ public class BoggleSolver {
     public int scoreOf(String word) {
         //System.out.println("Score techukundi");
         if (tst.contains(word)) {
-            if (word.length() == 4 || word.length() == 3) {
-            return 1;
-            } else if (word.length() == 5) {
+            switch (word.length()) {
+            case 0:
+            case 1:
+            case 2:
+                return 0;
+            case 3:
+            case 4:
+                return 1;
+            case 5:
                 return 2;
-            } else if (word.length() == 6) {
+            case 6:
                 return 3;
-            } else if (word.length() == 7) {
+            case 7:
                 return 5;
-            } else if (word.length() >= 8) {
+            default:
                 return 11;
             }
+        } else {
+            return 0;
         }
-        return 0;
     }
 
 }
