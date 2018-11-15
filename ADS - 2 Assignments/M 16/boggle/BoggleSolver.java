@@ -38,7 +38,7 @@ public class BoggleSolver {
                 }
 
                 marked[i][j] = true;
-                letter += board.getLetter(row, col);
+                letter += board.getLetter(row, col) + "";
                 dfs(board, list, row, col, marked, letter);
             }
         }
