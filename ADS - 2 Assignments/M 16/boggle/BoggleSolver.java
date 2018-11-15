@@ -21,7 +21,7 @@ public class BoggleSolver {
                 dfs(board, list, i, j, marked, letter);
             }
         }
-        return new Bag<String>();
+        return list;
     }
 
     public void dfs(BoggleBoard board, ArrayList<String> list, int i, int j, boolean[][] marked, String letter) {
