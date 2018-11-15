@@ -14,13 +14,14 @@ public class BoggleSolver {
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
     public Iterable<String> getAllValidWords(BoggleBoard board) {
         //System.out.println("Valid words loki vachindi");
-        boolean[][] marked = new boolean[board.rows()][board.cols()];
+        
         ArrayList<String> list = new ArrayList<String>();
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
-                marked[i][j] = true;
-                String letter = "" + board.getLetter(i, j);
-                dfs(board, list, i, j, marked, letter);
+                boolean[][] marked = new boolean[board.rows()][board.cols()];
+                //marked[i][j] = true;
+                //String letter = "" + board.getLetter(i, j);
+                dfs(board, list, i, j, marked, "");
             }
         }
         return list;
