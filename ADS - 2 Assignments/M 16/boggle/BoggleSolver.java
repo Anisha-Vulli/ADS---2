@@ -40,15 +40,18 @@ public class BoggleSolver {
         } else {
             word += ch;
         }
-        if (tst.contains(word) && letter.length() > 2) {
-            if (!list.contains(word)) {
-                list.add(word);   
-            }
-        }
-
         if (!tst.hasPrefix(word)) {
             return;
         }
+        if (tst.contains(word) && letter.length() > 2) {
+            // if (!list.contains(word)) {
+                   
+            // }
+
+            list.add(word);
+        }
+
+        
         marked[i][j] = true;
         for (int row = -1; row < 1; row++) {
             for (int col = -1; col < 1; col++) {
@@ -57,7 +60,7 @@ public class BoggleSolver {
                 }
 
                 if ((i + row >= 0) && (i + row < board.rows()) && (j + col >= 0) && (j + col < board.cols())) {
-                    dfs(board, list, i + row, i + col, marked, letter);
+                    dfs(board, list, i + row, j + col, marked, word);
                 }
                 
             }

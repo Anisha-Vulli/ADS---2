@@ -67,11 +67,13 @@ Expected Output:
 Score = 155
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+QUIS
+Score techukundi
+TENS
+Score techukundi
+TENS
+Score techukundi
+Score = 3
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -95,11 +97,725 @@ Expected Output:
 Score = 147
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+QUQUQUQU
+Score techukundi
+QUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQU
+Score techukundi
+QUQUQUQUQUQUQU
+Score techukundi
+Score = 3453
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -110,16 +826,12 @@ Your Output:
 Score = 0
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -143,11 +855,7 @@ Expected Output:
 Score = 2
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -155,11 +863,7 @@ Expected Output:
 Score = 1
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -167,11 +871,7 @@ Expected Output:
 Score = 14
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -179,11 +879,27 @@ Expected Output:
 Score = 11
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+TOOT
+Score techukundi
+Score = 10
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -191,11 +907,7 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -203,11 +915,7 @@ Expected Output:
 Score = 23
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -215,11 +923,7 @@ Expected Output:
 Score = 24
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -227,11 +931,7 @@ Expected Output:
 Score = 30
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at BoggleSolver.dfs(BoggleSolver.java:33)
-	at BoggleSolver.dfs(BoggleSolver.java:60)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 24: Passed ##########
