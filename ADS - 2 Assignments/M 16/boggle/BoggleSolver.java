@@ -26,7 +26,9 @@ public class BoggleSolver {
 
     public void dfs(BoggleBoard board, ArrayList<String> list, int i, int j, boolean[][] marked, String letter) {
         if (tst.contains(letter) && letter.length() > 2) {
-            list.add(letter);
+            if (!list.contains(letter)) {
+                list.add(letter);   
+            }
         }
 
         for (int row = 0; row < board.rows(); row++) {
