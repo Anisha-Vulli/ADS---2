@@ -40,13 +40,13 @@ public class BoggleSolver {
         } else {
             word += ch;
         }
-        if (tst.contains(letter) && letter.length() > 2) {
-            if (!list.contains(letter)) {
-                list.add(letter);   
+        if (tst.contains(word) && letter.length() > 2) {
+            if (!list.contains(word)) {
+                list.add(word);   
             }
         }
 
-        if (!tst.hasPrefix(letter)) {
+        if (!tst.hasPrefix(word)) {
             return;
         }
         marked[i][j] = true;

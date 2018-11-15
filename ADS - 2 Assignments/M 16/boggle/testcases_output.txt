@@ -3,12 +3,7 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -16,12 +11,7 @@ Expected Output:
 Score = 84
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -29,12 +19,7 @@ Expected Output:
 Score = 1
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -42,12 +27,7 @@ Expected Output:
 Score = 2
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -55,12 +35,7 @@ Expected Output:
 Score = 3
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -68,12 +43,7 @@ Expected Output:
 Score = 1000
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -81,12 +51,7 @@ Expected Output:
 Score = 400
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -94,12 +59,7 @@ Expected Output:
 Score = 7
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -107,10 +67,9 @@ Expected Output:
 Score = 155
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -120,12 +79,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -133,12 +87,7 @@ Expected Output:
 Score = 68
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -146,10 +95,9 @@ Expected Output:
 Score = 147
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -159,12 +107,7 @@ Expected Output:
 Score = 687
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -172,10 +115,9 @@ Expected Output:
 Score = 0
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -185,12 +127,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -198,12 +135,7 @@ Expected Output:
 Score = 129
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -211,10 +143,9 @@ Expected Output:
 Score = 2
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -224,10 +155,9 @@ Expected Output:
 Score = 1
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -237,10 +167,9 @@ Expected Output:
 Score = 14
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -250,10 +179,9 @@ Expected Output:
 Score = 11
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -263,10 +191,9 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -276,10 +203,9 @@ Expected Output:
 Score = 23
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -289,10 +215,9 @@ Expected Output:
 Score = 24
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -302,25 +227,19 @@ Expected Output:
 Score = 30
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BoggleSolver.dfs(BoggleSolver.java:33)
+	at BoggleSolver.dfs(BoggleSolver.java:60)
 	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
 
-########## Testcase 24: Failed ##########
+########## Testcase 24: Passed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 25: Failed ##########
@@ -328,12 +247,7 @@ Expected Output:
 Score = 26539
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 26: Failed ##########
@@ -341,12 +255,7 @@ Expected Output:
 Score = 19797
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 27: Failed ##########
@@ -354,12 +263,7 @@ Expected Output:
 Score = 27325
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 28: Failed ##########
@@ -367,12 +271,7 @@ Expected Output:
 Score = 32175
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:82)
-	at TST.contains(TST.java:62)
-	at BoggleSolver.dfs(BoggleSolver.java:43)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:24)
-	at Solution.main(Solution.java:33)
+Score = 0
 ----------------------------------------
 
 ########## Testcase 29: Passed ##########
