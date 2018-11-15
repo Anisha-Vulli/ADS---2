@@ -31,6 +31,10 @@ public class BoggleSolver {
             }
         }
 
+        if (!tst.hasPrefix(letter)) {
+            return;
+        }
+
         for (int row = 0; row < board.rows(); row++) {
             for (int col = 0; col < board.cols(); col++) {
                 if (marked[row][col]) {

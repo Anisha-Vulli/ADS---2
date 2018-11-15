@@ -59,7 +59,7 @@ Expected Output:
 Score = 7
 
 Your Output: 
-Score = 2
+Score = 0
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -75,7 +75,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Score = 35
+Score = 0
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -83,7 +83,7 @@ Expected Output:
 Score = 68
 
 Your Output: 
-Score = 2
+Score = 0
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -115,7 +115,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Score = 35
+Score = 0
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
