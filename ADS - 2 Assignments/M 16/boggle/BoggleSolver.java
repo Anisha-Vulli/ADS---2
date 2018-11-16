@@ -67,26 +67,31 @@ public class BoggleSolver {
     public int scoreOf(String word) {
         //System.out.println("Score techukundi");
         if (tst.contains(word)) {
-            switch (word.length()) {
-            case 0:
-            case 1:
-            case 2:
+
+            if (word.length() >= 0 && word.length() <= 2) {
                 return 0;
-            case 3:
-            case 4:
+            }
+            if (word.length() >= 3 && word.length() <= 4) {
                 return 1;
-            case 5:
+            }
+
+            if (word.length() == 5) {
                 return 2;
-            case 6:
+            }
+
+            if (word.length() == 6) {
                 return 3;
-            case 7:
+            }
+
+            if (word.length() == 7) {
                 return 5;
-            default:
+            }
+
+            if (word.length() >= 8) {
                 return 11;
             }
-        } else {
-            return 0;
-        }
+        } 
+        return 0;
     }
 
 }
