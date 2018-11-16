@@ -1,6 +1,14 @@
+/**
+ * Class for trie st.
+ */
 class TrieST {
-    private static final int R = 26;        // extended ASCII
-
+    /**
+     * extended ASCII.
+     */
+    private static final int R = 26;
+    /**
+     * 
+     */
     private Node root;      // root of trie
     private int N;          // number of keys in trie
 

@@ -1,9 +1,25 @@
-import java.util.*;
+/**
+ * Array list import.
+ */
+import java.util.ArrayList;
+/**
+ * Class for boggle solver.
+ */
 public class BoggleSolver {
-    TrieST tst;
-    // Initializes the data structure using the given array of strings as the dictionary.
-    // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-    public BoggleSolver(String[] dictionary) {
+    /**
+     * TrieST object.
+     */
+    private TrieST tst;
+    // Initializes the data structure using the given array
+    // of strings as the dictionary.
+    // (You can assume each word in the dictionary
+    // contains only the uppercase letters A through Z.)
+    /**
+     * Constructs the object.
+     *
+     * @param      dictionary  The dictionary
+     */
+    public BoggleSolver(final String[] dictionary) {
         //System.out.println("constructor ki vachindi");
         tst = new TrieST();
         for (int i = 0; i < dictionary.length; i++) {
@@ -11,21 +27,30 @@ public class BoggleSolver {
         }
     }
 
-    // Returns the set of all valid words in the given Boggle board, as an Iterable.
-    public Iterable<String> getAllValidWords(BoggleBoard board) {
-        //System.out.println("Valid words loki vachindi");
-        
+    // Returns the set of all valid words in the
+    //given Boggle board, as an Iterable.
+    
+    /**
+     * Gets all valid words.
+     *
+     * @param      board  The board
+     *
+     * @return     All valid words.
+     */
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
         ArrayList<String> list = new ArrayList<String>();
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
-                boolean[][] marked = new boolean[board.rows()][board.cols()];
+                boolean[][] marked =
+                new boolean[board.rows()][board.cols()];
                 dfs(board, list, i, j, marked, "");
             }
         }
         return list;
     }
 
-    public void dfs(BoggleBoard board, ArrayList<String> list, int i, int j, boolean[][] marked, String letter) {
+    public void dfs(final BoggleBoard board, final ArrayList<String> list,
+        final int i, final int j, final boolean[][] marked, final String letter) {
         //System.out.println(letter);
         if (marked[i][j]) {
             return;
@@ -52,7 +77,8 @@ public class BoggleSolver {
                     continue;
                 }
 
-                if ((i + row >= 0) && (i + row < board.rows()) && (j + col >= 0) && (j + col < board.cols())) {
+                if ((i + row >= 0) && (i + row < board.rows())
+                    && (j + col >= 0) && (j + col < board.cols())) {
                     dfs(board, list, i + row, j + col, marked, word);
                 }
                 
@@ -64,7 +90,7 @@ public class BoggleSolver {
 
     // Returns the score of the given word if it is in the dictionary, zero otherwise.
     // (You can assume the word contains only the uppercase letters A through Z.)
-    public int scoreOf(String word) {
+    public int scoreOf(final String word) {
         //System.out.println("Score techukundi");
         if (tst.contains(word)) {
 
