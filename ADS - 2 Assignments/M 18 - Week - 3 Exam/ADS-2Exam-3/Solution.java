@@ -181,9 +181,9 @@ class T9 {
         // your code goes here
         ArrayList<String> wordlist = new ArrayList<>();
         bst.put("a", 2); bst.put("b", 2); bst.put("c", 2);
-        bst.put("d", 3); bst.put("e", 3); bst.put("f", 3);
-        bst.put("g", 4); bst.put("h", 4); bst.put("i", 4);
-        bst.put("j", 5); bst.put("k", 5); bst.put("l", 5);
+        bst.put("d", 2 + 1); bst.put("e", 2 + 1); bst.put("f", 2 + 1);
+        bst.put("g", 2 + 2); bst.put("h", 2 + 2); bst.put("i", 2 + 2);
+        bst.put("j", 2 + 2 + 1); bst.put("k", 2 + 2 + 1); bst.put("l", 2 + 2 + 1);
         bst.put("m", 6); bst.put("n", 6); bst.put("o", 6);
         bst.put("p", 7); bst.put("q", 7); bst.put("r", 7); bst.put("s", 7);
         bst.put("t", 8); bst.put("u", 8); bst.put("v", 8);
