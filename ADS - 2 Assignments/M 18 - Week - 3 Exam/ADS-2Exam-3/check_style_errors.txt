@@ -2,12 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\BinarySearchST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\BinarySearchST.java:98:29: Parameter key should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\BinarySearchST.java:247:24: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\BinarySearchST.java:251:41: '4' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\BinarySearchST.java:516:17: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

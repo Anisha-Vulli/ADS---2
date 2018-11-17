@@ -95,7 +95,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException
      * if {@code key} is {@code null}
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException(
                 "argument to contains() is null");
@@ -244,11 +244,12 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
 
         n--;
-        keys[n] = null;// to avoid loitering
+        keys[n] = null; // to avoid loitering
         vals[n] = null;
 
         // resize if 1/4 full
-        if (n > 0 && n == keys.length / 4) {
+        final int four = 4;
+        if (n > 0 && n == keys.length / four) {
             resize(keys.length / 2);
         }
 
@@ -512,8 +513,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
             }
         }
         for (int i = 0; i < size(); i++) {
-            if (keys[i].compareTo
-                (select(rank(keys[i]))) != 0) {
+            if (keys[i].compareTo(
+                select(rank(keys[i]))) != 0) {
                 return false;
             }
         }
