@@ -188,12 +188,11 @@ Audit done.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:16:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:114:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:127: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:149:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:149:15: Parameter st should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:173: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:134: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:156:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:156:15: Parameter st should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:180: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.

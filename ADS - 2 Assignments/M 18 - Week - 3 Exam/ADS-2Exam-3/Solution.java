@@ -111,6 +111,13 @@ public class Solution {
         return in.readAllStrings();
     }
 
+    /**
+     * Loads a dictionary.
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static BinarySearchST<String, Integer> loadDictionary(
         final String file) {
         BinarySearchST<String, Integer>  st
