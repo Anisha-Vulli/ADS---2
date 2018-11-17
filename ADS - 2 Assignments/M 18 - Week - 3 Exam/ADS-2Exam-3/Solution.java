@@ -170,7 +170,7 @@ class T9 {
         for (int i = 0; i < k; i++) {
             int freq = maxpq.delMax();
             for (String s : words) {
-                maxpq.insert(tst.get(s));
+                //maxpq.insert(tst.get(s));
                 if (freq == tst.get(s)) {
                     wordlist.add(s);
                 }
