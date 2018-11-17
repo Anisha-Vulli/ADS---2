@@ -183,11 +183,16 @@ class T9 {
         bst.put("a", 2); bst.put("b", 2); bst.put("c", 2);
         bst.put("d", 2 + 1); bst.put("e", 2 + 1); bst.put("f", 2 + 1);
         bst.put("g", 2 + 2); bst.put("h", 2 + 2); bst.put("i", 2 + 2);
-        bst.put("j", 2 + 2 + 1); bst.put("k", 2 + 2 + 1); bst.put("l", 2 + 2 + 1);
-        bst.put("m", 6); bst.put("n", 6); bst.put("o", 6);
-        bst.put("p", 7); bst.put("q", 7); bst.put("r", 7); bst.put("s", 7);
-        bst.put("t", 8); bst.put("u", 8); bst.put("v", 8);
-        bst.put("w", 9); bst.put("x", 9); bst.put("y", 9); bst.put("z", 9);
+        bst.put("j", 2 + 2 + 1); bst.put("k", 2 + 2 + 1);
+        bst.put("l", 2 + 2 + 1);
+        bst.put("m", 2 + 2 + 2); bst.put("n", 2 + 2 + 2);
+        bst.put("o", 2 + 2 + 2);
+        bst.put("p", 2 + 2 + 2 + 1); bst.put("q", 2 + 2 + 2 + 1);
+        bst.put("r", 2 + 2 + 2 + 1); bst.put("s", 2 + 2 + 2 + 1);
+        bst.put("t", 2 * 2 * 2); bst.put("u", 2 * 2 * 2);
+        bst.put("v", 2 * 2 * 2);
+        bst.put("w", 2 + 2 + 2 + 2 + 1); bst.put("x", 2 + 2 + 2 + 2 + 1);
+        bst.put("y", 2 + 2 + 2 + 2 + 1); bst.put("z", 2 + 2 + 2 + 2 + 1);
         for (String each : tst.keys()) {
             String[] strarr = each.split("");
             String num = "";

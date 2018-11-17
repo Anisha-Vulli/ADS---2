@@ -193,22 +193,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:149:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:149:15: Parameter st should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:173: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:186: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:187:22: '6' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:187:39: '6' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:187:56: '6' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:188:22: '7' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:188:39: '7' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:188:56: '7' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:188:73: '7' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:189:22: '8' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:189:39: '8' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:189:56: '8' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:190:22: '9' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:190:39: '9' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:190:56: '9' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:190:73: '9' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
