@@ -11,7 +11,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.put(BinarySearchST.java:152)
+	at BinarySearchST.put(BinarySearchST.java:147)
 	at Solution.loadDictionary(Solution.java:114)
 	at Solution.main(Solution.java:31)
 ----------------------------------------
@@ -54,7 +54,7 @@ going
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.put(BinarySearchST.java:152)
+	at BinarySearchST.put(BinarySearchST.java:147)
 	at Solution.loadDictionary(Solution.java:114)
 	at Solution.main(Solution.java:40)
 ----------------------------------------
@@ -125,7 +125,7 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.put(BinarySearchST.java:152)
+	at BinarySearchST.put(BinarySearchST.java:147)
 	at Solution.loadDictionary(Solution.java:114)
 	at Solution.main(Solution.java:51)
 ----------------------------------------
@@ -139,7 +139,7 @@ words
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.put(BinarySearchST.java:152)
+	at BinarySearchST.put(BinarySearchST.java:147)
 	at Solution.loadDictionary(Solution.java:114)
 	at Solution.main(Solution.java:67)
 ----------------------------------------
@@ -194,7 +194,7 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.put(BinarySearchST.java:152)
+	at BinarySearchST.put(BinarySearchST.java:147)
 	at Solution.loadDictionary(Solution.java:114)
 	at Solution.main(Solution.java:82)
 ----------------------------------------

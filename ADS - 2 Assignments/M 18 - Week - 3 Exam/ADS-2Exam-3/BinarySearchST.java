@@ -1,10 +1,5 @@
 import java.util.ArrayList;
-/**
- * Class for binary search st.
- *
- * @param      <Key>    The key
- * @param      <Value>  The value
- */
+
 class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * Keys array.
