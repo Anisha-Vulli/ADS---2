@@ -13,7 +13,7 @@ import java.util.Collections;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -183,7 +183,7 @@ class T9 {
     }
     /**
      * Potential words function.
-     * 
+     *
      * Complexity is N^2.
      *
      * @param      t9Signature  The t 9 signature
@@ -249,6 +249,7 @@ class T9 {
     /**
      * Gets the suggestions.
      *
+     * Complexity is N^2.
      * @param      words  The words
      * @param      k      { parameter_description }
      *
