@@ -73,8 +73,8 @@ public class MaxPQ<Key> implements Iterable<Key> {
      * @param  comparator the order in
      * which to compare the keys
      */
-    public MaxPQ(final Comparator<Key> comparator) {
-        this(1, comparator);
+    public MaxPQ(final Comparator<Key> comparator1) {
+        this(1, comparator1);
     }
 
     /**
