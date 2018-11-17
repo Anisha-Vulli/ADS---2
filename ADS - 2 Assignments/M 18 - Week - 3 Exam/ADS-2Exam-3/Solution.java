@@ -207,15 +207,15 @@ class T9 {
                 if (str.equals("m") || str.equals("n") || str.equals("o")) {
                     num = num + bst.get(str);
                 }
-                if (str.equals("p") || str.equals("q") ||
-                    str.equals("r") || str.equals("s")) {
+                if (str.equals("p") || str.equals("q")
+                    || str.equals("r") || str.equals("s")) {
                     num = num + bst.get(str);
                 }
                 if (str.equals("t") || str.equals("u") || str.equals("v")) {
                     num = num + bst.get(str);
                 }
-                if (str.equals("w") || str.equals("x") ||
-                    str.equals("y") || str.equals("z")) {
+                if (str.equals("w") || str.equals("x")
+                    || str.equals("y") || str.equals("z")) {
                     num = num + bst.get(str);
                 }
             }

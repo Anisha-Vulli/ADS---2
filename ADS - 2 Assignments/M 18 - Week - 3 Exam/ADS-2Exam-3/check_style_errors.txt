@@ -208,11 +208,9 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:190:39: '9' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:190:56: '9' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:190:73: '9' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:210:56: '||' should be on a new line. [OperatorWrap]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:217:56: '||' should be on a new line. [OperatorWrap]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:225: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\Solution.java:262:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 Audit done.
