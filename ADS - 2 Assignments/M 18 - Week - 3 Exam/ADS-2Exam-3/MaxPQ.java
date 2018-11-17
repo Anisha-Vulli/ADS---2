@@ -302,13 +302,22 @@ public class MaxPQ<Key> implements Iterable<Key> {
         return new HeapIterator();
     }
 
+    /**
+     * Class for heap iterator.
+     */
     private class HeapIterator implements Iterator<Key> {
-
-        // create a new pq
+        /**
+         * create a new pq.
+         */
         private MaxPQ<Key> copy;
 
         // add all items to copy of heap
-        // takes linear time since already in heap order so no keys move
+        // takes linear time since already
+        // in heap order so no keys move
+        
+        /**
+         * Constructs the object.
+         */
         public HeapIterator() {
             if (comparator == null) {
                 copy = new MaxPQ<Key>(size());

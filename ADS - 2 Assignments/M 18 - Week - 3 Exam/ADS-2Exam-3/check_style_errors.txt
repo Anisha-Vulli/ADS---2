@@ -11,13 +11,11 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:160:24: Parameter x should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:191: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:279: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:305: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:308:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:312:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:312:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:338:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:317: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:321:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 18 - Week - 3 Exam\ADS-2Exam-3\MaxPQ.java:347:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...
