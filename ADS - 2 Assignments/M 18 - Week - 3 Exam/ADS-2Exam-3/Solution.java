@@ -1,10 +1,26 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Array List import.
+ */
 import java.util.ArrayList;
+/**
+ * Collections import.
+ */
 import java.util.Collections;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
 
     // Don't modify this method.
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
