@@ -60,8 +60,8 @@ public class MaxPQ<Key> implements Iterable<Key> {
      * to compare the keys
      */
     public MaxPQ(final int initCapacity,
-        final Comparator<Key> comparator) {
-        this.comparator = comparator;
+        final Comparator<Key> comparator1) {
+        this.comparator = comparator1;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
