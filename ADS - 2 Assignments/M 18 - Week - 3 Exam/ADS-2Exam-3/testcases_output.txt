@@ -220,7 +220,7 @@ fine
 seeking
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 hello
 is
@@ -228,10 +228,10 @@ right
 words
 
 Your Output: 
-hello
 is
-right
-words
+is
+is
+is
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -283,10 +283,64 @@ paper
 keep
 
 Your Output: 
+update
+update
+update
+record
+record
+record
+immediately
+immediately
+immediately
+bristol
+bristol
+bristol
+call
+call
+call
+spoil
+spoil
+spoil
+kiss
+kiss
+kiss
+pints
+pints
+pints
+alone
+alone
+alone
+shop
+shop
+shop
+any
+any
+any
+say
+say
+say
+goods
+goods
+goods
+inner
+inner
+inner
+cares
+cares
+cares
+save
+save
+save
+care
+care
+care
+happy
+happy
+happy
 Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
 	at MaxPQ.delMax(MaxPQ.java:174)
 	at T9.getSuggestions(Solution.java:171)
-	at T9.t9(Solution.java:185)
+	at T9.t9(Solution.java:186)
 	at Solution.main(Solution.java:71)
 ----------------------------------------
 

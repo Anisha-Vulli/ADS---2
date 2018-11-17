@@ -123,7 +123,7 @@ class T9 {
     public Iterable<String> potentialWords(String t9Signature) {
         // your code goes here
         ArrayList<String> wordlist = new ArrayList<>();
-        for(String each: tst.keys()) {
+        for(String each : tst.keys()) {
             String[] strarr = each.split("");
             String num = "";
             for(String str : strarr){
@@ -170,6 +170,7 @@ class T9 {
         for (int i = 0; i < k; i++) {
             int freq = maxpq.delMax();
             for (String s : words) {
+                maxpq.insert(tst.get(s));
                 if (freq == tst.get(s)) {
                     wordlist.add(s);
                 }
