@@ -222,7 +222,7 @@ class T9 {
             if (num.equals(t9Signature)) {
                 wordlist.add(each);
             }
-        } 
+        }
         return wordlist;
     }
 
@@ -259,6 +259,14 @@ class T9 {
 
     // final output
     // Don't modify this method.
+    /**
+     * t9 function.
+     *
+     * @param      t9Signature  The t 9 signature
+     * @param      k            { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
