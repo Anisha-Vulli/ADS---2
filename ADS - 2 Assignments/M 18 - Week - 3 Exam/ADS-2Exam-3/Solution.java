@@ -188,36 +188,36 @@ class T9 {
         bst.put("p", 7); bst.put("q", 7); bst.put("r", 7); bst.put("s", 7);
         bst.put("t", 8); bst.put("u", 8); bst.put("v", 8);
         bst.put("w", 9); bst.put("x", 9); bst.put("y", 9); bst.put("z", 9);
-        for(String each : tst.keys()) {
+        for (String each : tst.keys()) {
             String[] strarr = each.split("");
             String num = "";
-            for(String str : strarr){
-                if(str.equals("a") || str.equals("b") || str.equals("c")) {
+            for (String str : strarr){
+                if (str.equals("a") || str.equals("b") || str.equals("c")) {
                     num = num + bst.get(str);
                 }
-                if(str.equals("d") || str.equals("e") || str.equals("f")) {
+                if (str.equals("d") || str.equals("e") || str.equals("f")) {
                     num = num + bst.get(str);
                 }
-                if(str.equals("g") || str.equals("h") || str.equals("i")) {
+                if (str.equals("g") || str.equals("h") || str.equals("i")) {
                     num = num + bst.get(str);
                 }
-                if(str.equals("j") || str.equals("k") || str.equals("l")) {
+                if (str.equals("j") || str.equals("k") || str.equals("l")) {
                     num = num + bst.get(str);
                 }
-                if(str.equals("m") || str.equals("n") || str.equals("o")) {
+                if (str.equals("m") || str.equals("n") || str.equals("o")) {
                     num = num + bst.get(str);
                 }
-                if(str.equals("p") || str.equals("q") || str.equals("r") || str.equals("s")) {
+                if (str.equals("p") || str.equals("q") || str.equals("r") || str.equals("s")) {
                     num = num + bst.get(str);
                 }
-                if(str.equals("t") || str.equals("u") || str.equals("v")) {
+                if (str.equals("t") || str.equals("u") || str.equals("v")) {
                     num = num + bst.get(str);
                 }
-                if(str.equals("w") || str.equals("x") || str.equals("y") || str.equals("z")) {
+                if (str.equals("w") || str.equals("x") || str.equals("y") || str.equals("z")) {
                     num = num + bst.get(str);
                 }
             }
-            if(num.equals(t9Signature)) {
+            if (num.equals(t9Signature)) {
                 wordlist.add(each);
             }
         } 
