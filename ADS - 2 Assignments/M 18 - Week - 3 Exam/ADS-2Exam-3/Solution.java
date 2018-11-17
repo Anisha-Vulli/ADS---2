@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Solution {
 
@@ -104,10 +105,11 @@ public class Solution {
 
 class T9 {
     private TST<Integer> tst;
-
+    private BinarySearchST<String, Integer> bst;
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
+        bst = new BinarySearchST<String, Integer>();
         for (String str : st.keys()) {
             tst.put(str, st.get(str));
         }
@@ -116,22 +118,34 @@ class T9 {
     // get all the prefixes that match with given prefix.
     public Iterable<String> getAllWords(String prefix) {
         // your code goes here
-        ArrayList<String> list = new ArrayList<String>();
-        for (String str : tst.keysWithPrefix(prefix)) {
-            list.add(str);
-        }
-        return list;
+        return tst.keysWithPrefix(prefix);
     }
 
     public Iterable<String> potentialWords(String t9Signature) {
         // your code goes here
+        String[] val = t9Signature.split("");
+        //System.out.println(Arrays.toString(val));
         return null;
     }
 
     // return all possibilities(words), find top k with highest frequency.
     public Iterable<String> getSuggestions(Iterable<String> words, int k) {
         // your code goes here
-        return null;
+        ArrayList<String> wordlist = new ArrayList<>();
+        MaxPQ<Integer> maxpq = new MaxPQ<>();
+        for (String str : words) {
+            maxpq.insert(tst.get(str));
+        }
+        for (int i = 0; i < k; i++) {
+            int freq = maxpq.delMax();
+            for (String s : words) {
+                if (freq == tst.get(s)) {
+                    wordlist.add(s);
+                }
+            }
+        }
+        Collections.sort(wordlist);
+        return wordlist;
     }
 
     // final output
