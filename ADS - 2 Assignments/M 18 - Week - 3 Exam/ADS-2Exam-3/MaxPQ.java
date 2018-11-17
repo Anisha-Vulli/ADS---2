@@ -56,7 +56,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
      *
      * @param  initCapacity the initial
      * capacity of this priority queue
-     * @param  comparator the order in which
+     * @param  comparator1 the order in which
      * to compare the keys
      */
     public MaxPQ(final int initCapacity,
