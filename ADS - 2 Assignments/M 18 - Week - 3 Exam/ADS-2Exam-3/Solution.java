@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Solution {
 
@@ -103,15 +103,24 @@ public class Solution {
 }
 
 class T9 {
+    private TST<Integer> tst;
 
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
+        tst = new TST<Integer>();
+        for (String str : st.keys()) {
+            tst.put(str, st.get(str));
+        }
     }
 
     // get all the prefixes that match with given prefix.
     public Iterable<String> getAllWords(String prefix) {
         // your code goes here
-        return null;
+        ArrayList<String> list = new ArrayList<String>();
+        for (String str : tst.keysWithPrefix(prefix)) {
+            list.add(str);
+        }
+        return list;
     }
 
     public Iterable<String> potentialWords(String t9Signature) {
