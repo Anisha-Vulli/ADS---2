@@ -21,14 +21,15 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
 
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash
+            = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -97,13 +98,23 @@ public class Solution {
     }
 
     // Don't modify this method.
-    public static String[] toReadFile(String file) {
+
+    /**
+     * Reading a file.
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
 
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+    public static BinarySearchST<String, Integer> loadDictionary(
+        final String file) {
+        BinarySearchST<String, Integer>  st
+        = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] words = toReadFile(file);
         for (int i = 0; i < words.length; i++) {
@@ -118,10 +129,23 @@ public class Solution {
     }
 
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
+    /**
+     * TST object.
+     */
     private TST<Integer> tst;
+    /**
+     * Binary symbol table for alphabets.
+     */
     private BinarySearchST<String, Integer> bst;
+    /**
+     * Constructs the object.
+     *
+     * @param      st    { parameter_description }
+     */
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
@@ -132,12 +156,28 @@ class T9 {
     }
 
     // get all the prefixes that match with given prefix.
-    public Iterable<String> getAllWords(String prefix) {
+
+    /**
+     * Gets all words.
+     *
+     * @param      prefix  The prefix
+     *
+     * @return     All words.
+     */
+    public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
         return tst.keysWithPrefix(prefix);
     }
-
-    public Iterable<String> potentialWords(String t9Signature) {
+    /**
+     * Potential words function.
+     * 
+     * Complexity is N^2.
+     *
+     * @param      t9Signature  The t 9 signature
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         ArrayList<String> wordlist = new ArrayList<>();
         bst.put("a", 2); bst.put("b", 2); bst.put("c", 2);
@@ -185,7 +225,17 @@ class T9 {
     }
 
     // return all possibilities(words), find top k with highest frequency.
-    public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+
+    /**
+     * Gets the suggestions.
+     *
+     * @param      words  The words
+     * @param      k      { parameter_description }
+     *
+     * @return     The suggestions.
+     */
+    public Iterable<String> getSuggestions(
+        final Iterable<String> words, final int k) {
         // your code goes here
         ArrayList<String> wordlist = new ArrayList<>();
         MaxPQ<Integer> maxpq = new MaxPQ<>();
@@ -207,7 +257,7 @@ class T9 {
 
     // final output
     // Don't modify this method.
-    public Iterable<String> t9(String t9Signature, int k) {
+    public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
