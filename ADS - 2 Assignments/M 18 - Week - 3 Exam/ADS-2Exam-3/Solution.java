@@ -105,11 +105,10 @@ public class Solution {
 
 class T9 {
     private TST<Integer> tst;
-    private BinarySearchST<String, Integer> bst;
+    
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
-        bst = new BinarySearchST<String, Integer>();
         for (String str : st.keys()) {
             tst.put(str, st.get(str));
         }
@@ -123,9 +122,41 @@ class T9 {
 
     public Iterable<String> potentialWords(String t9Signature) {
         // your code goes here
-        String[] val = t9Signature.split("");
-        //System.out.println(Arrays.toString(val));
-        return null;
+        ArrayList<String> wordlist = new ArrayList<>();
+        for(String each: tst.keys()) {
+            String[] strarr = each.split("");
+            String num = "";
+            for(String str : strarr){
+                if(str.equals("a") || str.equals("b") || str.equals("c")) {
+                    num = num + "2";
+                }
+                if(str.equals("d") || str.equals("e") || str.equals("f")) {
+                    num = num + "3";
+                }
+                if(str.equals("g") || str.equals("h") || str.equals("i")) {
+                    num = num + "4";
+                }
+                if(str.equals("j") || str.equals("k") || str.equals("l")) {
+                    num = num + "5";
+                }
+                if(str.equals("m") || str.equals("n") || str.equals("o")) {
+                    num = num + "6";
+                }
+                if(str.equals("p") || str.equals("q") || str.equals("r") || str.equals("s")) {
+                    num = num + "7";
+                }
+                if(str.equals("t") || str.equals("u") || str.equals("v")) {
+                    num = num + "8";
+                }
+                if(str.equals("w") || str.equals("x") || str.equals("y") || str.equals("z")) {
+                    num = num + "9";
+                }
+            }
+            if(num.equals(t9Signature)) {
+                wordlist.add(each);
+            }
+        } 
+        return wordlist;
     }
 
     // return all possibilities(words), find top k with highest frequency.
@@ -154,3 +185,4 @@ class T9 {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
+
