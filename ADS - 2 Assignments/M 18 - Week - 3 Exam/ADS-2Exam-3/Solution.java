@@ -105,10 +105,11 @@ public class Solution {
 
 class T9 {
     private TST<Integer> tst;
-    
+    private BinarySearchST<String, Integer> bst;
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
+        bst = new BinarySearchST<String, Integer>();
         for (String str : st.keys()) {
             tst.put(str, st.get(str));
         }
@@ -123,33 +124,41 @@ class T9 {
     public Iterable<String> potentialWords(String t9Signature) {
         // your code goes here
         ArrayList<String> wordlist = new ArrayList<>();
+        bst.put("a", 2); bst.put("b", 2); bst.put("c", 2);
+        bst.put("d", 3); bst.put("e", 3); bst.put("f", 3);
+        bst.put("g", 4); bst.put("h", 4); bst.put("i", 4);
+        bst.put("j", 5); bst.put("k", 5); bst.put("l", 5);
+        bst.put("m", 6); bst.put("n", 6); bst.put("o", 6);
+        bst.put("p", 7); bst.put("q", 7); bst.put("r", 7); bst.put("s", 7);
+        bst.put("t", 8); bst.put("u", 8); bst.put("v", 8);
+        bst.put("w", 9); bst.put("x", 9); bst.put("y", 9); bst.put("z", 9);
         for(String each : tst.keys()) {
             String[] strarr = each.split("");
             String num = "";
             for(String str : strarr){
                 if(str.equals("a") || str.equals("b") || str.equals("c")) {
-                    num = num + "2";
+                    num = num + bst.get(str);
                 }
                 if(str.equals("d") || str.equals("e") || str.equals("f")) {
-                    num = num + "3";
+                    num = num + bst.get(str);
                 }
                 if(str.equals("g") || str.equals("h") || str.equals("i")) {
-                    num = num + "4";
+                    num = num + bst.get(str);
                 }
                 if(str.equals("j") || str.equals("k") || str.equals("l")) {
-                    num = num + "5";
+                    num = num + bst.get(str);
                 }
                 if(str.equals("m") || str.equals("n") || str.equals("o")) {
-                    num = num + "6";
+                    num = num + bst.get(str);
                 }
                 if(str.equals("p") || str.equals("q") || str.equals("r") || str.equals("s")) {
-                    num = num + "7";
+                    num = num + bst.get(str);
                 }
                 if(str.equals("t") || str.equals("u") || str.equals("v")) {
-                    num = num + "8";
+                    num = num + bst.get(str);
                 }
                 if(str.equals("w") || str.equals("x") || str.equals("y") || str.equals("z")) {
-                    num = num + "9";
+                    num = num + bst.get(str);
                 }
             }
             if(num.equals(t9Signature)) {
