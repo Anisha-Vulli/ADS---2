@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 52
 28
@@ -10,17 +10,13 @@ Expected Output:
 149
 
 Your Output: 
-52
-28
-240
-3
-98
-54
-47
-149
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchST.put(BinarySearchST.java:152)
+	at Solution.loadDictionary(Solution.java:114)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 wont
 working
@@ -57,42 +53,13 @@ messagesome
 going
 
 Your Output: 
-wont
-working
-what
-whatever
-whats
-whatsup
-vegetables
-too
-took
-tookplace
-tool
-toolets
-tooo
-toopray
-toot
-toothpaste
-tootsie
-over
-overa
-overdid
-overdose
-overemphasiseor
-overheating
-overtime
-message
-messaged
-messageit
-messageits
-messageno
-messagepandy
-messages
-messagesome
-going
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchST.put(BinarySearchST.java:152)
+	at Solution.loadDictionary(Solution.java:114)
+	at Solution.main(Solution.java:40)
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 hello
 pizza
@@ -157,70 +124,13 @@ fine
 seeking
 
 Your Output: 
-hello
-pizza
-what
-sunday
-ball
-call
-involve
-finish
-gone
-good
-home
-battery
-friends
-watches
-morning
-tonight
-shop
-phne
-any
-bmw
-box
-boy
-coz
-jay
-jaz
-kay
-law
-lay
-ammo
-das
-ear
-far
-send
-pocked
-pest
-rest
-woo
-paying
-saying
-james
-lands
-hates
-casting
-packing
-peeps
-bam
-bao
-cam
-can
-abt
-act
-bat
-cat
-mines
-liver
-lives
-dime
-dine
-find
-fine
-seeking
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchST.put(BinarySearchST.java:152)
+	at Solution.loadDictionary(Solution.java:114)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 hello
 is
@@ -228,10 +138,10 @@ right
 words
 
 Your Output: 
-hello
-is
-right
-words
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchST.put(BinarySearchST.java:152)
+	at Solution.loadDictionary(Solution.java:114)
+	at Solution.main(Solution.java:67)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -283,10 +193,9 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at MaxPQ.delMax(MaxPQ.java:174)
-	at T9.getSuggestions(Solution.java:196)
-	at T9.t9(Solution.java:211)
-	at Solution.main(Solution.java:87)
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchST.put(BinarySearchST.java:152)
+	at Solution.loadDictionary(Solution.java:114)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
