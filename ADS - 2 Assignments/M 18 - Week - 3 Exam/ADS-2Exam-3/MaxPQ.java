@@ -70,7 +70,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
      * Initializes an empty priority
      * queue using the given comparator.
      *
-     * @param  comparator the order in
+     * @param  comparator1 the order in
      * which to compare the keys
      */
     public MaxPQ(final Comparator<Key> comparator1) {
@@ -157,7 +157,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
      * @param  x the new key to
      * add to this priority queue
      */
-    public void insert(Key x) {
+    public void insert(final Key x) {
 
         // double size of array if necessary
         if (n == pq.length - 1) {
@@ -188,7 +188,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
         exch(1, n--);
         sink(1);
         pq[n + 1] = null;
-        final int four = 4; 
+        final int four = 4;
         if ((n > 0) && (n == (pq.length - 1) / four)) {
             resize(pq.length / 2);
         }
@@ -276,7 +276,9 @@ public class MaxPQ<Key> implements Iterable<Key> {
      * @return     True if maximum heap, False otherwise.
      */
     private boolean isMaxHeap(final int k) {
-        if (k > n) return true;
+        if (k > n) {
+            return true;
+        }
         int left = 2 * k;
         int right = 2 * k + 1;
         if (left  <= n && less(k, left)) {
@@ -314,11 +316,11 @@ public class MaxPQ<Key> implements Iterable<Key> {
         // add all items to copy of heap
         // takes linear time since already
         // in heap order so no keys move
-        
+
         /**
          * Constructs the object.
          */
-        public HeapIterator() {
+        protected HeapIterator() {
             if (comparator == null) {
                 copy = new MaxPQ<Key>(size());
             } else {
@@ -343,7 +345,11 @@ public class MaxPQ<Key> implements Iterable<Key> {
         public void remove() {
             throw new UnsupportedOperationException();
         }
-
+        /**
+         * Next function.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Key next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
