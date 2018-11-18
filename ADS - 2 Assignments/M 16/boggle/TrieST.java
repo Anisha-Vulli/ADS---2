@@ -114,7 +114,8 @@ class TrieST {
 
     /**
      * Is the set empty?
-     * @return <tt>true</tt> if the set is empty, and <tt>false</tt> otherwise
+     * @return <tt>true</tt> if the set is empty,
+     * and <tt>false</tt> otherwise
      * Time complexity is O(1)
      */
     public boolean isEmpty() {
@@ -123,7 +124,8 @@ class TrieST {
 
     /**
      * Returns all of the keys in the set, as an iterator.
-     * To iterate over all of the keys in a set named <tt>set</tt>, use the
+     * To iterate over all of the keys in a set
+     * named <tt>set</tt>, use the
      * foreach notation: <tt>for (Key key : set)</tt>.
      * @return an iterator to all of the keys in the set
      * Time complexity is O(1)
@@ -133,9 +135,11 @@ class TrieST {
     }
 
     /**
-     * Returns all of the keys in the set that start with <tt>prefix</tt>.
+     * Returns all of the keys in the set that start
+     * with <tt>prefix</tt>.
      * @param prefix the prefix
-     * @return all of the keys in the set that start with <tt>prefix</tt>,
+     * @return all of the keys in the set that start
+     * with <tt>prefix</tt>,
      *     as an iterable
      *     Time complexity is O(N)
      */
@@ -148,9 +152,14 @@ class TrieST {
     /**
     * Time Complexity is O(N)
     **/
-    private void collect(final Node x, final StringBuilder prefix, final Queue<String> results) {
-        if (x == null) return;
-        if (x.isString) results.enqueue(prefix.toString());
+    private void collect(final Node x, final StringBuilder prefix,
+        final Queue<String> results) {
+        if (x == null) {
+            return;
+        }
+        if (x.isString) {
+            results.enqueue(prefix.toString());
+        }
         for (char c = 'A'; c < 'A' + R; c++) {
             prefix.append(c);
             collect(x.next[c - 'A'], prefix, results);
@@ -176,13 +185,18 @@ class TrieST {
     * Time complexity is O(1)
     **/
     private void collect(final Node x, final StringBuilder prefix,
-                         final String pattern, final Queue<String> results) {
-        if (x == null) return;
-        int d = prefix.length();
-        if (d == pattern.length() && x.isString)
-            results.enqueue(prefix.toString());
-        if (d == pattern.length())
+                         final String pattern,
+                         final Queue<String> results) {
+        if (x == null) {
             return;
+        }
+        int d = prefix.length();
+        if (d == pattern.length() && x.isString) {
+            results.enqueue(prefix.toString());
+        }
+        if (d == pattern.length()) {
+            return;
+        }
         char c = Character.toUpperCase(pattern.charAt(d));
         if (c == '.') {
             for (char ch = 'A'; ch < 'A' + R; ch++) {
@@ -198,62 +212,100 @@ class TrieST {
     }
 
     /**
-     * Returns the string in the set that is the longest prefix of <tt>query</tt>,
+     * Returns the string in the set that is the longest
+     * prefix of <tt>query</tt>,
      * or <tt>null</tt>, if no such string.
      * @param query the query string
-     * @throws NullPointerException if <tt>query</tt> is <tt>null</tt>
-     * @return the string in the set that is the longest prefix of <tt>query</tt>,
+     * @throws NullPointerException if <tt>query</tt> is
+     * <tt>null</tt>
+     * @return the string in the set that is the longest
+     * prefix of <tt>query</tt>,
      *     or <tt>null</tt> if no such string
      *     Time complexity is O(1)
      */
-    public String longestPrefixOf(String query) {
-        int length = longestPrefixOf(root, query, 0, -1);
-        if (length == -1) return null;
-        return query.substring(0, length);
+    public String longestPrefixOf(final String query) {
+        String str = query;
+        int length = longestPrefixOf(root, str, 0, -1);
+        if (length == -1) {
+            return null;
+        }
+        return str.substring(0, length);
     }
 
-    // returns the length of the longest string key in the subtrie
-    // rooted at x that is a prefix of the query string,
-    // assuming the first d character match and we have already
-    // found a prefix match of length length
     /**
-     * Time Complexity is O(N)
-    **/
-    private int longestPrefixOf(Node x, String query, int d, int length) {
-        if (x == null) return length;
-        if (x.isString) length = d;
-        if (d == query.length()) return length;
-        char c = Character.toUpperCase(query.charAt(d));
-        return longestPrefixOf(x.next[c - 'A'], query, d + 1, length);
+     * returns the length of the longest string key in the subtrie.
+     * rooted at x that is a prefix of the query string,.
+     * assuming the first d character match and we have already
+     * found a prefix match of length length
+     *
+     * Time Complexity is O(N).
+     * @param      x       { parameter_description }
+     * @param      query   The query
+     * @param      d       { parameter_description }
+     * @param      length  The length
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private int longestPrefixOf(final Node x, final String query,
+        final int d, final int length) {
+
+        Node y = x;
+        String str = query;
+        int a = d;
+        int len = length;
+        if (y == null) {
+            return len;
+        }
+        if (y.isString) {
+            len = a;
+        }
+        if (a == str.length()) {
+            return length;
+        }
+        char c = Character.toUpperCase(str.charAt(a));
+        return longestPrefixOf(y.next[c - 'A'], str, a + 1, len);
     }
 
     /**
      * Removes the key from the set if the key is present.
      * @param key the key
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * @throws NullPointerException if <tt>key</tt>
+     * is <tt>null</tt>
      * Time complexity is O(N)
      */
-    public void delete(String key) {
-        root = delete(root, key, 0);
+    public void delete(final String key) {
+        String str = key;
+        root = delete(root, str, 0);
     }
     /**
     * Time complexity is O(N)
     **/
-    private Node delete(Node x, String key, int d) {
-        if (x == null) return null;
-        if (d == key.length()) {
-            if (x.isString) N--;
-            x.isString = false;
+    private Node delete(final Node x, final String key, final int d) {
+        Node y = x;
+        String str = key;
+        int a = d;
+        if (y == null) {
+            return null;
+        }
+        if (a == key.length()) {
+            if (y.isString) {
+                N--;
+            }
+            y.isString = false;
         } else {
-            char c = key.charAt(d);
-            x.next[c - 'A'] = delete(x.next[c - 'A'], key, d + 1);
+            char c = str.charAt(a);
+            y.next[c - 'A'] = delete(y.next[c - 'A'], str, a + 1);
         }
 
         // remove subtrie rooted at x if it is completely empty
-        if (x.isString) return x;
-        for (int c = 'A'; c < 'A' + R; c++)
-            if (x.next[c - 'A'] != null)
-                return x;
+        if (y.isString) {
+            return x;
+        }
+        for (int c = 'A'; c < 'A' + R; c++) {
+            if (y.next[c - 'A'] != null) {
+                return y;
+            }
+        }
         return null;
     }
     /**
