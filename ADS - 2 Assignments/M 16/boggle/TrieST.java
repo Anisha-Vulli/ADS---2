@@ -7,12 +7,19 @@ class TrieST {
      */
     private static final int R = 26;
     /**
-     * 
+     * root of trie.
      */
-    private Node root;      // root of trie
-    private int N;          // number of keys in trie
+    private Node root;
+    /**
+     * number of keys in trie.
+     */
+    private int N;
 
-    // R-way trie node
+    /**
+     * Class for node.
+     *
+     * R-way trie node.
+     */
     private static class Node {
         private Node[] next = new Node[R];
         private boolean isString;
@@ -21,15 +28,18 @@ class TrieST {
     /**
      * Initializes an empty set of strings.
      */
-    public TrieST() {
+    protected TrieST() {
     }
 
     /**
      * Does the set contain the given key?
      * @param key the key
-     * @return <tt>true</tt> if the set contains <tt>key</tt> and
+     * @return <tt>true</tt> if the set contains
+     * <tt>key</tt> and
      *     <tt>false</tt> otherwise
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * @throws NullPointerException if <tt>key</tt>
+     * is <tt>null</tt>
+     *
      * Time complexity is O(1)
      */
     public boolean contains(final String key) {
@@ -65,14 +75,19 @@ class TrieST {
     /**
     * Time complexity is O(1)
     **/
-    private Node add(Node x, final String key, final int d) {
-        if (x == null) x = new Node();
+    private Node add(final Node x, final String key, final int d) {
+        Node y = x;
+        if (y == null) {
+            y = new Node();
+        }
         if (d == key.length()) {
-            if (!x.isString) N++;
-            x.isString = true;
+            if (!y.isString) {
+                N++;
+            }
+            y.isString = true;
         } else {
             char c = Character.toUpperCase(key.charAt(d));
-            x.next[c - 'A'] = add(x.next[c - 'A'], key, d + 1);
+            y.next[c - 'A'] = add(y.next[c - 'A'], key, d + 1);
         }
         return x;
     }
@@ -88,7 +103,8 @@ class TrieST {
 
     /**
      * Is the set empty?
-     * @return <tt>true</tt> if the set is empty, and <tt>false</tt> otherwise
+     * @return <tt>true</tt> if the set is empty,
+     * and <tt>false</tt> otherwise
      * Time complexity is O(1)
      */
     public boolean isEmpty() {
@@ -97,7 +113,8 @@ class TrieST {
 
     /**
      * Returns all of the keys in the set, as an iterator.
-     * To iterate over all of the keys in a set named <tt>set</tt>, use the
+     * To iterate over all of the keys in a set named
+     * <tt>set</tt>, use the
      * foreach notation: <tt>for (Key key : set)</tt>.
      * @return an iterator to all of the keys in the set
      * Time complexity is O(1)
@@ -107,9 +124,11 @@ class TrieST {
     }
 
     /**
-     * Returns all of the keys in the set that start with <tt>prefix</tt>.
+     * Returns all of the keys in the set that
+     * start with <tt>prefix</tt>.
      * @param prefix the prefix
-     * @return all of the keys in the set that start with <tt>prefix</tt>,
+     * @return all of the keys in the set that
+     * start with <tt>prefix</tt>,
      *     as an iterable
      *     Time complexity is O(N)
      */
@@ -122,7 +141,8 @@ class TrieST {
     /**
     * Time Complexity is O(N)
     **/
-    private void collect(final Node x, final StringBuilder prefix, final Queue<String> results) {
+    private void collect(final Node x, final StringBuilder prefix,
+        final Queue<String> results) {
         if (x == null) return;
         if (x.isString) results.enqueue(prefix.toString());
         for (char c = 'A'; c < 'A' + R; c++) {
@@ -133,12 +153,15 @@ class TrieST {
     }
 
     /**
-     * Returns all of the keys in the set that match <tt>pattern</tt>,
+     * Returns all of the keys in the set that match
+     * <tt>pattern</tt>,
      * where . symbol is treated as a wildcard character.
      * @param pattern the pattern
-     * @return all of the keys in the set that match <tt>pattern</tt>,
-     *     as an iterable, where . is treated as a wildcard character.
-     *     Time complexity is O(N)
+     * @return all of the keys in the set that match
+     * <tt>pattern</tt>,
+     *     as an iterable, where . is treated as a
+     *     wildcard character.
+     * Time complexity is O(N)
      */
     public Iterable<String> keysThatMatch(final String pattern) {
         Queue<String> results = new Queue<String>();
@@ -150,13 +173,18 @@ class TrieST {
     * Time complexity is O(1)
     **/
     private void collect(final Node x, final StringBuilder prefix,
-                         final String pattern, final Queue<String> results) {
-        if (x == null) return;
-        int d = prefix.length();
-        if (d == pattern.length() && x.isString)
-            results.enqueue(prefix.toString());
-        if (d == pattern.length())
+                         final String pattern,
+                         final Queue<String> results) {
+        if (x == null) {
             return;
+        }
+        int d = prefix.length();
+        if (d == pattern.length() && x.isString) {
+            results.enqueue(prefix.toString());
+        }
+        if (d == pattern.length()) {
+            return;
+        }
         char c = Character.toUpperCase(pattern.charAt(d));
         if (c == '.') {
             for (char ch = 'A'; ch < 'A' + R; ch++) {
@@ -172,15 +200,18 @@ class TrieST {
     }
 
     /**
-     * Returns the string in the set that is the longest prefix of <tt>query</tt>,
+     * Returns the string in the set that is the longest
+     * prefix of <tt>query</tt>,
      * or <tt>null</tt>, if no such string.
      * @param query the query string
-     * @throws NullPointerException if <tt>query</tt> is <tt>null</tt>
-     * @return the string in the set that is the longest prefix of <tt>query</tt>,
+     * @throws NullPointerException if <tt>query</tt> is
+     * <tt>null</tt>
+     * @return the string in the set that is the longest
+     * prefix of <tt>query</tt>,
      *     or <tt>null</tt> if no such string
      *     Time complexity is O(1)
      */
-    public String longestPrefixOf(String query) {
+    public String longestPrefixOf(final String query) {
         int length = longestPrefixOf(root, query, 0, -1);
         if (length == -1) return null;
         return query.substring(0, length);
@@ -193,8 +224,11 @@ class TrieST {
     /**
      * Time Complexity is O(N)
     **/
-    private int longestPrefixOf(Node x, String query, int d, int length) {
-        if (x == null) return length;
+    private int longestPrefixOf(final Node x, final String query,
+        final int d, final int length) {
+        if (x == null) {
+            return length;
+        }
         if (x.isString) length = d;
         if (d == query.length()) return length;
         char c = Character.toUpperCase(query.charAt(d));
