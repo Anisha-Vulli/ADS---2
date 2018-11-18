@@ -13,7 +13,7 @@ class TrieST {
     /**
      * number of keys in trie.
      */
-    private int N;
+    private int n;
 
     // R-way trie node
 
@@ -21,7 +21,13 @@ class TrieST {
      * Class for node.
      */
     private static class Node {
+        /**
+         * Node array.
+         */
         private Node[] next = new Node[R];
+        /**
+         * isString boolean.
+         */
         private boolean isString;
     }
 
@@ -39,7 +45,7 @@ class TrieST {
      *     <tt>false</tt> otherwise
      * @throws NullPointerException if
      * <tt>key</tt> is <tt>null</tt>
-     * 
+     *
      *
      * Time complexity is O(1)
      */
@@ -76,7 +82,7 @@ class TrieST {
      * @param key the key to add
      * @throws NullPointerException if
      * <tt>key</tt> is <tt>null</tt>
-     * 
+     *
      *
      * Time complexity is O(N)
      */
@@ -102,7 +108,7 @@ class TrieST {
         }
         if (d == key.length()) {
             if (!y.isString) {
-                N++;
+                n++;
             }
             y.isString = true;
         } else {
@@ -118,7 +124,7 @@ class TrieST {
      * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;
+        return n;
     }
 
 
@@ -329,7 +335,7 @@ class TrieST {
         }
         if (a == key.length()) {
             if (y.isString) {
-                N--;
+                n--;
             }
             y.isString = false;
         } else {
