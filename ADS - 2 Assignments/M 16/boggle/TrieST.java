@@ -1,10 +1,25 @@
+/**
+ * Class for trie st.
+ */
 class TrieST {
-    private static final int R = 26;        // extended ASCII
-
-    private Node root;      // root of trie
-    private int N;          // number of keys in trie
+    /**
+     * extended ASCII.
+     */
+    private static final int R = 26;
+    /**
+     * root of trie.
+     */
+    private Node root;
+    /**
+     * number of keys in trie.
+     */
+    private int N;
 
     // R-way trie node
+
+    /**
+     * Class for node.
+     */
     private static class Node {
         private Node[] next = new Node[R];
         private boolean isString;
@@ -13,20 +28,26 @@ class TrieST {
     /**
      * Initializes an empty set of strings.
      */
-    public TrieST() {
+    protected TrieST() {
     }
 
     /**
      * Does the set contain the given key?
      * @param key the key
-     * @return <tt>true</tt> if the set contains <tt>key</tt> and
+     * @return <tt>true</tt> if the set contains
+     * <tt>key</tt> and
      *     <tt>false</tt> otherwise
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * @throws NullPointerException if
+     * <tt>key</tt> is <tt>null</tt>
+     * 
+     *
      * Time complexity is O(1)
      */
     public boolean contains(final String key) {
         Node x = get(root, key, 0);
-        if (x == null) return false;
+        if (x == null) {
+            return false;
+        }
         return x.isString;
     }
     /**
@@ -39,16 +60,24 @@ class TrieST {
      * @return [description]
      */
     private Node get(final Node x, final String key, final int d) {
-        if (x == null) return null;
-        if (d == key.length()) return x;
+        if (x == null) {
+            return null;
+        }
+        if (d == key.length()) {
+            return x;
+        }
         char c = Character.toUpperCase(key.charAt(d));
         return get(x.next[c - 'A'], key, d + 1);
     }
 
     /**
-     * Adds the key to the set if it is not already present.
+     * Adds the key to the set if it is not
+     * already present.
      * @param key the key to add
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>
+     * @throws NullPointerException if
+     * <tt>key</tt> is <tt>null</tt>
+     * 
+     *
      * Time complexity is O(N)
      */
     public void add(final String key) {
@@ -57,16 +86,21 @@ class TrieST {
     /**
     * Time complexity is O(1)
     **/
-    private Node add(Node x, final String key, final int d) {
-        if (x == null) x = new Node();
+    private Node add(final Node x, final String key, final int d) {
+        Node y = x;
+        if (y == null) {
+            y = new Node();
+        }
         if (d == key.length()) {
-            if (!x.isString) N++;
-            x.isString = true;
+            if (!y.isString) {
+                N++;
+            }
+            y.isString = true;
         } else {
             char c = Character.toUpperCase(key.charAt(d));
-            x.next[c - 'A'] = add(x.next[c - 'A'], key, d + 1);
+            y.next[c - 'A'] = add(y.next[c - 'A'], key, d + 1);
         }
-        return x;
+        return y;
     }
 
     /**
