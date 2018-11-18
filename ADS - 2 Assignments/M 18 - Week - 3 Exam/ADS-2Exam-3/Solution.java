@@ -210,32 +210,33 @@ class T9 {
             String[] strarr = each.split("");
             String num = "";
             for (String str : strarr) {
-                if (str.equals("a") || str.equals("b") || str.equals("c")) {
-                    num = num + bst.get(str);
-                }
-                if (str.equals("d") || str.equals("e") || str.equals("f")) {
-                    num = num + bst.get(str);
-                }
-                if (str.equals("g") || str.equals("h") || str.equals("i")) {
-                    num = num + bst.get(str);
-                }
-                if (str.equals("j") || str.equals("k") || str.equals("l")) {
-                    num = num + bst.get(str);
-                }
-                if (str.equals("m") || str.equals("n") || str.equals("o")) {
-                    num = num + bst.get(str);
-                }
-                if (str.equals("p") || str.equals("q")
-                    || str.equals("r") || str.equals("s")) {
-                    num = num + bst.get(str);
-                }
-                if (str.equals("t") || str.equals("u") || str.equals("v")) {
-                    num = num + bst.get(str);
-                }
-                if (str.equals("w") || str.equals("x")
-                    || str.equals("y") || str.equals("z")) {
-                    num = num + bst.get(str);
-                }
+                // if (str.equals("a") || str.equals("b") || str.equals("c")) {
+                //     num = num + bst.get(str);
+                // }
+                // if (str.equals("d") || str.equals("e") || str.equals("f")) {
+                //     num = num + bst.get(str);
+                // }
+                // if (str.equals("g") || str.equals("h") || str.equals("i")) {
+                //     num = num + bst.get(str);
+                // }
+                // if (str.equals("j") || str.equals("k") || str.equals("l")) {
+                //     num = num + bst.get(str);
+                // }
+                // if (str.equals("m") || str.equals("n") || str.equals("o")) {
+                //     num = num + bst.get(str);
+                // }
+                // if (str.equals("p") || str.equals("q")
+                //     || str.equals("r") || str.equals("s")) {
+                //     num = num + bst.get(str);
+                // }
+                // if (str.equals("t") || str.equals("u") || str.equals("v")) {
+                //     num = num + bst.get(str);
+                // }
+                // if (str.equals("w") || str.equals("x")
+                //     || str.equals("y") || str.equals("z")) {
+                //     num = num + bst.get(str);
+                // }
+                num = num + bst.get(str);
             }
             if (num.equals(t9Signature)) {
                 wordlist.add(each);
