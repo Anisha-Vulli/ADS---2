@@ -283,10 +283,26 @@ paper
 keep
 
 Your Output: 
+call
+kiss
+alone
+any
+boy
+coz
+pay
+saw
+say
+goods
+inner
+cares
+save
+card
+care
+case
 Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
 	at MaxPQ.delMax(MaxPQ.java:184)
 	at T9.getSuggestions(Solution.java:242)
-	at T9.t9(Solution.java:268)
+	at T9.t9(Solution.java:269)
 	at Solution.main(Solution.java:94)
 ----------------------------------------
 

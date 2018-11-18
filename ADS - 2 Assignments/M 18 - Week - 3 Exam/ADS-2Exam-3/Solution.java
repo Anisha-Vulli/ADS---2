@@ -240,14 +240,15 @@ class T9 {
         }
         for (int i = 0; i < k; i++) {
             int freq = maxpq.delMax();
+            if (maxpq.isEmpty()) {
+                break;
+            }
             for (String s : words) {
                 //maxpq.insert(tst.get(s));
                 if (freq == tst.get(s)) {
                     wordlist.add(s);
                 }
-                if (maxpq.isEmpty()) {
-                    break;
-                }
+                
             }
         }
         Collections.sort(wordlist);
