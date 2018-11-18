@@ -83,9 +83,18 @@ class TrieST {
     public void add(final String key) {
         root = add(root, key, 0);
     }
+
     /**
-    * Time complexity is O(1)
-    **/
+     * Adding the strings into the trieset.
+     *
+     * Time complexity is O(1).
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node add(final Node x, final String key, final int d) {
         Node y = x;
         if (y == null) {
@@ -104,44 +113,51 @@ class TrieST {
     }
 
     /**
-     * Returns the number of strings in the set.
-     * @return the number of strings in the set
-     * Time complexity is O(1)
+     * Returns number of string in a trieset.
+     * Time complexity is O(1).
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         return N;
     }
 
+
     /**
-     * Is the set empty?
-     * @return <tt>true</tt> if the set is empty,
-     * and <tt>false</tt> otherwise
-     * Time complexity is O(1)
+     * Determines if empty.
+     *
+     * Complexity is 1.
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return size() == 0;
     }
 
+
+
     /**
      * Returns all of the keys in the set, as an iterator.
-     * To iterate over all of the keys in a set
-     * named <tt>set</tt>, use the
-     * foreach notation: <tt>for (Key key : set)</tt>.
-     * @return an iterator to all of the keys in the set
-     * Time complexity is O(1)
+     * To iterate over all of the keys in a set.
+     *
+     * Time complexity is O(1).
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<String> keys() {
         return keysWithPrefix("");
     }
 
+
+
     /**
      * Returns all of the keys in the set that start
-     * with <tt>prefix</tt>.
-     * @param prefix the prefix
-     * @return all of the keys in the set that start
-     * with <tt>prefix</tt>,
-     *     as an iterable
-     *     Time complexity is O(N)
+     * with prefix.
+     *
+     * Time complexity is O(N).
+     *
+     * @param      prefix  The prefix
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
         Queue<String> results = new Queue<String>();
@@ -149,9 +165,16 @@ class TrieST {
         collect(x, new StringBuilder(prefix), results);
         return results;
     }
+
     /**
-    * Time Complexity is O(N)
-    **/
+     * Collect function.
+     *
+     * Time Complexity is O(N)
+     *
+     * @param      x        { parameter_description }
+     * @param      prefix   The prefix
+     * @param      results  The results
+     */
     private void collect(final Node x, final StringBuilder prefix,
         final Queue<String> results) {
         if (x == null) {
@@ -170,7 +193,7 @@ class TrieST {
     /**
      * Returns all of the keys in the set that match <tt>pattern</tt>,
      * where . symbol is treated as a wildcard character.
-     * 
+     *
      * Time complexity is O(N).
      * @param      pattern  The pattern
      *
@@ -186,7 +209,7 @@ class TrieST {
 
     /**
      * Collects the words.
-     * 
+     *
      * Time complexity is O(1).
      *
      * @param      x        { parameter_description }
