@@ -942,18 +942,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:155:37: Expected @param tag for 'x'. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:155:60: Expected @param tag for 'prefix'. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:156:29: Expected @param tag for 'results'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:184: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:187:37: Expected @param tag for 'x'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:187:60: Expected @param tag for 'prefix'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:188:39: Expected @param tag for 'pattern'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:189:46: Expected @param tag for 'results'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:280: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:283: Expected @return tag. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:283:36: Expected @param tag for 'x'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:283:52: Expected @param tag for 'key'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:283:67: Expected @param tag for 'd'. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:311: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:314: Expected @return tag. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:314:43: Expected @param tag for 'query'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:173: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\TrieST.java:189: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 17 errors.

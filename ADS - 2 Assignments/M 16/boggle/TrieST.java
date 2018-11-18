@@ -170,10 +170,11 @@ class TrieST {
     /**
      * Returns all of the keys in the set that match <tt>pattern</tt>,
      * where . symbol is treated as a wildcard character.
-     * @param pattern the pattern
-     * @return all of the keys in the set that match <tt>pattern</tt>,
-     *     as an iterable, where . is treated as a wildcard character.
-     *     Time complexity is O(N)
+     * 
+     * Time complexity is O(N).
+     * @param      pattern  The pattern
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<String> keysThatMatch(final String pattern) {
         Queue<String> results = new Queue<String>();
@@ -181,9 +182,18 @@ class TrieST {
         collect(root, prefix, pattern, results);
         return results;
     }
+
+
     /**
-    * Time complexity is O(1)
-    **/
+     * Collects the words.
+     * 
+     * Time complexity is O(1).
+     *
+     * @param      x        { parameter_description }
+     * @param      prefix   The prefix
+     * @param      pattern  The pattern
+     * @param      results  The results
+     */
     private void collect(final Node x, final StringBuilder prefix,
                          final String pattern,
                          final Queue<String> results) {
@@ -211,17 +221,16 @@ class TrieST {
         }
     }
 
+
     /**
      * Returns the string in the set that is the longest
-     * prefix of <tt>query</tt>,
-     * or <tt>null</tt>, if no such string.
-     * @param query the query string
-     * @throws NullPointerException if <tt>query</tt> is
-     * <tt>null</tt>
-     * @return the string in the set that is the longest
-     * prefix of <tt>query</tt>,
-     *     or <tt>null</tt> if no such string
-     *     Time complexity is O(1)
+     * prefix of the query.
+     *
+     * Time complexity is O(1).
+     *
+     * @param      query  The query
+     *
+     * @return     { description_of_the_return_value }
      */
     public String longestPrefixOf(final String query) {
         String str = query;
@@ -268,19 +277,27 @@ class TrieST {
 
     /**
      * Removes the key from the set if the key is present.
-     * @param key the key
-     * @throws NullPointerException if <tt>key</tt>
-     * is <tt>null</tt>
-     * Time complexity is O(N)
+     * Time complexity is O(N).
+     * @param      key   The key
      */
     public void delete(final String key) {
         String str = key;
         root = delete(root, str, 0);
     }
+
     /**
-    * Time complexity is O(N)
-    **/
-    private Node delete(final Node x, final String key, final int d) {
+     * Delete function.
+     *
+     * Time complexity is O(N)
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node delete(final Node x, final String key,
+        final int d) {
         Node y = x;
         String str = key;
         int a = d;
@@ -311,6 +328,14 @@ class TrieST {
     /**
      *  Time complexity is O(1)
     **/
+
+    /**
+     * Determines if it has prefix.
+     *
+     * @param      query  The query
+     *
+     * @return     True if has prefix, False otherwise.
+     */
     public boolean hasPrefix(final String query) {
         Node x = get(root, query, 0);
         return x != null;
