@@ -26,7 +26,7 @@ public class BoggleSolver {
     /**
      * Gets all valid words.
      *
-     * Complexity is N^2. 
+     * Complexity is N^2.
      *
      * @param      board  The board
      *
@@ -47,7 +47,7 @@ public class BoggleSolver {
     /**
      * dfs in the  grid.
      *
-     * Complexity is N^2. 
+     * Complexity is N^2.
      *
      * @param      board   The board
      * @param      list    The list
@@ -57,7 +57,8 @@ public class BoggleSolver {
      * @param      letter  The letter
      */
     public void dfs(final BoggleBoard board, final ArrayList<String> list,
-        final int i, final int j, final boolean[][] marked, final String letter) {
+        final int i, final int j, final boolean[][] marked,
+        final String letter) {
         //System.out.println(letter);
         if (marked[i][j]) {
             return;
@@ -74,7 +75,7 @@ public class BoggleSolver {
         }
         if (tst.contains(word) && word.length() > 2) {
             if (!list.contains(word)) {
-               list.add(word);   
+               list.add(word);
             }
         }
         marked[i][j] = true;
@@ -88,7 +89,6 @@ public class BoggleSolver {
                     && (j + col >= 0) && (j + col < board.cols())) {
                     dfs(board, list, i + row, j + col, marked, word);
                 }
-                
             }
         }
 
@@ -136,7 +136,7 @@ public class BoggleSolver {
             if (word.length() >= eight) {
                 return eleven;
             }
-        } 
+        }
         return 0;
     }
 
