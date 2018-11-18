@@ -10,10 +10,6 @@ public class BoggleSolver {
      * TrieST object.
      */
     private TrieST tst;
-    // Initializes the data structure using the given array
-    // of strings as the dictionary.
-    // (You can assume each word in the dictionary
-    // contains only the uppercase letters A through Z.)
     /**
      * Constructs the object.
      *
@@ -27,11 +23,10 @@ public class BoggleSolver {
         }
     }
 
-    // Returns the set of all valid words in the
-    //given Boggle board, as an Iterable.
-    
     /**
      * Gets all valid words.
+     *
+     * Complexity is N^2. 
      *
      * @param      board  The board
      *
@@ -49,6 +44,18 @@ public class BoggleSolver {
         return list;
     }
 
+    /**
+     * dfs in the  grid.
+     *
+     * Complexity is N^2. 
+     *
+     * @param      board   The board
+     * @param      list    The list
+     * @param      i       { parameter_description }
+     * @param      j       { parameter_description }
+     * @param      marked  The marked
+     * @param      letter  The letter
+     */
     public void dfs(final BoggleBoard board, final ArrayList<String> list,
         final int i, final int j, final boolean[][] marked, final String letter) {
         //System.out.println(letter);
@@ -88,33 +95,46 @@ public class BoggleSolver {
         marked[i][j] = false;
     }
 
-    // Returns the score of the given word if it is in the dictionary, zero otherwise.
-    // (You can assume the word contains only the uppercase letters A through Z.)
+
+    /**
+     * Finding the score of the word.
+     *
+     * @param      word  The word
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int scoreOf(final String word) {
         //System.out.println("Score techukundi");
+        final int three = 3;
+        final int five = 5;
+        final int six = 6;
+        final int eight = 8;
+        final int eleven = 11;
+        final int four = 4;
+        final int seven = 7;
         if (tst.contains(word)) {
 
             if (word.length() >= 0 && word.length() <= 2) {
                 return 0;
             }
-            if (word.length() >= 3 && word.length() <= 4) {
+            if (word.length() >= three && word.length() <= four) {
                 return 1;
             }
 
-            if (word.length() == 5) {
+            if (word.length() == five) {
                 return 2;
             }
 
-            if (word.length() == 6) {
-                return 3;
+            if (word.length() == six) {
+                return three;
             }
 
-            if (word.length() == 7) {
-                return 5;
+            if (word.length() == seven) {
+                return five;
             }
 
-            if (word.length() >= 8) {
-                return 11;
+            if (word.length() >= eight) {
+                return eleven;
             }
         } 
         return 0;

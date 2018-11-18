@@ -524,28 +524,14 @@ Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:32: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:52:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'dfs' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'dfs' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:52:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:53: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:70: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:84: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:91: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:92: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:93:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:93:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:100:34: '3' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:100:56: '4' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:104:34: '5' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:108:34: '6' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:109:24: '3' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:112:34: '7' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:113:24: '5' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:116:34: '8' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:117:24: '11' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:119: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:29: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:50: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:60: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:77: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:91: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 16\boggle\BoggleSolver.java:139: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...
