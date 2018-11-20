@@ -218,14 +218,14 @@ class T9 {
         // }
         // return wordlist;
         //String
-        
-    dfs("",0,wordlist,t9Signature.length(), t9Signature);
+
+        dfs("",0,wordlist,t9Signature.length(), t9Signature);
          //dfs("",0,wordlist,5,"43556");
         return wordlist;
 
     }
 
-    ArrayList<String> getChar(int i) {
+    public ArrayList<String> getChar(final int i) {
         ArrayList<String> vals = new ArrayList<String>();
         for (String s : bst.keys()) {
             if (bst.get(s) == i) {
@@ -235,21 +235,24 @@ class T9 {
         return vals;
     }
 
-    void dfs(String res,int i,  ArrayList<String> wordlist,int lenPattern,String t9Signature){
-        if(res.length()==lenPattern){
-            if(tst.contains(res)){
-                wordlist.add(res);
+    public void dfs(final String res,final int i,final ArrayList<String> wordlist,
+        final int lenPattern,final String t9Signature){
+        String str = res;
+        if(str.length() == lenPattern){
+            if(tst.contains(str)){
+                wordlist.add(str);
             }
         }
-        if (res.length() >= lenPattern) {
+        if (str.length() >= lenPattern) {
             return;
         }
         
-        ArrayList<String> characterArray = getChar(Integer.parseInt(t9Signature.charAt(i) + ""));
+        ArrayList<String> characterArray = 
+        getChar(Integer.parseInt(t9Signature.charAt(i) + ""));
         for(String c : characterArray){
-            res+=c+"";
-            dfs(res,i+1,wordlist,lenPattern,t9Signature);
-            res= res.substring(0,res.length()-1);
+            str += c + "";
+            dfs(str, i+1, wordlist, lenPattern, t9Signature);
+            str = str.substring(0, str.length()-1);
            //System.out.println(res);
         }
         
