@@ -224,7 +224,13 @@ class T9 {
         return wordlist;
 
     }
-
+    /**
+     * Gets the character.
+     *
+     * @param      i     { parameter_description }
+     *
+     * @return     The character.
+     */
     public ArrayList<String> getChar(final int i) {
         ArrayList<String> vals = new ArrayList<String>();
         for (String s : bst.keys()) {
@@ -234,7 +240,15 @@ class T9 {
         }
         return vals;
     }
-
+    /**
+     * DFS into the t9Signature code.
+     *
+     * @param      res          The resource
+     * @param      i            { parameter_description }
+     * @param      wordlist     The wordlist
+     * @param      lenPattern   The length pattern
+     * @param      t9Signature  The t 9 signature
+     */
     public void dfs(final String res,final int i,final ArrayList<String> wordlist,
         final int lenPattern,final String t9Signature){
         String str = res;
@@ -255,7 +269,6 @@ class T9 {
             str = str.substring(0, str.length()-1);
            //System.out.println(res);
         }
-        
 
     }
 

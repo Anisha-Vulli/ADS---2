@@ -301,8 +301,8 @@ care
 case
 Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
 	at MaxPQ.delMax(MaxPQ.java:184)
-	at T9.getSuggestions(Solution.java:282)
-	at T9.t9(Solution.java:309)
+	at T9.getSuggestions(Solution.java:295)
+	at T9.t9(Solution.java:322)
 	at Solution.main(Solution.java:94)
 ----------------------------------------
 
