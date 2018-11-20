@@ -206,17 +206,54 @@ class T9 {
         bst.put("v", 2 * 2 * 2);
         bst.put("w", 2 + 2 + 2 + 2 + 1); bst.put("x", 2 + 2 + 2 + 2 + 1);
         bst.put("y", 2 + 2 + 2 + 2 + 1); bst.put("z", 2 + 2 + 2 + 2 + 1);
-        for (String each : tst.keys()) {
-            String[] strarr = each.split("");
-            String num = "";
-            for (String str : strarr) {
-                num = num + bst.get(str);
-            }
-            if (num.equals(t9Signature)) {
-                wordlist.add(each);
+        // for (String each : tst.keys()) {
+        //     String[] strarr = each.split("");
+        //     String num = "";
+        //     for (String str : strarr) {
+        //         num = num + bst.get(str);
+        //     }
+        //     if (num.equals(t9Signature)) {
+        //         wordlist.add(each);
+        //     }
+        // }
+        // return wordlist;
+        //String
+        
+    dfs("",0,wordlist,t9Signature.length(), t9Signature);
+         //dfs("",0,wordlist,5,"43556");
+        return wordlist;
+
+    }
+
+    ArrayList<String> getChar(int i) {
+        ArrayList<String> vals = new ArrayList<String>();
+        for (String s : bst.keys()) {
+            if (bst.get(s) == i) {
+                vals.add(s);
             }
         }
-        return wordlist;
+        return vals;
+    }
+
+    void dfs(String res,int i,  ArrayList<String> wordlist,int lenPattern,String t9Signature){
+        if(res.length()==lenPattern){
+            if(tst.contains(res)){
+                wordlist.add(res);
+            }
+        }
+        if (res.length() >= lenPattern) {
+            return;
+        }
+        
+        ArrayList<String> characterArray = getChar(Integer.parseInt(t9Signature.charAt(i) + ""));
+        for(String c : characterArray){
+            res+=c+"";
+            dfs(res,i+1,wordlist,lenPattern,t9Signature);
+            res= res.substring(0,res.length()-1);
+           //System.out.println(res);
+        }
+        
+
     }
 
     // return all possibilities(words), find top k with highest frequency.
