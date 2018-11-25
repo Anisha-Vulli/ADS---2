@@ -314,7 +314,8 @@ public final class StdOut {
      * @param args   the arguments accompanying
      * the format string
      */
-    public static void printf(Locale locale, String format, Object... args) {
+    public static void printf(Locale locale,
+        String format, Object... args) {
         out.printf(locale, format, args);
         out.flush();
     }

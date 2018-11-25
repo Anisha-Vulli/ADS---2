@@ -1,0 +1,6 @@
+[master 5757a69] "ads2_m5_ba1_1: 3/3 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 5 files changed, 17 insertions(+), 12 deletions(-)
+ rewrite ADS - 2 Assignments/M 5/Bonus-1/Solution.class (69%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/Anisha-Vulli/ADS---2.git
+   a28346f..5757a69  master -> master

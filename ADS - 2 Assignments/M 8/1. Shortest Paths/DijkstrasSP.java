@@ -4,26 +4,26 @@
  */
 class DijkstrasSP {
     /**
-     *the distTo array to store.
-     *distance from one vertex to another.
+     * the distTo array to store.
+     * distance from one vertex to another.
      */
     private Double[] distTo;
     /**
-     *edge to is to store the edge connected.
+     * edge to is to store the edge connected.
      */
     private Edge[] edgeTo;
     /**
-     *indexed minpq to store the key value.
-     *pair.
+     * indexed minpq to store the key value.
+     * pair.
      */
     private IndexMinPQ<Double> pq;
     /**
-     *the graph object.
+     * the graph object.
      */
     private EdgeWeightedGraph graph;
     /**
-     *the constructor to initialize the objects.
-     *the time complexity is O(E + V).
+     * the constructor to initialize the objects.
+     * the time complexity is O(E + V).
      * @param      g  graph object.
      * @param      source  The source
      */
@@ -46,8 +46,8 @@ class DijkstrasSP {
         }
     }
     /**
-     *this method is to relax the edges.
-     *time complexity is O(logE)
+     * this method is to relax the edges.
+     * time complexity is O(logE)
      * @param      edge    The edge
      * @param      vertex  The vertex
      */
@@ -65,8 +65,8 @@ class DijkstrasSP {
         }
     }
     /**
-     *the method returns the distance.
-     *from the source to given vertex.
+     * the method returns the distance.
+     * from the source to given vertex.
      *
      * @param      v  vertex
      *
@@ -76,7 +76,8 @@ class DijkstrasSP {
         return distTo[v];
     }
     /**
-     *whether the path is there or not.
+     * whether the path is there or not.
+     * Complexity is o(1).
      *
      * @param      v another vertex.
      *
@@ -86,10 +87,10 @@ class DijkstrasSP {
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
     /**
-     *shortest path to given vertex.
-     *
+     * shortest path to given vertex.
+     * time complexity is O(ElogV).
      * @param      v  vertex.
-     *time complexity is O(ElogV)
+     *
      * @return shortest path is returned from the source.
      */
     public Iterable<Edge> pathTo(final int v) {
@@ -106,8 +107,8 @@ class DijkstrasSP {
     }
     /**
      *returns the shortest distance between.
-     *two vertices.
-     *time complexity O(E)
+     * two vertices.
+     * time complexity O(E)
      * @param      vertex  The vertex
      *
      * @return shortest distance between two vertices.

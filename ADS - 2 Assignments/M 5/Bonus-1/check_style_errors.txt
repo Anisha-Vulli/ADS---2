@@ -34,7 +34,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\CC.java:140:94: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\CC.java:143:5: Class 'CC' looks like designed for extension (can be subclassed), but the method 'idarr' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CC' final or making the method 'idarr' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\CC.java:143:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\CC.java:147: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\CC.java:146: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
@@ -47,18 +47,3 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Graph.java:137:37: Parameter v should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 7 errors.
-Starting audit...
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:7:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:20: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:26: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:42: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---2\ADS - 2 Assignments\M 5\Bonus-1\Solution.java:51: Line has trailing spaces. [RegexpSingleline]
-Audit done.
-Checkstyle ends with 10 errors.
-Starting audit...
-Audit done.

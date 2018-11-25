@@ -129,6 +129,8 @@ class GraphTheory implements Graph {
      * Checks if there is a connection between two nodes.
      * Complexity is N.
      * Checks throughout the list for the particular index.
+     * For matrix it is 1.
+     * For adjecency list it is E.
      *
      * @param      v1     { parameter_description }
      * @param      w     { parameter_description }

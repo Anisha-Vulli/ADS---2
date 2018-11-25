@@ -23,7 +23,6 @@ final class Solution {
         int[] idarray = ccobj.idarr();
         //System.out.println(Arrays.toString(idarray));
         int count = 0;
-        
         int finalcnt = 0;
         int id = 0;
         for (int i = 0; i < grp.vertex(); i++) {

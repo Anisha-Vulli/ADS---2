@@ -1,0 +1,11 @@
+warning: LF will be replaced by CRLF in ADS - 2 Assignments/M 1/1.1 Graph/Bag.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ADS - 2 Assignments/M 1/1.1 Graph/Solution.java.
+The file will have its original line endings in your working directory.
+[master ad4bf8b] "ads2_m1_a1_1: 7/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 10 insertions(+), 11 deletions(-)
+ rewrite ADS - 2 Assignments/M 1/1.1 Graph/check_style_errors.txt (87%)
+ rewrite ADS - 2 Assignments/M 1/1.1 Graph/result/score.json (81%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/Anisha-Vulli/ADS---2.git
+   8b07fd9..ad4bf8b  master -> master

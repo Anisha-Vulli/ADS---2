@@ -1,0 +1,9 @@
+warning: LF will be replaced by CRLF in ADS - 2 Assignments/M 14/Assignment-1/Solution.java.
+The file will have its original line endings in your working directory.
+[master 1eadef2] "ads2_m14_a1_1: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 12 insertions(+), 14 deletions(-)
+ rewrite ADS - 2 Assignments/M 14/Assignment-1/check_style_errors.txt (72%)
+ rewrite ADS - 2 Assignments/M 14/Assignment-1/result/score.json (76%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/Anisha-Vulli/ADS---2.git
+   befc153..1eadef2  master -> master

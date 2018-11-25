@@ -1,0 +1,13 @@
+[master 71c0517] "ads2_m3_a2_1: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 14 files changed, 174 insertions(+), 4 deletions(-)
+ create mode 100644 ADS - 2 Assignments/M 3/3.2 Bipartite/Bipartite.class
+ create mode 100644 ADS - 2 Assignments/M 3/3.2 Bipartite/Bipartite.java
+ delete mode 100644 ADS - 2 Assignments/M 3/3.2 Bipartite/DirectedCycle.class
+ rewrite ADS - 2 Assignments/M 3/3.2 Bipartite/Stack$ListIterator.class (94%)
+ rewrite ADS - 2 Assignments/M 3/3.2 Bipartite/Stack$Node.class (80%)
+ rewrite ADS - 2 Assignments/M 3/3.2 Bipartite/Stack.class (80%)
+ delete mode 100644 ADS - 2 Assignments/M 3/3.2 Bipartite/md5/score.txt
+ delete mode 100644 ADS - 2 Assignments/M 3/3.2 Bipartite/result/score.json
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/Anisha-Vulli/ADS---2.git
+   5757a69..71c0517  master -> master

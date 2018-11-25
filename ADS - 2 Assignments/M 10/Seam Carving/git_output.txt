@@ -1,0 +1,10 @@
+warning: LF will be replaced by CRLF in ADS - 2 Assignments/M 10/Seam Carving/SeamCarver.java.
+The file will have its original line endings in your working directory.
+[master 88e0ee9] "ads2_m10_a1_1: 9/9 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 5 files changed, 915 insertions(+), 874 deletions(-)
+ rewrite ADS - 2 Assignments/M 10/Seam Carving/SeamCarver.class (100%)
+ rewrite ADS - 2 Assignments/M 10/Seam Carving/SeamCarver.java (82%)
+ rewrite ADS - 2 Assignments/M 10/Seam Carving/result/score.json (82%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/Anisha-Vulli/ADS---2.git
+   1fb6368..88e0ee9  master -> master
